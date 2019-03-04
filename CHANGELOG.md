@@ -8,7 +8,7 @@ bumps.  A breaking change will get clearly notified in this log.
 
 NOTE:  this changelog represents the changes that are associated with the library code in this repo (rather than the tools or services in this repo).  
 
-## [Unreleased]
+
 
 ### Added
 
