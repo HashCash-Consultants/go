@@ -71,7 +71,7 @@ $ createuser <username> --pwprompt
 $ Enter password for new role: <Enter password>
 $ Enter it again: <Enter the pwd again>
 ```
-- you need to add user. Exit from postgres and login as root user and execute following command.
+- You need to add Aurora user. Exit from postgres and login as root user and execute following command.
 ```
 $ exit
 $ adduser <username>;
@@ -82,7 +82,7 @@ $ su - postgres
 $ psql
 $ \du
 ```
- - Create a blank database using following command.
+- Create a blank database using following command.
 ```
  $ CREATE DATABASE <DB_NAME> OWNER <user created>;
 ```
