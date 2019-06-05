@@ -17,6 +17,7 @@ and save the file
 ```
 - Open vi .bashrc and add following lines
 ```ssh
+eval "$(direnv hook bash)"
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 ```
@@ -25,15 +26,15 @@ export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 source ~/.profile
 source  ~/.bashrc
 ```
-- Check go version it should be - 
+- Check go version
 ```ssh
 $ go version
 ```
 
 # Install dep
-
+- sudo -s
 - curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
-- Check go version it should be - 
+- Check dep version 
 ```ssh
 $ dep version
 
@@ -59,5 +60,43 @@ $ go install -ldflags "-X github.com/hcnet/go/support/app.version=aurora-0.16.0"
 - after running above command you check aurora build in <Your_dir>/go/bin folder and you can check aurora version by  following command :
 ```ssh
 $ ./aurora version
+```
 
+# Aurora database setup
+- Create a user for HC Net aurora database.
+```
+$ sudo -s
+$ su – postgres
+$ createuser <username> --pwprompt
+$ Enter password for new role: <Enter password>
+$ Enter it again: <Enter the pwd again>
+```
+- you need to add user. Exit from postgres and login as root user and execute following command.
+```
+$ exit
+$ adduser <username>;
+```
+- To verify if user is created, execute following commands
+```
+$ su - postgres
+$ psql
+$ \du
+```
+ - Create a blank database using following command.
+```
+ $ CREATE DATABASE <DB_NAME> OWNER <user created>;
+```
+ # Initialize aurora
+ - Initialize aurora with database login as root user and Go   “go/bin” using following command
+```
+ $ export DATABASE_URL="postgresql://define aurora db username:define aurora db user password@localhost/define aurora database name"
+```
+- After that Go “go/bin” and execute following command
+```
+$ ./aurora db init
+```
+# Aurora up command
+- Go “go/bin” execute following command
+```
+$ sudo nohup ./aurora --db-url="postgresql://define aurora db username:define aurora db user password @localhost/define aurora database name" --hcnet-core-db-url="postgresql://define Node1 database username:define Node1 database user password@localhost/define Node1 database name" --hcnet-core-url="http://localhost:11626" --network-passphrase="define Network password" --ingest="true" --per-hour-rate-limit=540000000 &
 ```
