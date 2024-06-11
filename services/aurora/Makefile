@@ -7,12 +7,12 @@ endif
 DOCKER_PLATFORM := $(shell docker system info --format '{{.OSType}}/{{.Architecture}}')
 
 binary-build:
-	$(SUDO) docker run --platform $(DOCKER_PLATFORM) --rm $(DOCKER_OPTS) -v $(shell pwd)/../../:/go/src/github.com/shantanu-hashcash/go \
+	$(SUDO) docker run --platform $(DOCKER_PLATFORM) --rm $(DOCKER_OPTS) -v $(shell pwd)/../../:/go/src/github.com/HashCash-Consultants/go \
 		--pull always \
 		--env CGO_ENABLED=0 \
-		--env GOFLAGS="-ldflags=-X=github.com/shantanu-hashcash/go/support/app.version=$(VERSION_STRING)" \
+		--env GOFLAGS="-ldflags=-X=github.com/HashCash-Consultants/go/support/app.version=$(VERSION_STRING)" \
 		golang:1.22-bullseye \
 		/bin/bash -c '\
-			git config --global --add safe.directory /go/src/github.com/shantanu-hashcash/go && \
-			cd /go/src/github.com/shantanu-hashcash/go && \
+			git config --global --add safe.directory /go/src/github.com/HashCash-Consultants/go && \
+			cd /go/src/github.com/HashCash-Consultants/go && \
 			go build -o hcnet-aurora -trimpath -v ./services/aurora'

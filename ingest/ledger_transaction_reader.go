@@ -5,10 +5,10 @@ import (
 	"encoding/hex"
 	"io"
 
-	"github.com/shantanu-hashcash/go/ingest/ledgerbackend"
-	"github.com/shantanu-hashcash/go/network"
-	"github.com/shantanu-hashcash/go/support/errors"
-	"github.com/shantanu-hashcash/go/xdr"
+	"github.com/HashCash-Consultants/go/ingest/ledgerbackend"
+	"github.com/HashCash-Consultants/go/network"
+	"github.com/HashCash-Consultants/go/support/errors"
+	"github.com/HashCash-Consultants/go/xdr"
 )
 
 var badMetaVersionErr = errors.New(
@@ -115,7 +115,7 @@ func (reader *LedgerTransactionReader) Seek(index int) error {
 // storeHashes creates a mapping between hashes and envelopes in order to
 // correctly provide a per-transaction view on-the-fly when Read() is called.
 func (reader *LedgerTransactionReader) storeTransactions(networkPassphrase string) error {
-	// See https://github.com/shantanu-hashcash/go/pull/2720: envelopes in the meta (which
+	// See https://github.com/HashCash-Consultants/go/pull/2720: envelopes in the meta (which
 	// just come straight from the agreed-upon transaction set) are not in the
 	// same order as the actual list of metas (which are sorted by hash), so we
 	// need to hash the envelopes *first* to properly associate them with their

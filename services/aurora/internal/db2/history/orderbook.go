@@ -5,10 +5,10 @@ import (
 	"database/sql"
 	"math/big"
 
-	"github.com/shantanu-hashcash/go/amount"
-	"github.com/shantanu-hashcash/go/support/db"
-	"github.com/shantanu-hashcash/go/support/errors"
-	"github.com/shantanu-hashcash/go/xdr"
+	"github.com/HashCash-Consultants/go/amount"
+	"github.com/HashCash-Consultants/go/support/db"
+	"github.com/HashCash-Consultants/go/support/errors"
+	"github.com/HashCash-Consultants/go/xdr"
 )
 
 type priceLevel struct {

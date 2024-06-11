@@ -9,7 +9,7 @@ import (
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/shantanu-hashcash/go/support/errors"
+	"github.com/HashCash-Consultants/go/support/errors"
 )
 
 func TestStressTestStateTestSuite(t *testing.T) {

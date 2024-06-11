@@ -13,8 +13,8 @@ import (
 	"regexp"
 	"strconv"
 
-	"github.com/shantanu-hashcash/go/support/ordered"
-	"github.com/shantanu-hashcash/go/xdr"
+	"github.com/HashCash-Consultants/go/support/ordered"
+	"github.com/HashCash-Consultants/go/xdr"
 )
 
 var (
@@ -147,7 +147,7 @@ func StringFromFloat64(v float64) string {
 // Sell units = pathPaymentAmountSold and buy units = pathPaymentAmountBought
 //
 // this is how we do floor and ceiling in hcnet-core:
-// https://github.com/shantanu-hashcash/hcnet-core/blob/9af27ef4e20b66f38ab148d52ba7904e74fe502f/src/util/types.cpp#L201
+// https://github.com/HashCash-Consultants/hcnet-core/blob/9af27ef4e20b66f38ab148d52ba7904e74fe502f/src/util/types.cpp#L201
 func ConvertToBuyingUnits(sellingOfferAmount int64, sellingUnitsNeeded int64, pricen int64, priced int64) (int64, int64, error) {
 	var e error
 	// offerSellingBound
@@ -177,7 +177,7 @@ func ConvertToBuyingUnits(sellingOfferAmount int64, sellingUnitsNeeded int64, pr
 }
 
 // MulFractionRoundDown sets x = (x * n) / d, which is a round-down operation
-// see https://github.com/shantanu-hashcash/hcnet-core/blob/9af27ef4e20b66f38ab148d52ba7904e74fe502f/src/util/types.cpp#L201
+// see https://github.com/HashCash-Consultants/hcnet-core/blob/9af27ef4e20b66f38ab148d52ba7904e74fe502f/src/util/types.cpp#L201
 func MulFractionRoundDown(x int64, n int64, d int64) (int64, error) {
 	if d == 0 {
 		return 0, ErrDivisionByZero
@@ -198,7 +198,7 @@ func MulFractionRoundDown(x int64, n int64, d int64) (int64, error) {
 }
 
 // mulFractionRoundUp sets x = ((x * n) + d - 1) / d, which is a round-up operation
-// see https://github.com/shantanu-hashcash/hcnet-core/blob/9af27ef4e20b66f38ab148d52ba7904e74fe502f/src/util/types.cpp#L201
+// see https://github.com/HashCash-Consultants/hcnet-core/blob/9af27ef4e20b66f38ab148d52ba7904e74fe502f/src/util/types.cpp#L201
 func mulFractionRoundUp(x int64, n int64, d int64) (int64, error) {
 	if d == 0 {
 		return 0, ErrDivisionByZero

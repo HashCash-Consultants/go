@@ -5,8 +5,8 @@ import (
 
 	sq "github.com/Masterminds/squirrel"
 
-	"github.com/shantanu-hashcash/go/services/aurora/internal/db2"
-	"github.com/shantanu-hashcash/go/support/errors"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/db2"
+	"github.com/HashCash-Consultants/go/support/errors"
 )
 
 func (q *Q) GetAccountSignersByAccountID(ctx context.Context, id string) ([]AccountSigner, error) {

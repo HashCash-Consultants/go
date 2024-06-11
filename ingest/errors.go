@@ -1,7 +1,7 @@
 package ingest
 
 import (
-	"github.com/shantanu-hashcash/go/support/errors"
+	"github.com/HashCash-Consultants/go/support/errors"
 )
 
 // ErrNotFound is returned when the requested ledger is not found

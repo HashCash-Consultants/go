@@ -8,8 +8,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/shantanu-hashcash/go/support/errors"
-	"github.com/shantanu-hashcash/go/support/log"
+	"github.com/HashCash-Consultants/go/support/errors"
+	"github.com/HashCash-Consultants/go/support/log"
 )
 
 type hash []byte

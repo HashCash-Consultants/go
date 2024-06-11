@@ -5,8 +5,8 @@ import (
 
 	sq "github.com/Masterminds/squirrel"
 
-	"github.com/shantanu-hashcash/go/keypair"
-	"github.com/shantanu-hashcash/go/services/aurora/internal/test"
+	"github.com/HashCash-Consultants/go/keypair"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/test"
 )
 
 type transactionParticipant struct {

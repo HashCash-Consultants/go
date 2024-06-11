@@ -6,7 +6,7 @@ import (
 	"path/filepath"
 
 	"github.com/aws/aws-sdk-go/aws"
-	backend "github.com/shantanu-hashcash/go/exp/lightaurora/index/backend"
+	backend "github.com/HashCash-Consultants/go/exp/lightaurora/index/backend"
 )
 
 func Connect(backendUrl string) (Store, error) {

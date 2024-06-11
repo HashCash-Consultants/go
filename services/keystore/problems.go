@@ -4,7 +4,7 @@ import (
 	"errors"
 	"net/http"
 
-	"github.com/shantanu-hashcash/go/support/render/problem"
+	"github.com/HashCash-Consultants/go/support/render/problem"
 )
 
 var errRequiredField = errors.New("field value cannot be empty")

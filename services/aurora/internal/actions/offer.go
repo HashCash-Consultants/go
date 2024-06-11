@@ -4,13 +4,13 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/shantanu-hashcash/go/protocols/aurora"
-	auroraContext "github.com/shantanu-hashcash/go/services/aurora/internal/context"
-	"github.com/shantanu-hashcash/go/services/aurora/internal/db2/history"
-	"github.com/shantanu-hashcash/go/services/aurora/internal/ledger"
-	"github.com/shantanu-hashcash/go/services/aurora/internal/resourceadapter"
-	"github.com/shantanu-hashcash/go/support/errors"
-	"github.com/shantanu-hashcash/go/support/render/hal"
+	"github.com/HashCash-Consultants/go/protocols/aurora"
+	auroraContext "github.com/HashCash-Consultants/go/services/aurora/internal/context"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/db2/history"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/ledger"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/resourceadapter"
+	"github.com/HashCash-Consultants/go/support/errors"
+	"github.com/HashCash-Consultants/go/support/render/hal"
 )
 
 // AccountOffersQuery query struct for offers end-point

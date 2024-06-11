@@ -6,10 +6,10 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/shantanu-hashcash/go/exp/lightaurora/index"
-	"github.com/shantanu-hashcash/go/historyarchive"
-	"github.com/shantanu-hashcash/go/network"
-	"github.com/shantanu-hashcash/go/support/log"
+	"github.com/HashCash-Consultants/go/exp/lightaurora/index"
+	"github.com/HashCash-Consultants/go/historyarchive"
+	"github.com/HashCash-Consultants/go/network"
+	"github.com/HashCash-Consultants/go/support/log"
 )
 
 func main() {

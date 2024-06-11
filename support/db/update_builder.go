@@ -5,7 +5,7 @@ import (
 	"database/sql"
 	"reflect"
 
-	"github.com/shantanu-hashcash/go/support/errors"
+	"github.com/HashCash-Consultants/go/support/errors"
 )
 
 // Exec executes the query that has been previously configured on the

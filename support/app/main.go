@@ -3,7 +3,7 @@
 package app
 
 import "time"
-import "github.com/shantanu-hashcash/go/support/errors"
+import "github.com/HashCash-Consultants/go/support/errors"
 
 var (
 	// ErrNoBuildTime is the error returned when no build time for the current

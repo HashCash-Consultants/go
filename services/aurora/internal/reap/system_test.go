@@ -3,8 +3,8 @@ package reap
 import (
 	"testing"
 
-	"github.com/shantanu-hashcash/go/services/aurora/internal/ledger"
-	"github.com/shantanu-hashcash/go/services/aurora/internal/test"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/ledger"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/test"
 )
 
 func TestDeleteUnretainedHistory(t *testing.T) {

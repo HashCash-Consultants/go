@@ -14,12 +14,12 @@ import (
 	"os"
 	"strings"
 
-	"github.com/shantanu-hashcash/go/keypair"
-	"github.com/shantanu-hashcash/go/network"
+	"github.com/HashCash-Consultants/go/keypair"
+	"github.com/HashCash-Consultants/go/network"
 
 	"github.com/howeyc/gopass"
-	"github.com/shantanu-hashcash/go/txnbuild"
-	"github.com/shantanu-hashcash/go/xdr"
+	"github.com/HashCash-Consultants/go/txnbuild"
+	"github.com/HashCash-Consultants/go/xdr"
 )
 
 type SignOrVerify struct {

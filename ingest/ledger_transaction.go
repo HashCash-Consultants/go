@@ -1,8 +1,8 @@
 package ingest
 
 import (
-	"github.com/shantanu-hashcash/go/support/errors"
-	"github.com/shantanu-hashcash/go/xdr"
+	"github.com/HashCash-Consultants/go/support/errors"
+	"github.com/HashCash-Consultants/go/xdr"
 )
 
 // LedgerTransaction represents the data for a single transaction within a ledger.
@@ -45,7 +45,7 @@ func (t *LedgerTransaction) GetChanges() ([]Change, error) {
 		txChanges := GetChangesFromLedgerEntryChanges(v1Meta.TxChanges)
 		changes = append(changes, txChanges...)
 
-		// Ignore operations meta if txInternalError https://github.com/shantanu-hashcash/go/issues/2111
+		// Ignore operations meta if txInternalError https://github.com/HashCash-Consultants/go/issues/2111
 		if t.txInternalError() && t.LedgerVersion <= 12 {
 			return changes, nil
 		}
@@ -81,7 +81,7 @@ func (t *LedgerTransaction) GetChanges() ([]Change, error) {
 		changes = append(changes, txChangesBefore...)
 
 		// Ignore operations meta and txChangesAfter if txInternalError
-		// https://github.com/shantanu-hashcash/go/issues/2111
+		// https://github.com/HashCash-Consultants/go/issues/2111
 		if t.txInternalError() && t.LedgerVersion <= 12 {
 			return changes, nil
 		}
@@ -120,7 +120,7 @@ func (t *LedgerTransaction) GetOperationChanges(operationIndex uint32) ([]Change
 		return changes, errors.New("TransactionMeta.V=0 not supported")
 	}
 
-	// Ignore operations meta if txInternalError https://github.com/shantanu-hashcash/go/issues/2111
+	// Ignore operations meta if txInternalError https://github.com/HashCash-Consultants/go/issues/2111
 	if t.txInternalError() && t.LedgerVersion <= 12 {
 		return changes, nil
 	}

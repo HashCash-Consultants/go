@@ -4,8 +4,8 @@
 package main
 
 import (
-	"github.com/shantanu-hashcash/go/services/keystore"
-	"github.com/shantanu-hashcash/go/support/env"
+	"github.com/HashCash-Consultants/go/services/keystore"
+	"github.com/HashCash-Consultants/go/support/env"
 )
 
 func getConfig() *keystore.Config {

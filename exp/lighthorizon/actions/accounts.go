@@ -6,16 +6,16 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/shantanu-hashcash/go/support/log"
-	"github.com/shantanu-hashcash/go/xdr"
+	"github.com/HashCash-Consultants/go/support/log"
+	"github.com/HashCash-Consultants/go/xdr"
 
-	"github.com/shantanu-hashcash/go/exp/lightaurora/adapters"
-	"github.com/shantanu-hashcash/go/exp/lightaurora/services"
-	hProtocol "github.com/shantanu-hashcash/go/protocols/aurora"
-	"github.com/shantanu-hashcash/go/protocols/aurora/operations"
-	"github.com/shantanu-hashcash/go/support/render/hal"
-	supportProblem "github.com/shantanu-hashcash/go/support/render/problem"
-	"github.com/shantanu-hashcash/go/toid"
+	"github.com/HashCash-Consultants/go/exp/lightaurora/adapters"
+	"github.com/HashCash-Consultants/go/exp/lightaurora/services"
+	hProtocol "github.com/HashCash-Consultants/go/protocols/aurora"
+	"github.com/HashCash-Consultants/go/protocols/aurora/operations"
+	"github.com/HashCash-Consultants/go/support/render/hal"
+	supportProblem "github.com/HashCash-Consultants/go/support/render/problem"
+	"github.com/HashCash-Consultants/go/toid"
 )
 
 const (

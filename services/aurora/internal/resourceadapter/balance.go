@@ -1,12 +1,12 @@
 package resourceadapter
 
 import (
-	"github.com/shantanu-hashcash/go/amount"
-	protocol "github.com/shantanu-hashcash/go/protocols/aurora"
-	"github.com/shantanu-hashcash/go/services/aurora/internal/assets"
-	"github.com/shantanu-hashcash/go/services/aurora/internal/db2/history"
-	"github.com/shantanu-hashcash/go/support/errors"
-	"github.com/shantanu-hashcash/go/xdr"
+	"github.com/HashCash-Consultants/go/amount"
+	protocol "github.com/HashCash-Consultants/go/protocols/aurora"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/assets"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/db2/history"
+	"github.com/HashCash-Consultants/go/support/errors"
+	"github.com/HashCash-Consultants/go/xdr"
 )
 
 func PopulatePoolShareBalance(dest *protocol.Balance, row history.TrustLine) (err error) {

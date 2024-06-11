@@ -8,9 +8,9 @@ import (
 
 	"github.com/BurntSushi/toml"
 	"github.com/asaskevich/govalidator"
-	"github.com/shantanu-hashcash/go/amount"
-	"github.com/shantanu-hashcash/go/strkey"
-	"github.com/shantanu-hashcash/go/support/errors"
+	"github.com/HashCash-Consultants/go/amount"
+	"github.com/HashCash-Consultants/go/strkey"
+	"github.com/HashCash-Consultants/go/support/errors"
 )
 
 // TLS represents a common configuration snippet for configuring TLS in a server process

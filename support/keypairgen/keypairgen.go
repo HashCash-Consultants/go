@@ -1,6 +1,6 @@
 package keypairgen
 
-import "github.com/shantanu-hashcash/go/keypair"
+import "github.com/HashCash-Consultants/go/keypair"
 
 // Generator generates new keys with the underlying source. The underlying
 // source defaults to the RandomSource if not specified.

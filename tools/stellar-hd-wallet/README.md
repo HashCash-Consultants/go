@@ -1,6 +1,6 @@
 # hcnet-hd-wallet
 
-Console tool to generate Hcnet HD wallet for a given seed. Implements [SEP-0005](https://github.com/shantanu-hashcash/hcnet-protocol/blob/master/ecosystem/sep-0005.md).
+Console tool to generate Hcnet HD wallet for a given seed. Implements [SEP-0005](https://github.com/HashCash-Consultants/hcnet-protocol/blob/master/ecosystem/sep-0005.md).
 
 This is experimental software. Use at your own risk.
 

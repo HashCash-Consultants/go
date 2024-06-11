@@ -7,8 +7,8 @@ import (
 	"strings"
 
 	"github.com/guregu/null"
-	"github.com/shantanu-hashcash/go/support/errors"
-	"github.com/shantanu-hashcash/go/xdr"
+	"github.com/HashCash-Consultants/go/support/errors"
+	"github.com/HashCash-Consultants/go/xdr"
 )
 
 // TimeBounds represents the time bounds of a Hcnet transaction

@@ -18,15 +18,15 @@ For each new version we will only track changes from the previous version.
 #### Changes
 
 * In ["Transaction"](https://developers.hcnet.org/api/aurora/resources/transactions/object),
-`result_meta_xdr` field is [now nullable](https://github.com/shantanu-hashcash/go/pull/5228), and will be `null` when Aurora has `SKIP_TXMETA=true` set, otherwise if Aurora is configured with `SKIP_TXMETA=false` which is default, then `result_meta_xdr` will be the same value of base64 encoded xdr.
+`result_meta_xdr` field is [now nullable](https://github.com/HashCash-Consultants/go/pull/5228), and will be `null` when Aurora has `SKIP_TXMETA=true` set, otherwise if Aurora is configured with `SKIP_TXMETA=false` which is default, then `result_meta_xdr` will be the same value of base64 encoded xdr.
 * Operations responses may include a `transaction` field which represents the transaction that created the operation.
 
 ### 0.15.0
 
 #### SDKs with full support
 
-- [JS SDK 0.10.2](https://github.com/shantanu-hashcash/js-hcnet-sdk/releases/tag/v0.10.2)
-- [Java SDK 0.4.0](https://github.com/shantanu-hashcash/java-hcnet-sdk/releases/tag/0.4.0)
+- [JS SDK 0.10.2](https://github.com/HashCash-Consultants/js-hcnet-sdk/releases/tag/v0.10.2)
+- [Java SDK 0.4.0](https://github.com/HashCash-Consultants/java-hcnet-sdk/releases/tag/0.4.0)
 
 #### Changes
 
@@ -59,8 +59,8 @@ instead of per request.
 
 #### SDKs with full support
 
-- [JS SDK 0.10.2](https://github.com/shantanu-hashcash/js-hcnet-sdk/releases/tag/v0.10.2)
-- [Java SDK 0.3.1](https://github.com/shantanu-hashcash/java-hcnet-sdk/releases/tag/0.3.1)
+- [JS SDK 0.10.2](https://github.com/HashCash-Consultants/js-hcnet-sdk/releases/tag/v0.10.2)
+- [Java SDK 0.3.1](https://github.com/HashCash-Consultants/java-hcnet-sdk/releases/tag/0.3.1)
 
 #### Changes
 
@@ -98,8 +98,8 @@ instead of per request.
 
 #### SDKs with full support
 
-- [JS SDK 0.8.2](https://github.com/shantanu-hashcash/js-hcnet-sdk/releases/tag/v0.8.2)
-- [Java SDK 0.2.1](https://github.com/shantanu-hashcash/java-hcnet-sdk/releases/tag/0.2.1)
+- [JS SDK 0.8.2](https://github.com/HashCash-Consultants/js-hcnet-sdk/releases/tag/v0.8.2)
+- [Java SDK 0.2.1](https://github.com/HashCash-Consultants/java-hcnet-sdk/releases/tag/0.2.1)
 
 #### Changes
 
@@ -124,8 +124,8 @@ instead of per request.
 
 #### SDKs with full support
 
-- [JS SDK 0.8.2](https://github.com/shantanu-hashcash/js-hcnet-sdk/releases/tag/v0.8.2)
-- [Java SDK 0.2.1](https://github.com/shantanu-hashcash/java-hcnet-sdk/releases/tag/0.2.1)
+- [JS SDK 0.8.2](https://github.com/HashCash-Consultants/js-hcnet-sdk/releases/tag/v0.8.2)
+- [Java SDK 0.2.1](https://github.com/HashCash-Consultants/java-hcnet-sdk/releases/tag/0.2.1)
 
 #### Changes
 

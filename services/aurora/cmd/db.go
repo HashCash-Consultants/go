@@ -12,15 +12,15 @@ import (
 
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
-	"github.com/shantanu-hashcash/go/services/aurora/internal/db2/history"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/db2/history"
 
-	aurora "github.com/shantanu-hashcash/go/services/aurora/internal"
-	"github.com/shantanu-hashcash/go/services/aurora/internal/db2/schema"
-	"github.com/shantanu-hashcash/go/services/aurora/internal/ingest"
-	support "github.com/shantanu-hashcash/go/support/config"
-	"github.com/shantanu-hashcash/go/support/db"
-	"github.com/shantanu-hashcash/go/support/errors"
-	hlog "github.com/shantanu-hashcash/go/support/log"
+	aurora "github.com/HashCash-Consultants/go/services/aurora/internal"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/db2/schema"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/ingest"
+	support "github.com/HashCash-Consultants/go/support/config"
+	"github.com/HashCash-Consultants/go/support/db"
+	"github.com/HashCash-Consultants/go/support/errors"
+	hlog "github.com/HashCash-Consultants/go/support/log"
 )
 
 var dbCmd = &cobra.Command{

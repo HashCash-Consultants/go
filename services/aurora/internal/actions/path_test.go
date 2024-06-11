@@ -5,9 +5,9 @@ import (
 	"net/http"
 	"testing"
 
-	auroraContext "github.com/shantanu-hashcash/go/services/aurora/internal/context"
-	"github.com/shantanu-hashcash/go/services/aurora/internal/db2/history"
-	"github.com/shantanu-hashcash/go/services/aurora/internal/test"
+	auroraContext "github.com/HashCash-Consultants/go/services/aurora/internal/context"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/db2/history"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/test"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -3,8 +3,8 @@ package ingester
 import (
 	"context"
 
-	"github.com/shantanu-hashcash/go/historyarchive"
-	"github.com/shantanu-hashcash/go/xdr"
+	"github.com/HashCash-Consultants/go/historyarchive"
+	"github.com/HashCash-Consultants/go/xdr"
 	"github.com/stretchr/testify/mock"
 )
 

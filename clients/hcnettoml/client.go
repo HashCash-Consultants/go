@@ -6,8 +6,8 @@ import (
 	"net/http"
 
 	"github.com/BurntSushi/toml"
-	"github.com/shantanu-hashcash/go/address"
-	"github.com/shantanu-hashcash/go/support/errors"
+	"github.com/HashCash-Consultants/go/address"
+	"github.com/HashCash-Consultants/go/support/errors"
 )
 
 // GetHcnetToml returns hcnet.toml file for a given domain
@@ -30,7 +30,7 @@ func (c *Client) GetHcnetToml(domain string) (resp *Response, err error) {
 
 	// There is one corner case not handled here: response is exactly
 	// HcnetTomlMaxSize long and is incorrect toml. Check discussion:
-	// https://github.com/shantanu-hashcash/go/pull/24#discussion_r89909696
+	// https://github.com/HashCash-Consultants/go/pull/24#discussion_r89909696
 	if err != nil && limitReader.(*io.LimitedReader).N == 0 {
 		err = errors.Errorf("hcnet.toml response exceeds %d bytes limit", HcnetTomlMaxSize)
 		return

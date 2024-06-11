@@ -3,12 +3,12 @@ package serve
 import (
 	"net/http"
 
-	"github.com/shantanu-hashcash/go/exp/services/recoverysigner/internal/account"
-	"github.com/shantanu-hashcash/go/exp/services/recoverysigner/internal/serve/auth"
-	"github.com/shantanu-hashcash/go/keypair"
-	"github.com/shantanu-hashcash/go/support/http/httpdecode"
-	supportlog "github.com/shantanu-hashcash/go/support/log"
-	"github.com/shantanu-hashcash/go/support/render/httpjson"
+	"github.com/HashCash-Consultants/go/exp/services/recoverysigner/internal/account"
+	"github.com/HashCash-Consultants/go/exp/services/recoverysigner/internal/serve/auth"
+	"github.com/HashCash-Consultants/go/keypair"
+	"github.com/HashCash-Consultants/go/support/http/httpdecode"
+	supportlog "github.com/HashCash-Consultants/go/support/log"
+	"github.com/HashCash-Consultants/go/support/render/httpjson"
 )
 
 type accountGetHandler struct {

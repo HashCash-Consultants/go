@@ -22,7 +22,7 @@ import (
 	"github.com/Masterminds/squirrel"
 	"github.com/jmoiron/sqlx"
 
-	"github.com/shantanu-hashcash/go/support/errors"
+	"github.com/HashCash-Consultants/go/support/errors"
 
 	// Enable postgres
 	_ "github.com/lib/pq"

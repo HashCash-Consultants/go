@@ -6,7 +6,7 @@ import (
 	"path"
 
 	lru "github.com/hashicorp/golang-lru"
-	"github.com/shantanu-hashcash/go/support/log"
+	"github.com/HashCash-Consultants/go/support/log"
 )
 
 // OnDiskCache fronts another storage with a local filesystem cache. Its
@@ -183,7 +183,7 @@ func (b *OnDiskCache) PutFile(filepath string, in io.ReadCloser) error {
 // Close purges the cache, then forwards the call to the wrapped backend.
 func (b *OnDiskCache) Close() error {
 	// We only purge the cache, leaving the filesystem untouched:
-	// https://github.com/shantanu-hashcash/go/pull/4457#discussion_r929352643
+	// https://github.com/HashCash-Consultants/go/pull/4457#discussion_r929352643
 	b.lru.Purge()
 	return b.Storage.Close()
 }

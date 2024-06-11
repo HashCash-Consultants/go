@@ -3,8 +3,8 @@ package main
 import (
 	"github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
-	"github.com/shantanu-hashcash/go/services/regulated-assets-approval-server/cmd"
-	"github.com/shantanu-hashcash/go/support/log"
+	"github.com/HashCash-Consultants/go/services/regulated-assets-approval-server/cmd"
+	"github.com/HashCash-Consultants/go/support/log"
 )
 
 func main() {

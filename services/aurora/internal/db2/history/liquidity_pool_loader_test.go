@@ -6,8 +6,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/shantanu-hashcash/go/services/aurora/internal/test"
-	"github.com/shantanu-hashcash/go/xdr"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/test"
+	"github.com/HashCash-Consultants/go/xdr"
 )
 
 func TestLiquidityPoolLoader(t *testing.T) {

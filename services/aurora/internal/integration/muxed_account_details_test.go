@@ -4,13 +4,13 @@ import (
 	"math"
 	"testing"
 
-	"github.com/shantanu-hashcash/go/clients/auroraclient"
-	hProtocol "github.com/shantanu-hashcash/go/protocols/aurora"
-	"github.com/shantanu-hashcash/go/protocols/aurora/effects"
-	"github.com/shantanu-hashcash/go/protocols/aurora/operations"
-	"github.com/shantanu-hashcash/go/services/aurora/internal/test/integration"
-	"github.com/shantanu-hashcash/go/txnbuild"
-	"github.com/shantanu-hashcash/go/xdr"
+	"github.com/HashCash-Consultants/go/clients/auroraclient"
+	hProtocol "github.com/HashCash-Consultants/go/protocols/aurora"
+	"github.com/HashCash-Consultants/go/protocols/aurora/effects"
+	"github.com/HashCash-Consultants/go/protocols/aurora/operations"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/test/integration"
+	"github.com/HashCash-Consultants/go/txnbuild"
+	"github.com/HashCash-Consultants/go/xdr"
 	"github.com/stretchr/testify/assert"
 )
 

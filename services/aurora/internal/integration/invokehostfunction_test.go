@@ -7,11 +7,11 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/shantanu-hashcash/go/clients/auroraclient"
-	"github.com/shantanu-hashcash/go/protocols/aurora/operations"
-	"github.com/shantanu-hashcash/go/services/aurora/internal/test/integration"
-	"github.com/shantanu-hashcash/go/txnbuild"
-	"github.com/shantanu-hashcash/go/xdr"
+	"github.com/HashCash-Consultants/go/clients/auroraclient"
+	"github.com/HashCash-Consultants/go/protocols/aurora/operations"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/test/integration"
+	"github.com/HashCash-Consultants/go/txnbuild"
+	"github.com/HashCash-Consultants/go/xdr"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
@@ -327,7 +327,7 @@ func TestContractInvokeHostFunctionInvokeStatefulContractFn(t *testing.T) {
 
 func assembleInstallContractCodeOp(t *testing.T, sourceAccount string, wasmFileName string) *txnbuild.InvokeHostFunction {
 	// Assemble the InvokeHostFunction UploadContractWasm operation:
-	// CAP-0047 - https://github.com/shantanu-hashcash/hcnet-protocol/blob/master/core/cap-0047.md#creating-a-contract-using-invokehostfunctionop
+	// CAP-0047 - https://github.com/HashCash-Consultants/hcnet-protocol/blob/master/core/cap-0047.md#creating-a-contract-using-invokehostfunctionop
 
 	contract, err := os.ReadFile(filepath.Join("testdata", wasmFileName))
 	require.NoError(t, err)
@@ -344,7 +344,7 @@ func assembleInstallContractCodeOp(t *testing.T, sourceAccount string, wasmFileN
 
 func assembleCreateContractOp(t *testing.T, sourceAccount string, wasmFileName string, contractSalt string, passPhrase string) *txnbuild.InvokeHostFunction {
 	// Assemble the InvokeHostFunction CreateContract operation:
-	// CAP-0047 - https://github.com/shantanu-hashcash/hcnet-protocol/blob/master/core/cap-0047.md#creating-a-contract-using-invokehostfunctionop
+	// CAP-0047 - https://github.com/HashCash-Consultants/hcnet-protocol/blob/master/core/cap-0047.md#creating-a-contract-using-invokehostfunctionop
 
 	contract, err := os.ReadFile(filepath.Join("testdata", wasmFileName))
 	require.NoError(t, err)

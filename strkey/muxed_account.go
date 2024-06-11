@@ -5,7 +5,7 @@ import (
 	"fmt"
 
 	xdr "github.com/stellar/go-xdr/xdr3"
-	"github.com/shantanu-hashcash/go/support/errors"
+	"github.com/HashCash-Consultants/go/support/errors"
 )
 
 type MuxedAccount struct {

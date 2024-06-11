@@ -3,10 +3,10 @@ Package auroraclient provides client access to a Aurora server, allowing an appl
 
 This library provides an interface to the Hcnet Aurora service. It supports the building of Go applications on
 top of the Hcnet network (https://www.hcnet.org/). Transactions may be constructed using the sister package to
-this one, txnbuild (https://github.com/shantanu-hashcash/go/tree/master/txnbuild), and then submitted with this client to any
+this one, txnbuild (https://github.com/HashCash-Consultants/go/tree/master/txnbuild), and then submitted with this client to any
 Aurora instance for processing onto the ledger. Together, these two libraries provide a complete Hcnet SDK.
 
-For more information and further examples, see https://github.com/shantanu-hashcash/go/blob/master/docs/reference/readme.md
+For more information and further examples, see https://github.com/HashCash-Consultants/go/blob/master/docs/reference/readme.md
 */
 package auroraclient
 
@@ -18,12 +18,12 @@ import (
 	"sync"
 	"time"
 
-	hProtocol "github.com/shantanu-hashcash/go/protocols/aurora"
-	"github.com/shantanu-hashcash/go/protocols/aurora/effects"
-	"github.com/shantanu-hashcash/go/protocols/aurora/operations"
-	"github.com/shantanu-hashcash/go/support/clock"
-	"github.com/shantanu-hashcash/go/support/render/problem"
-	"github.com/shantanu-hashcash/go/txnbuild"
+	hProtocol "github.com/HashCash-Consultants/go/protocols/aurora"
+	"github.com/HashCash-Consultants/go/protocols/aurora/effects"
+	"github.com/HashCash-Consultants/go/protocols/aurora/operations"
+	"github.com/HashCash-Consultants/go/support/clock"
+	"github.com/HashCash-Consultants/go/support/render/problem"
+	"github.com/HashCash-Consultants/go/txnbuild"
 )
 
 // cursor represents `cursor` param in queries

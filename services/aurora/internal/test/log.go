@@ -2,7 +2,7 @@ package test
 
 import (
 	"github.com/sirupsen/logrus"
-	"github.com/shantanu-hashcash/go/support/log"
+	"github.com/HashCash-Consultants/go/support/log"
 )
 
 var testLogger *log.Entry

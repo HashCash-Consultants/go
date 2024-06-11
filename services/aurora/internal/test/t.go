@@ -9,13 +9,13 @@ import (
 
 	"github.com/jmoiron/sqlx"
 	"github.com/sirupsen/logrus"
-	"github.com/shantanu-hashcash/go/services/aurora/internal/db2/schema"
-	"github.com/shantanu-hashcash/go/services/aurora/internal/ledger"
-	"github.com/shantanu-hashcash/go/services/aurora/internal/operationfeestats"
-	tdb "github.com/shantanu-hashcash/go/services/aurora/internal/test/db"
-	"github.com/shantanu-hashcash/go/services/aurora/internal/test/scenarios"
-	"github.com/shantanu-hashcash/go/support/db"
-	"github.com/shantanu-hashcash/go/support/render/hal"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/db2/schema"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/ledger"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/operationfeestats"
+	tdb "github.com/HashCash-Consultants/go/services/aurora/internal/test/db"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/test/scenarios"
+	"github.com/HashCash-Consultants/go/support/db"
+	"github.com/HashCash-Consultants/go/support/render/hal"
 )
 
 // TODO - remove ref to core db once scenario tests are removed.

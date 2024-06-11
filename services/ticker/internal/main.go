@@ -1,7 +1,7 @@
 package ticker
 
 import (
-	"github.com/shantanu-hashcash/go/services/ticker/internal/scraper"
+	"github.com/HashCash-Consultants/go/services/ticker/internal/scraper"
 )
 
 // MarketSummary represents a summary of statistics of all valid markets

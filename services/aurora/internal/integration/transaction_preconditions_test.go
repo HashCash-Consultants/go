@@ -8,12 +8,12 @@ import (
 	"testing"
 	"time"
 
-	sdk "github.com/shantanu-hashcash/go/clients/auroraclient"
-	"github.com/shantanu-hashcash/go/keypair"
-	"github.com/shantanu-hashcash/go/network"
-	"github.com/shantanu-hashcash/go/services/aurora/internal/test/integration"
-	"github.com/shantanu-hashcash/go/txnbuild"
-	"github.com/shantanu-hashcash/go/xdr"
+	sdk "github.com/HashCash-Consultants/go/clients/auroraclient"
+	"github.com/HashCash-Consultants/go/keypair"
+	"github.com/HashCash-Consultants/go/network"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/test/integration"
+	"github.com/HashCash-Consultants/go/txnbuild"
+	"github.com/HashCash-Consultants/go/xdr"
 	"github.com/stretchr/testify/assert"
 )
 

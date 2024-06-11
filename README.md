@@ -1,14 +1,14 @@
 <div align="center">
-<a href="https://hcnet.org"><img alt="Hcnet" src="https://github.com/shantanu-hashcash/.github/raw/master/hcnet-logo.png" width="558" /></a>
+<a href="https://hcnet.org"><img alt="Hcnet" src="https://github.com/HashCash-Consultants/.github/raw/master/hcnet-logo.png" width="558" /></a>
 <br/>
 <strong>Creating equitable access to the global financial system</strong>
 <h1>Hcnet Go Monorepo</h1>
 </div>
 <p align="center">
  
-<a href="https://github.com/shantanu-hashcash/go/actions/workflows/go.yml?query=branch%3Amaster+event%3Apush">![master GitHub workflow](https://github.com/shantanu-hashcash/go/actions/workflows/go.yml/badge.svg)</a>
-<a href="https://godoc.org/github.com/shantanu-hashcash/go"><img alt="GoDoc" src="https://godoc.org/github.com/shantanu-hashcash/go?status.svg" /></a>
-<a href="https://goreportcard.com/report/github.com/shantanu-hashcash/go"><img alt="Go Report Card" src="https://goreportcard.com/badge/github.com/shantanu-hashcash/go" /></a>
+<a href="https://github.com/HashCash-Consultants/go/actions/workflows/go.yml?query=branch%3Amaster+event%3Apush">![master GitHub workflow](https://github.com/HashCash-Consultants/go/actions/workflows/go.yml/badge.svg)</a>
+<a href="https://godoc.org/github.com/HashCash-Consultants/go"><img alt="GoDoc" src="https://godoc.org/github.com/HashCash-Consultants/go?status.svg" /></a>
+<a href="https://goreportcard.com/report/github.com/HashCash-Consultants/go"><img alt="Go Report Card" src="https://goreportcard.com/badge/github.com/HashCash-Consultants/go" /></a>
 </p>
 
 This repo is the home for all of the public Go code produced by the [Hcnet Development Foundation].
@@ -50,7 +50,7 @@ Each of these directories have their own README file that explain further the na
 
 ### Other packages
 
-In addition to the packages described above, this repository contains various packages related to working with the Hcnet network from a go program.  It's recommended that you use [godoc](https://godoc.org/github.com/shantanu-hashcash/go#pkg-subdirectories) to browse the documentation for each.
+In addition to the packages described above, this repository contains various packages related to working with the Hcnet network from a go program.  It's recommended that you use [godoc](https://godoc.org/github.com/HashCash-Consultants/go#pkg-subdirectories) to browse the documentation for each.
 
 
 ## Package source layout

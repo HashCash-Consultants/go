@@ -1,12 +1,12 @@
 FROM golang:1.22-bullseye AS builder
 
 ARG VERSION="devel"
-WORKDIR /go/src/github.com/shantanu-hashcash/go
+WORKDIR /go/src/github.com/HashCash-Consultants/go
 COPY go.mod go.sum ./
 RUN go mod download
 COPY . ./
-ENV GOFLAGS="-ldflags=-X=github.com/shantanu-hashcash/go/support/app.version=${VERSION}-(built-from-source)"
-RUN go install github.com/shantanu-hashcash/go/services/aurora
+ENV GOFLAGS="-ldflags=-X=github.com/HashCash-Consultants/go/support/app.version=${VERSION}-(built-from-source)"
+RUN go install github.com/HashCash-Consultants/go/services/aurora
 
 FROM ubuntu:22.04
 ARG HCNET_CORE_VERSION 

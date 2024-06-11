@@ -4,7 +4,7 @@ import (
 	"context"
 	"errors"
 
-	"github.com/shantanu-hashcash/go/services/ticker/internal/tickerdb"
+	"github.com/HashCash-Consultants/go/services/ticker/internal/tickerdb"
 )
 
 // Issuers resolves the issuers() GraphQL query.

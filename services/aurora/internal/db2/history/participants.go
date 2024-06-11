@@ -3,7 +3,7 @@ package history
 import (
 	"context"
 
-	"github.com/shantanu-hashcash/go/support/db"
+	"github.com/HashCash-Consultants/go/support/db"
 )
 
 // QParticipants defines ingestion participant related queries.

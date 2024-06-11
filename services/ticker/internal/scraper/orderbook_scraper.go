@@ -6,9 +6,9 @@ import (
 	"time"
 
 	"github.com/pkg/errors"
-	auroraclient "github.com/shantanu-hashcash/go/clients/auroraclient"
-	hProtocol "github.com/shantanu-hashcash/go/protocols/aurora"
-	"github.com/shantanu-hashcash/go/services/ticker/internal/utils"
+	auroraclient "github.com/HashCash-Consultants/go/clients/auroraclient"
+	hProtocol "github.com/HashCash-Consultants/go/protocols/aurora"
+	"github.com/HashCash-Consultants/go/services/ticker/internal/utils"
 )
 
 // fetchOrderbook fetches the orderbook stats for the base and counter assets provided in the parameters
@@ -83,7 +83,7 @@ func calcOrderbookStats(obStats *OrderbookStats, summary hProtocol.OrderBookSumm
 
 		// On Aurora, Ask prices are in units of counter, but
 		// amount is in units of base. Therefore, real amount = amount * price
-		// See: https://github.com/shantanu-hashcash/go/issues/612
+		// See: https://github.com/HashCash-Consultants/go/issues/612
 		obStats.AskVolume += pricef * amountf
 		if pricef < obStats.LowestAsk {
 			obStats.LowestAsk = pricef

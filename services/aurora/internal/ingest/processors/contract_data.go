@@ -3,8 +3,8 @@ package processors
 import (
 	"math/big"
 
-	"github.com/shantanu-hashcash/go/strkey"
-	"github.com/shantanu-hashcash/go/xdr"
+	"github.com/HashCash-Consultants/go/strkey"
+	"github.com/HashCash-Consultants/go/xdr"
 )
 
 const (
@@ -12,10 +12,10 @@ const (
 )
 
 var (
-	// https://github.com/shantanu-hashcash/rs-soroban-env/blob/v0.0.16/soroban-env-host/src/native_contract/token/public_types.rs#L22
+	// https://github.com/HashCash-Consultants/rs-soroban-env/blob/v0.0.16/soroban-env-host/src/native_contract/token/public_types.rs#L22
 	nativeAssetSym = xdr.ScSymbol("Native")
 	// these are storage DataKey enum
-	// https://github.com/shantanu-hashcash/rs-soroban-env/blob/v0.0.16/soroban-env-host/src/native_contract/token/storage_types.rs#L23
+	// https://github.com/HashCash-Consultants/rs-soroban-env/blob/v0.0.16/soroban-env-host/src/native_contract/token/storage_types.rs#L23
 	balanceMetadataSym = xdr.ScSymbol("Balance")
 	metadataSym        = xdr.ScSymbol("METADATA")
 	metadataNameSym    = xdr.ScSymbol("name")
@@ -53,9 +53,9 @@ var (
 // it returns nil.
 //
 // References:
-// https://github.com/shantanu-hashcash/rs-soroban-env/blob/v0.0.16/soroban-env-host/src/native_contract/token/public_types.rs#L21
-// https://github.com/shantanu-hashcash/rs-soroban-env/blob/v0.0.16/soroban-env-host/src/native_contract/token/asset_info.rs#L6
-// https://github.com/shantanu-hashcash/rs-soroban-env/blob/v0.0.16/soroban-env-host/src/native_contract/token/contract.rs#L115
+// https://github.com/HashCash-Consultants/rs-soroban-env/blob/v0.0.16/soroban-env-host/src/native_contract/token/public_types.rs#L21
+// https://github.com/HashCash-Consultants/rs-soroban-env/blob/v0.0.16/soroban-env-host/src/native_contract/token/asset_info.rs#L6
+// https://github.com/HashCash-Consultants/rs-soroban-env/blob/v0.0.16/soroban-env-host/src/native_contract/token/contract.rs#L115
 //
 // The asset info in `ContractData` entry takes the following form:
 //
@@ -181,7 +181,7 @@ func AssetFromContractData(ledgerEntry xdr.LedgerEntry, passphrase string) *xdr.
 //
 // Reference:
 //
-//	https://github.com/shantanu-hashcash/rs-soroban-env/blob/da325551829d31dcbfa71427d51c18e71a121c5f/soroban-env-host/src/native_contract/token/storage_types.rs#L11-L24
+//	https://github.com/HashCash-Consultants/rs-soroban-env/blob/da325551829d31dcbfa71427d51c18e71a121c5f/soroban-env-host/src/native_contract/token/storage_types.rs#L11-L24
 func ContractBalanceFromContractData(ledgerEntry xdr.LedgerEntry, passphrase string) ([32]byte, *big.Int, bool) {
 	contractData, ok := ledgerEntry.Data.GetContractData()
 	if !ok {
@@ -245,7 +245,7 @@ func ContractBalanceFromContractData(ledgerEntry xdr.LedgerEntry, passphrase str
 	}
 
 	// amount cannot be negative
-	// https://github.com/shantanu-hashcash/rs-soroban-env/blob/a66f0815ba06a2f5328ac420950690fd1642f887/soroban-env-host/src/native_contract/token/balance.rs#L92-L93
+	// https://github.com/HashCash-Consultants/rs-soroban-env/blob/a66f0815ba06a2f5328ac420950690fd1642f887/soroban-env-host/src/native_contract/token/balance.rs#L92-L93
 	if int64(amount.Hi) < 0 {
 		return [32]byte{}, nil, false
 	}

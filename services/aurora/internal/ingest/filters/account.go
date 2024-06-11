@@ -3,10 +3,10 @@ package filters
 import (
 	"context"
 
-	"github.com/shantanu-hashcash/go/ingest"
-	"github.com/shantanu-hashcash/go/services/aurora/internal/db2/history"
-	"github.com/shantanu-hashcash/go/services/aurora/internal/ingest/processors"
-	"github.com/shantanu-hashcash/go/support/collections/set"
+	"github.com/HashCash-Consultants/go/ingest"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/db2/history"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/ingest/processors"
+	"github.com/HashCash-Consultants/go/support/collections/set"
 )
 
 type accountFilter struct {

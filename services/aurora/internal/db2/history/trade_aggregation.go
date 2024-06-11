@@ -7,10 +7,10 @@ import (
 
 	sq "github.com/Masterminds/squirrel"
 
-	"github.com/shantanu-hashcash/go/services/aurora/internal/db2"
-	"github.com/shantanu-hashcash/go/support/errors"
-	strtime "github.com/shantanu-hashcash/go/support/time"
-	"github.com/shantanu-hashcash/go/toid"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/db2"
+	"github.com/HashCash-Consultants/go/support/errors"
+	strtime "github.com/HashCash-Consultants/go/support/time"
+	"github.com/HashCash-Consultants/go/toid"
 )
 
 // AllowedResolutions is the set of trade aggregation time windows allowed to be used as the

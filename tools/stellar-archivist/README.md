@@ -14,7 +14,7 @@ It is much smaller and simpler than `hcnet-core`, and is intended only for archi
 ## Installation
 
 ```
-$ go install github.com/shantanu-hashcash/go/tools/hcnet-archivist
+$ go install github.com/HashCash-Consultants/go/tools/hcnet-archivist
 ```
 
 ## Usage

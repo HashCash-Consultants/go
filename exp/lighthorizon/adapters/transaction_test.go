@@ -11,13 +11,13 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/shantanu-hashcash/go/exp/lightaurora/common"
-	"github.com/shantanu-hashcash/go/exp/lightaurora/ingester"
-	"github.com/shantanu-hashcash/go/ingest"
-	"github.com/shantanu-hashcash/go/network"
-	protocol "github.com/shantanu-hashcash/go/protocols/aurora"
-	"github.com/shantanu-hashcash/go/toid"
-	"github.com/shantanu-hashcash/go/xdr"
+	"github.com/HashCash-Consultants/go/exp/lightaurora/common"
+	"github.com/HashCash-Consultants/go/exp/lightaurora/ingester"
+	"github.com/HashCash-Consultants/go/ingest"
+	"github.com/HashCash-Consultants/go/network"
+	protocol "github.com/HashCash-Consultants/go/protocols/aurora"
+	"github.com/HashCash-Consultants/go/toid"
+	"github.com/HashCash-Consultants/go/xdr"
 )
 
 // TestTransactionAdapter confirms that the adapter correctly serializes a

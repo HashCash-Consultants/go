@@ -1,9 +1,9 @@
 package txnbuild
 
 import (
-	"github.com/shantanu-hashcash/go/amount"
-	"github.com/shantanu-hashcash/go/support/errors"
-	"github.com/shantanu-hashcash/go/xdr"
+	"github.com/HashCash-Consultants/go/amount"
+	"github.com/HashCash-Consultants/go/support/errors"
+	"github.com/HashCash-Consultants/go/xdr"
 )
 
 // ManageBuyOffer represents the Hcnet manage buy offer operation. See

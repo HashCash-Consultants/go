@@ -1,6 +1,6 @@
 package auroraclient
 
-import "github.com/shantanu-hashcash/go/support/errors"
+import "github.com/HashCash-Consultants/go/support/errors"
 
 // IsNotFoundError returns true if the error is a auroraclient.Error with
 // a not_found problem indicating that the resource is not found on

@@ -4,14 +4,14 @@ import (
 	"context"
 	"net/http"
 
-	auroraContext "github.com/shantanu-hashcash/go/services/aurora/internal/context"
-	"github.com/shantanu-hashcash/go/services/aurora/internal/db2"
-	"github.com/shantanu-hashcash/go/services/aurora/internal/db2/history"
-	"github.com/shantanu-hashcash/go/services/aurora/internal/ledger"
-	"github.com/shantanu-hashcash/go/services/aurora/internal/resourceadapter"
-	"github.com/shantanu-hashcash/go/support/errors"
-	"github.com/shantanu-hashcash/go/support/render/hal"
-	"github.com/shantanu-hashcash/go/support/render/problem"
+	auroraContext "github.com/HashCash-Consultants/go/services/aurora/internal/context"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/db2"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/db2/history"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/ledger"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/resourceadapter"
+	"github.com/HashCash-Consultants/go/support/errors"
+	"github.com/HashCash-Consultants/go/support/render/hal"
+	"github.com/HashCash-Consultants/go/support/render/problem"
 )
 
 // EffectsQuery query struct for effects end-points

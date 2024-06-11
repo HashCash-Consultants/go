@@ -13,7 +13,7 @@ import (
 	"path"
 	"strings"
 
-	"github.com/shantanu-hashcash/go/xdr"
+	"github.com/HashCash-Consultants/go/xdr"
 )
 
 func DumpXdrAsJson(args []string) error {

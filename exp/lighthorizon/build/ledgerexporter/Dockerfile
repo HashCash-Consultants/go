@@ -1,9 +1,9 @@
 FROM golang:1.20 AS builder
 
-WORKDIR /go/src/github.com/shantanu-hashcash/go
+WORKDIR /go/src/github.com/HashCash-Consultants/go
 COPY . ./
 RUN go mod download
-RUN go install github.com/shantanu-hashcash/go/exp/services/ledgerexporter
+RUN go install github.com/HashCash-Consultants/go/exp/services/ledgerexporter
 
 FROM ubuntu:22.04
 ARG HCNET_CORE_VERSION
@@ -19,9 +19,9 @@ RUN echo "deb https://apt.hcnet.org jammy unstable" >/etc/apt/sources.list.d/SDF
 RUN apt-get update && apt-get install -y hcnet-core=${HCNET_CORE_VERSION}
 RUN apt-get clean
 
-COPY --from=builder /go/src/github.com/shantanu-hashcash/go/exp/lightaurora/build/ledgerexporter/captive-core-pubnet.cfg /
-COPY --from=builder /go/src/github.com/shantanu-hashcash/go/exp/lightaurora/build/ledgerexporter/captive-core-testnet.cfg /
-COPY --from=builder /go/src/github.com/shantanu-hashcash/go/exp/lightaurora/build/ledgerexporter/start /
+COPY --from=builder /go/src/github.com/HashCash-Consultants/go/exp/lightaurora/build/ledgerexporter/captive-core-pubnet.cfg /
+COPY --from=builder /go/src/github.com/HashCash-Consultants/go/exp/lightaurora/build/ledgerexporter/captive-core-testnet.cfg /
+COPY --from=builder /go/src/github.com/HashCash-Consultants/go/exp/lightaurora/build/ledgerexporter/start /
 
 RUN ["chmod", "+x", "/start"]
 

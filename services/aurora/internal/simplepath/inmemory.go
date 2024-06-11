@@ -4,9 +4,9 @@ import (
 	"context"
 
 	"github.com/go-errors/errors"
-	"github.com/shantanu-hashcash/go/exp/orderbook"
-	"github.com/shantanu-hashcash/go/services/aurora/internal/paths"
-	"github.com/shantanu-hashcash/go/xdr"
+	"github.com/HashCash-Consultants/go/exp/orderbook"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/paths"
+	"github.com/HashCash-Consultants/go/xdr"
 )
 
 const (

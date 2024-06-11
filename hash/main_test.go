@@ -11,7 +11,7 @@ import (
 
 func TestHash(t *testing.T) {
 	RegisterFailHandler(Fail)
-	RunSpecs(t, "Package: github.com/shantanu-hashcash/go/hash")
+	RunSpecs(t, "Package: github.com/HashCash-Consultants/go/hash")
 }
 
 type HashCase struct {

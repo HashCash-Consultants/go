@@ -3,7 +3,7 @@ package serve
 import (
 	"net/http"
 
-	"github.com/shantanu-hashcash/go/support/render/httpjson"
+	"github.com/HashCash-Consultants/go/support/render/httpjson"
 )
 
 type txApprovalResponse struct {

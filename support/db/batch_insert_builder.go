@@ -7,7 +7,7 @@ import (
 	"sort"
 
 	sq "github.com/Masterminds/squirrel"
-	"github.com/shantanu-hashcash/go/support/errors"
+	"github.com/HashCash-Consultants/go/support/errors"
 )
 
 // BatchInsertBuilder works like sq.InsertBuilder but has a better support for batching

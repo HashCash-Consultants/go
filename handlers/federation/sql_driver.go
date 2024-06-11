@@ -3,8 +3,8 @@ package federation
 import (
 	"context"
 
-	"github.com/shantanu-hashcash/go/support/db"
-	"github.com/shantanu-hashcash/go/support/errors"
+	"github.com/HashCash-Consultants/go/support/db"
+	"github.com/HashCash-Consultants/go/support/errors"
 )
 
 // LookupRecord implements `Driver` by performing `drv.LookupRecordQuery`

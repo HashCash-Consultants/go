@@ -3,7 +3,7 @@ package cmd
 import (
 	"github.com/lib/pq"
 	"github.com/spf13/cobra"
-	"github.com/shantanu-hashcash/go/services/ticker/internal/tickerdb"
+	"github.com/HashCash-Consultants/go/services/ticker/internal/tickerdb"
 )
 
 func init() {

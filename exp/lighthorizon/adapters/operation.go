@@ -6,10 +6,10 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/shantanu-hashcash/go/exp/lightaurora/common"
-	"github.com/shantanu-hashcash/go/protocols/aurora/operations"
-	"github.com/shantanu-hashcash/go/support/render/hal"
-	"github.com/shantanu-hashcash/go/xdr"
+	"github.com/HashCash-Consultants/go/exp/lightaurora/common"
+	"github.com/HashCash-Consultants/go/protocols/aurora/operations"
+	"github.com/HashCash-Consultants/go/support/render/hal"
+	"github.com/HashCash-Consultants/go/xdr"
 )
 
 func PopulateOperation(r *http.Request, op *common.Operation) (operations.Operation, error) {

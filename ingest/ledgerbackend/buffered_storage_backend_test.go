@@ -13,9 +13,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 
-	"github.com/shantanu-hashcash/go/support/compressxdr"
-	"github.com/shantanu-hashcash/go/support/datastore"
-	"github.com/shantanu-hashcash/go/xdr"
+	"github.com/HashCash-Consultants/go/support/compressxdr"
+	"github.com/HashCash-Consultants/go/support/datastore"
+	"github.com/HashCash-Consultants/go/xdr"
 )
 
 var partitionSize = uint32(64000)

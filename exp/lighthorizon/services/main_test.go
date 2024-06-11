@@ -7,11 +7,11 @@ import (
 
 	"github.com/prometheus/client_golang/prometheus"
 
-	"github.com/shantanu-hashcash/go/exp/lightaurora/index"
-	"github.com/shantanu-hashcash/go/exp/lightaurora/ingester"
-	"github.com/shantanu-hashcash/go/ingest"
-	"github.com/shantanu-hashcash/go/toid"
-	"github.com/shantanu-hashcash/go/xdr"
+	"github.com/HashCash-Consultants/go/exp/lightaurora/index"
+	"github.com/HashCash-Consultants/go/exp/lightaurora/ingester"
+	"github.com/HashCash-Consultants/go/ingest"
+	"github.com/HashCash-Consultants/go/toid"
+	"github.com/HashCash-Consultants/go/xdr"
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"
 )

@@ -4,10 +4,10 @@ import (
 	"context"
 	"time"
 
-	auroraclient "github.com/shantanu-hashcash/go/clients/auroraclient"
-	hProtocol "github.com/shantanu-hashcash/go/protocols/aurora"
-	"github.com/shantanu-hashcash/go/services/ticker/internal/utils"
-	hlog "github.com/shantanu-hashcash/go/support/log"
+	auroraclient "github.com/HashCash-Consultants/go/clients/auroraclient"
+	hProtocol "github.com/HashCash-Consultants/go/protocols/aurora"
+	"github.com/HashCash-Consultants/go/services/ticker/internal/utils"
+	hlog "github.com/HashCash-Consultants/go/support/log"
 )
 
 type ScraperConfig struct {
@@ -17,7 +17,7 @@ type ScraperConfig struct {
 }
 
 // TOMLDoc is the interface for storing TOML Issuer Documentation.
-// See: https://github.com/shantanu-hashcash/hcnet-protocol/blob/master/ecosystem/sep-0001.md#currency-documentation
+// See: https://github.com/HashCash-Consultants/hcnet-protocol/blob/master/ecosystem/sep-0001.md#currency-documentation
 type TOMLDoc struct {
 	OrgName    string `toml:"ORG_NAME"`
 	OrgURL     string `toml:"ORG_URL"`
@@ -25,7 +25,7 @@ type TOMLDoc struct {
 }
 
 // TOMLCurrency is the interface for storing TOML Currency Information.
-// See: https://github.com/shantanu-hashcash/hcnet-protocol/blob/master/ecosystem/sep-0001.md#currency-documentation
+// See: https://github.com/HashCash-Consultants/hcnet-protocol/blob/master/ecosystem/sep-0001.md#currency-documentation
 type TOMLCurrency struct {
 	Code                        string   `toml:"code"`
 	Issuer                      string   `toml:"issuer"`
@@ -46,7 +46,7 @@ type TOMLCurrency struct {
 }
 
 // TOMLIssuer is the interface for storing TOML Issuer Information.
-// See: https://github.com/shantanu-hashcash/hcnet-protocol/blob/master/ecosystem/sep-0001.md#currency-documentation
+// See: https://github.com/HashCash-Consultants/hcnet-protocol/blob/master/ecosystem/sep-0001.md#currency-documentation
 type TOMLIssuer struct {
 	FederationServer string         `toml:"FEDERATION_SERVER"`
 	AuthServer       string         `toml:"AUTH_SERVER"`

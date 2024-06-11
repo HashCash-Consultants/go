@@ -6,10 +6,10 @@ import (
 	"io"
 	"time"
 
-	"github.com/shantanu-hashcash/go/historyarchive"
-	"github.com/shantanu-hashcash/go/ingest"
-	"github.com/shantanu-hashcash/go/support/storage"
-	"github.com/shantanu-hashcash/go/xdr"
+	"github.com/HashCash-Consultants/go/historyarchive"
+	"github.com/HashCash-Consultants/go/ingest"
+	"github.com/HashCash-Consultants/go/support/storage"
+	"github.com/HashCash-Consultants/go/xdr"
 )
 
 func claimables() {

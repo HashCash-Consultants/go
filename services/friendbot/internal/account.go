@@ -1,8 +1,8 @@
 package internal
 
 import (
-	"github.com/shantanu-hashcash/go/clients/auroraclient"
-	"github.com/shantanu-hashcash/go/support/errors"
+	"github.com/HashCash-Consultants/go/clients/auroraclient"
+	"github.com/HashCash-Consultants/go/support/errors"
 )
 
 // Account implements the `txnbuild.Account` interface.

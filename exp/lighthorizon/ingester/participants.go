@@ -1,9 +1,9 @@
 package ingester
 
 import (
-	"github.com/shantanu-hashcash/go/exp/lightaurora/index"
-	"github.com/shantanu-hashcash/go/support/collections/set"
-	"github.com/shantanu-hashcash/go/xdr"
+	"github.com/HashCash-Consultants/go/exp/lightaurora/index"
+	"github.com/HashCash-Consultants/go/support/collections/set"
+	"github.com/HashCash-Consultants/go/xdr"
 )
 
 // GetTransactionParticipants takes a LedgerTransaction and returns a set of all

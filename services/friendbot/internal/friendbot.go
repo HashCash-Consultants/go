@@ -4,7 +4,7 @@ import (
 	"log"
 	"sync"
 
-	hProtocol "github.com/shantanu-hashcash/go/protocols/aurora"
+	hProtocol "github.com/HashCash-Consultants/go/protocols/aurora"
 )
 
 // Bot represents the friendbot subsystem and primarily delegates work

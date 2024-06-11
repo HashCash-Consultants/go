@@ -3,7 +3,7 @@ package history
 import (
 	"context"
 
-	"github.com/shantanu-hashcash/go/support/db"
+	"github.com/HashCash-Consultants/go/support/db"
 )
 
 // OperationParticipantBatchInsertBuilder is used to insert a transaction's operations into the

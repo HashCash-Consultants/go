@@ -6,8 +6,8 @@ import (
 
 	"github.com/guregu/null"
 
-	"github.com/shantanu-hashcash/go/support/db"
-	"github.com/shantanu-hashcash/go/support/errors"
+	"github.com/HashCash-Consultants/go/support/db"
+	"github.com/HashCash-Consultants/go/support/errors"
 )
 
 // TradeType is an enum which indicates the type of trade

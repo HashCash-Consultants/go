@@ -5,11 +5,11 @@ import (
 	"sort"
 	"time"
 
-	"github.com/shantanu-hashcash/go/clients/auroraclient"
-	"github.com/shantanu-hashcash/go/keypair"
-	"github.com/shantanu-hashcash/go/network"
-	"github.com/shantanu-hashcash/go/protocols/aurora"
-	"github.com/shantanu-hashcash/go/txnbuild"
+	"github.com/HashCash-Consultants/go/clients/auroraclient"
+	"github.com/HashCash-Consultants/go/keypair"
+	"github.com/HashCash-Consultants/go/network"
+	"github.com/HashCash-Consultants/go/protocols/aurora"
+	"github.com/HashCash-Consultants/go/txnbuild"
 )
 
 var serverAccount, _ = keypair.ParseFull("SCDXPYDGKV5HOAGVZN3FQSS5FKUPP5BAVBWH4FXKTAWAC24AE4757JSI")

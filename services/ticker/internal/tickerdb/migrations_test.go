@@ -9,8 +9,8 @@ import (
 	assetfs "github.com/elazarl/go-bindata-assetfs"
 	"github.com/shurcooL/httpfs/filter"
 
-	bdata "github.com/shantanu-hashcash/go/services/ticker/internal/tickerdb/migrations"
-	supportHttp "github.com/shantanu-hashcash/go/support/http"
+	bdata "github.com/HashCash-Consultants/go/services/ticker/internal/tickerdb/migrations"
+	supportHttp "github.com/HashCash-Consultants/go/support/http"
 )
 
 func TestGeneratedAssets(t *testing.T) {

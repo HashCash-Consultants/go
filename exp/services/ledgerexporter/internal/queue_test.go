@@ -6,7 +6,7 @@ import (
 
 	"github.com/prometheus/client_golang/prometheus"
 	dto "github.com/prometheus/client_model/go"
-	"github.com/shantanu-hashcash/go/support/datastore"
+	"github.com/HashCash-Consultants/go/support/datastore"
 	"github.com/stretchr/testify/require"
 )
 

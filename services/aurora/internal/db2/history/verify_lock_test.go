@@ -5,7 +5,7 @@ import (
 	"database/sql"
 	"testing"
 
-	"github.com/shantanu-hashcash/go/services/aurora/internal/test"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/test"
 )
 
 func TestTryStateVerificationLock(t *testing.T) {

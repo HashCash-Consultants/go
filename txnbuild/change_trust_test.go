@@ -3,7 +3,7 @@ package txnbuild
 import (
 	"testing"
 
-	"github.com/shantanu-hashcash/go/network"
+	"github.com/HashCash-Consultants/go/network"
 	"github.com/stretchr/testify/assert"
 )
 

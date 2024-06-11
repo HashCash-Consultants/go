@@ -40,7 +40,7 @@ This script is helpful to spin up the services quickly and play around with them
 We will now configure a development environment to run Aurora service locally without Docker.
 
 ### Building Hcnet Core
-Aurora requires an instance of hcnet-core binary on the same host. This is referred to as the `Captive Core`. Since, we are running aurora for dev purposes, we recommend considering two approaches to get the hcnet-core binary, if saving time is top priority and your development machine is on a linux debian o/s, then consider installing the debian package, otherwise the next option available is to compile the core source directly to binary on your machine, refer to [INSTALL.md](https://github.com/shantanu-hashcash/hcnet-core/blob/master/INSTALL.md) file for the instructions on both approaches.
+Aurora requires an instance of hcnet-core binary on the same host. This is referred to as the `Captive Core`. Since, we are running aurora for dev purposes, we recommend considering two approaches to get the hcnet-core binary, if saving time is top priority and your development machine is on a linux debian o/s, then consider installing the debian package, otherwise the next option available is to compile the core source directly to binary on your machine, refer to [INSTALL.md](https://github.com/HashCash-Consultants/hcnet-core/blob/master/INSTALL.md) file for the instructions on both approaches.
 
 ### Building Aurora
 

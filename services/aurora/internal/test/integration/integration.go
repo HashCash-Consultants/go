@@ -16,7 +16,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/shantanu-hashcash/go/services/aurora/internal/test"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/test"
 
 	"github.com/2opremio/pretty"
 	"github.com/creachadair/jrpc2"
@@ -24,18 +24,18 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/stretchr/testify/assert"
 
-	sdk "github.com/shantanu-hashcash/go/clients/auroraclient"
-	"github.com/shantanu-hashcash/go/clients/hcnetcore"
-	"github.com/shantanu-hashcash/go/ingest/ledgerbackend"
-	"github.com/shantanu-hashcash/go/keypair"
-	proto "github.com/shantanu-hashcash/go/protocols/aurora"
-	aurora "github.com/shantanu-hashcash/go/services/aurora/internal"
-	"github.com/shantanu-hashcash/go/services/aurora/internal/ingest"
-	"github.com/shantanu-hashcash/go/support/config"
-	"github.com/shantanu-hashcash/go/support/db/dbtest"
-	"github.com/shantanu-hashcash/go/support/errors"
-	"github.com/shantanu-hashcash/go/txnbuild"
-	"github.com/shantanu-hashcash/go/xdr"
+	sdk "github.com/HashCash-Consultants/go/clients/auroraclient"
+	"github.com/HashCash-Consultants/go/clients/hcnetcore"
+	"github.com/HashCash-Consultants/go/ingest/ledgerbackend"
+	"github.com/HashCash-Consultants/go/keypair"
+	proto "github.com/HashCash-Consultants/go/protocols/aurora"
+	aurora "github.com/HashCash-Consultants/go/services/aurora/internal"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/ingest"
+	"github.com/HashCash-Consultants/go/support/config"
+	"github.com/HashCash-Consultants/go/support/db/dbtest"
+	"github.com/HashCash-Consultants/go/support/errors"
+	"github.com/HashCash-Consultants/go/txnbuild"
+	"github.com/HashCash-Consultants/go/xdr"
 )
 
 const (

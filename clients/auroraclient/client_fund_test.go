@@ -3,7 +3,7 @@ package auroraclient
 import (
 	"testing"
 
-	"github.com/shantanu-hashcash/go/support/http/httptest"
+	"github.com/HashCash-Consultants/go/support/http/httptest"
 	"github.com/stretchr/testify/assert"
 )
 

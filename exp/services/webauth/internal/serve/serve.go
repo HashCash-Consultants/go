@@ -7,12 +7,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/shantanu-hashcash/go/clients/auroraclient"
-	"github.com/shantanu-hashcash/go/keypair"
-	"github.com/shantanu-hashcash/go/support/errors"
-	supporthttp "github.com/shantanu-hashcash/go/support/http"
-	supportlog "github.com/shantanu-hashcash/go/support/log"
-	"github.com/shantanu-hashcash/go/support/render/health"
+	"github.com/HashCash-Consultants/go/clients/auroraclient"
+	"github.com/HashCash-Consultants/go/keypair"
+	"github.com/HashCash-Consultants/go/support/errors"
+	supporthttp "github.com/HashCash-Consultants/go/support/http"
+	supportlog "github.com/HashCash-Consultants/go/support/log"
+	"github.com/HashCash-Consultants/go/support/render/health"
 	"gopkg.in/square/go-jose.v2"
 )
 

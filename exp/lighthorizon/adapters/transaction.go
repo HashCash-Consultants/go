@@ -11,12 +11,12 @@ import (
 	"time"
 	"unicode/utf8"
 
-	"github.com/shantanu-hashcash/go/exp/lightaurora/common"
-	"github.com/shantanu-hashcash/go/exp/lightaurora/ingester"
-	"github.com/shantanu-hashcash/go/network"
-	protocol "github.com/shantanu-hashcash/go/protocols/aurora"
-	"github.com/shantanu-hashcash/go/support/render/hal"
-	"github.com/shantanu-hashcash/go/xdr"
+	"github.com/HashCash-Consultants/go/exp/lightaurora/common"
+	"github.com/HashCash-Consultants/go/exp/lightaurora/ingester"
+	"github.com/HashCash-Consultants/go/network"
+	protocol "github.com/HashCash-Consultants/go/protocols/aurora"
+	"github.com/HashCash-Consultants/go/support/render/hal"
+	"github.com/HashCash-Consultants/go/xdr"
 	"golang.org/x/exp/constraints"
 )
 

@@ -7,9 +7,9 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/shantanu-hashcash/go/protocols/aurora"
-	"github.com/shantanu-hashcash/go/services/aurora/internal/ingest"
-	"github.com/shantanu-hashcash/go/services/aurora/internal/ledger"
+	"github.com/HashCash-Consultants/go/protocols/aurora"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/ingest"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/ledger"
 )
 
 func TestPopulateRoot(t *testing.T) {

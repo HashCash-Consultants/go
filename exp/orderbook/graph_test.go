@@ -8,9 +8,9 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/shantanu-hashcash/go/keypair"
-	"github.com/shantanu-hashcash/go/price"
-	"github.com/shantanu-hashcash/go/xdr"
+	"github.com/HashCash-Consultants/go/keypair"
+	"github.com/HashCash-Consultants/go/price"
+	"github.com/HashCash-Consultants/go/xdr"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -2298,7 +2298,7 @@ func TestInterleavedFixedPaths(t *testing.T) {
 
 func TestRepro(t *testing.T) {
 	// A reproduction of the bug report:
-	// https://github.com/shantanu-hashcash/go/issues/4014
+	// https://github.com/HashCash-Consultants/go/issues/4014
 	usdc := xdr.MustNewCreditAsset("USDC", "GAEB3HSAWRVILER6T5NMX5VAPTK4PPO2BAL37HR2EOUIK567GJFEO437")
 	eurt := xdr.MustNewCreditAsset("EURT", "GABHG6C7YL2WA2ZJSONPD6ZBWLPAWKYDPYMK6BQRFLZXPQE7IBSTMPNN")
 

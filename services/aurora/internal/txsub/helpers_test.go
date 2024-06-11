@@ -10,9 +10,9 @@ import (
 	"context"
 	"database/sql"
 	"github.com/prometheus/client_golang/prometheus"
-	"github.com/shantanu-hashcash/go/services/aurora/internal/ledger"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/ledger"
 
-	"github.com/shantanu-hashcash/go/services/aurora/internal/db2/history"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/db2/history"
 	"github.com/stretchr/testify/mock"
 )
 

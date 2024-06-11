@@ -6,10 +6,10 @@ import (
 	"time"
 
 	"github.com/prometheus/client_golang/prometheus"
-	"github.com/shantanu-hashcash/go/exp/lightaurora/common"
-	"github.com/shantanu-hashcash/go/exp/lightaurora/ingester"
-	"github.com/shantanu-hashcash/go/support/log"
-	"github.com/shantanu-hashcash/go/xdr"
+	"github.com/HashCash-Consultants/go/exp/lightaurora/common"
+	"github.com/HashCash-Consultants/go/exp/lightaurora/ingester"
+	"github.com/HashCash-Consultants/go/support/log"
+	"github.com/HashCash-Consultants/go/xdr"
 )
 
 type OperationService interface {

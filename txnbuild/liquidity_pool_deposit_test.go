@@ -3,7 +3,7 @@ package txnbuild
 import (
 	"testing"
 
-	"github.com/shantanu-hashcash/go/price"
+	"github.com/HashCash-Consultants/go/price"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

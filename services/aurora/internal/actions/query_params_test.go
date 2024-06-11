@@ -5,8 +5,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/shantanu-hashcash/go/support/render/problem"
-	"github.com/shantanu-hashcash/go/xdr"
+	"github.com/HashCash-Consultants/go/support/render/problem"
+	"github.com/HashCash-Consultants/go/xdr"
 )
 
 var (

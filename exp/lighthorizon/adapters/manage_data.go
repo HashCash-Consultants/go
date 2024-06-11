@@ -3,8 +3,8 @@ package adapters
 import (
 	"encoding/base64"
 
-	"github.com/shantanu-hashcash/go/exp/lightaurora/common"
-	"github.com/shantanu-hashcash/go/protocols/aurora/operations"
+	"github.com/HashCash-Consultants/go/exp/lightaurora/common"
+	"github.com/HashCash-Consultants/go/protocols/aurora/operations"
 )
 
 func populateManageDataOperation(op *common.Operation, baseOp operations.Base) (operations.ManageData, error) {

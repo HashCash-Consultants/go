@@ -9,12 +9,12 @@ import (
 
 	"github.com/guregu/null"
 	"github.com/lib/pq"
-	"github.com/shantanu-hashcash/go/xdr"
+	"github.com/HashCash-Consultants/go/xdr"
 
-	. "github.com/shantanu-hashcash/go/protocols/aurora"
-	"github.com/shantanu-hashcash/go/services/aurora/internal/db2/history"
-	"github.com/shantanu-hashcash/go/support/test"
-	hcnetTime "github.com/shantanu-hashcash/go/support/time"
+	. "github.com/HashCash-Consultants/go/protocols/aurora"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/db2/history"
+	"github.com/HashCash-Consultants/go/support/test"
+	hcnetTime "github.com/HashCash-Consultants/go/support/time"
 	"github.com/stretchr/testify/assert"
 )
 

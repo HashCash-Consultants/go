@@ -2,8 +2,8 @@ package serve
 
 import (
 	"github.com/prometheus/client_golang/prometheus"
-	"github.com/shantanu-hashcash/go/exp/services/recoverysigner/internal/account"
-	supportlog "github.com/shantanu-hashcash/go/support/log"
+	"github.com/HashCash-Consultants/go/exp/services/recoverysigner/internal/account"
+	supportlog "github.com/HashCash-Consultants/go/support/log"
 )
 
 type metricAccountsCount struct {

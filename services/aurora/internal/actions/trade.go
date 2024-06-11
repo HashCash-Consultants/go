@@ -7,17 +7,17 @@ import (
 	"strconv"
 	gTime "time"
 
-	"github.com/shantanu-hashcash/go/protocols/aurora"
-	auroraContext "github.com/shantanu-hashcash/go/services/aurora/internal/context"
-	"github.com/shantanu-hashcash/go/services/aurora/internal/db2"
-	"github.com/shantanu-hashcash/go/services/aurora/internal/db2/history"
-	"github.com/shantanu-hashcash/go/services/aurora/internal/ledger"
-	"github.com/shantanu-hashcash/go/services/aurora/internal/resourceadapter"
-	"github.com/shantanu-hashcash/go/support/errors"
-	"github.com/shantanu-hashcash/go/support/render/hal"
-	"github.com/shantanu-hashcash/go/support/render/problem"
-	"github.com/shantanu-hashcash/go/support/time"
-	"github.com/shantanu-hashcash/go/xdr"
+	"github.com/HashCash-Consultants/go/protocols/aurora"
+	auroraContext "github.com/HashCash-Consultants/go/services/aurora/internal/context"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/db2"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/db2/history"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/ledger"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/resourceadapter"
+	"github.com/HashCash-Consultants/go/support/errors"
+	"github.com/HashCash-Consultants/go/support/render/hal"
+	"github.com/HashCash-Consultants/go/support/render/problem"
+	"github.com/HashCash-Consultants/go/support/time"
+	"github.com/HashCash-Consultants/go/xdr"
 )
 
 // TradeAssetsQueryParams represents the base and counter assets on trade related end-points.

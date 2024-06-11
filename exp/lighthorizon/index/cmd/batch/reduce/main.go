@@ -8,11 +8,11 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/shantanu-hashcash/go/exp/lightaurora/index"
-	types "github.com/shantanu-hashcash/go/exp/lightaurora/index/types"
-	"github.com/shantanu-hashcash/go/support/collections/set"
-	"github.com/shantanu-hashcash/go/support/errors"
-	"github.com/shantanu-hashcash/go/support/log"
+	"github.com/HashCash-Consultants/go/exp/lightaurora/index"
+	types "github.com/HashCash-Consultants/go/exp/lightaurora/index/types"
+	"github.com/HashCash-Consultants/go/support/collections/set"
+	"github.com/HashCash-Consultants/go/support/errors"
+	"github.com/HashCash-Consultants/go/support/log"
 )
 
 const (

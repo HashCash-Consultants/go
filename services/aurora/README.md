@@ -5,7 +5,7 @@ Aurora is the client facing API server for the [Hcnet ecosystem](https://develop
 
 Check out the following resources to get started:
 - [Aurora Development Guide](internal/docs/GUIDE_FOR_DEVELOPERS.md): Instructions for building and developing Aurora. Covers setup, building, testing, and contributing. Also contains some helpful notes and context for Aurora developers.
-- [Quickstart Guide](https://github.com/shantanu-hashcash/quickstart): An external tool provided from a separate repository. It builds a docker image which can be used for running the hcnet stack including Aurora locally for evaluation and testing situations. A great way to observe a reference runtime deployment, to see how everything fits together.
+- [Quickstart Guide](https://github.com/HashCash-Consultants/quickstart): An external tool provided from a separate repository. It builds a docker image which can be used for running the hcnet stack including Aurora locally for evaluation and testing situations. A great way to observe a reference runtime deployment, to see how everything fits together.
 - [Aurora Testing Guide](internal/docs/TESTING_NOTES.md): Details on how to test Aurora, including unit tests, integration tests, and end-to-end tests.
 - [Aurora SDK and API Guide](internal/docs/SDK_API_GUIDE.md): Documentation on the Aurora SDKs, APIs, resources, and examples. Useful for developers building on top of Aurora.
 

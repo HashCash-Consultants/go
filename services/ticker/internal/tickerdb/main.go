@@ -5,8 +5,8 @@ import (
 
 	"github.com/jmoiron/sqlx"
 	migrate "github.com/rubenv/sql-migrate"
-	bdata "github.com/shantanu-hashcash/go/services/ticker/internal/tickerdb/migrations"
-	"github.com/shantanu-hashcash/go/support/db"
+	bdata "github.com/HashCash-Consultants/go/services/ticker/internal/tickerdb/migrations"
+	"github.com/HashCash-Consultants/go/support/db"
 )
 
 //go:generate go run github.com/kevinburke/go-bindata/go-bindata@v3.18.0+incompatible -nometadata -ignore .+\.go$ -pkg bdata -o migrations/bindata.go ./...

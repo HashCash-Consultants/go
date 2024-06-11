@@ -8,7 +8,7 @@ import (
 	"net/url"
 	"path"
 
-	"github.com/shantanu-hashcash/go/support/errors"
+	"github.com/HashCash-Consultants/go/support/errors"
 )
 
 type HttpStorage struct {

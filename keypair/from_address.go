@@ -4,8 +4,8 @@ import (
 	"crypto/ed25519"
 	"encoding"
 
-	"github.com/shantanu-hashcash/go/strkey"
-	"github.com/shantanu-hashcash/go/xdr"
+	"github.com/HashCash-Consultants/go/strkey"
+	"github.com/HashCash-Consultants/go/xdr"
 )
 
 // FromAddress represents a keypair to which only the address is know.  This KP

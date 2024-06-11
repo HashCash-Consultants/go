@@ -3,8 +3,8 @@ package sse
 import (
 	"net/http"
 
-	"github.com/shantanu-hashcash/go/services/aurora/internal/ledger"
-	"github.com/shantanu-hashcash/go/support/errors"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/ledger"
+	"github.com/HashCash-Consultants/go/support/errors"
 	"github.com/stellar/throttled"
 )
 
@@ -40,7 +40,7 @@ func (handler StreamHandler) ServeStream(
 	currentLedgerSequence := ledgerSource.CurrentLedger()
 	for {
 		// Rate limit the request if it's a call to stream since it queries the DB every second. See
-		// https://github.com/shantanu-hashcash/go/issues/715 for more details.
+		// https://github.com/HashCash-Consultants/go/issues/715 for more details.
 		rateLimiter := handler.RateLimiter
 		if rateLimiter != nil {
 			limited, _, err := rateLimiter.RateLimiter.RateLimit(rateLimiter.VaryBy.Key(r), 1)

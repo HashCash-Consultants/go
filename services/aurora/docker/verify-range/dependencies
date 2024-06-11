@@ -11,7 +11,7 @@ echo "deb https://apt.hcnet.org $(lsb_release -cs) stable" | sudo tee -a /etc/ap
 apt-get update
 apt-get install -y hcnet-core=${HCNET_CORE_VERSION}
 
-git clone https://github.com/shantanu-hashcash/go.git hcnet-go
+git clone https://github.com/HashCash-Consultants/go.git hcnet-go
 cd hcnet-go
 
 # By default "git fetch" only fetches refs/<branchname>

@@ -9,15 +9,15 @@ import (
 
 	"github.com/go-chi/chi"
 	"github.com/go-chi/chi/middleware"
-	"github.com/shantanu-hashcash/go/amount"
-	"github.com/shantanu-hashcash/go/clients/auroraclient"
-	"github.com/shantanu-hashcash/go/keypair"
-	"github.com/shantanu-hashcash/go/services/regulated-assets-approval-server/internal/db"
-	"github.com/shantanu-hashcash/go/services/regulated-assets-approval-server/internal/serve/kycstatus"
-	"github.com/shantanu-hashcash/go/support/errors"
-	supporthttp "github.com/shantanu-hashcash/go/support/http"
-	"github.com/shantanu-hashcash/go/support/log"
-	"github.com/shantanu-hashcash/go/support/render/health"
+	"github.com/HashCash-Consultants/go/amount"
+	"github.com/HashCash-Consultants/go/clients/auroraclient"
+	"github.com/HashCash-Consultants/go/keypair"
+	"github.com/HashCash-Consultants/go/services/regulated-assets-approval-server/internal/db"
+	"github.com/HashCash-Consultants/go/services/regulated-assets-approval-server/internal/serve/kycstatus"
+	"github.com/HashCash-Consultants/go/support/errors"
+	supporthttp "github.com/HashCash-Consultants/go/support/http"
+	"github.com/HashCash-Consultants/go/support/log"
+	"github.com/HashCash-Consultants/go/support/render/health"
 )
 
 type Options struct {

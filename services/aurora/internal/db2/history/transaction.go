@@ -6,10 +6,10 @@ import (
 
 	sq "github.com/Masterminds/squirrel"
 
-	"github.com/shantanu-hashcash/go/services/aurora/internal/db2"
-	"github.com/shantanu-hashcash/go/support/errors"
-	"github.com/shantanu-hashcash/go/toid"
-	"github.com/shantanu-hashcash/go/xdr"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/db2"
+	"github.com/HashCash-Consultants/go/support/errors"
+	"github.com/HashCash-Consultants/go/toid"
+	"github.com/HashCash-Consultants/go/xdr"
 )
 
 // TransactionByHash is a query that loads a single row from the

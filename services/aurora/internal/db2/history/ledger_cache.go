@@ -3,8 +3,8 @@ package history
 import (
 	"context"
 
-	"github.com/shantanu-hashcash/go/support/collections/set"
-	"github.com/shantanu-hashcash/go/support/errors"
+	"github.com/HashCash-Consultants/go/support/collections/set"
+	"github.com/HashCash-Consultants/go/support/errors"
 )
 
 // Queue adds `seq` to the load queue for the cache.

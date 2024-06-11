@@ -54,4 +54,4 @@ Flags:
       --signing-key string                 Hcnet signing key(s) used for signing transactions comma separated (first key is used for signing, others used for verifying challenges) (SIGNING_KEY)
 ```
 
-[SEP-10]: https://github.com/shantanu-hashcash/hcnet-protocol/blob/28c636b4ef5074ca0c3d46bbe9bf0f3f38095233/ecosystem/sep-0010.md
+[SEP-10]: https://github.com/HashCash-Consultants/hcnet-protocol/blob/28c636b4ef5074ca0c3d46bbe9bf0f3f38095233/ecosystem/sep-0010.md

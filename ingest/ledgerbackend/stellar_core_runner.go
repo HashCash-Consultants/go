@@ -17,8 +17,8 @@ import (
 	"time"
 
 	"github.com/pkg/errors"
-	"github.com/shantanu-hashcash/go/protocols/hcnetcore"
-	"github.com/shantanu-hashcash/go/support/log"
+	"github.com/HashCash-Consultants/go/protocols/hcnetcore"
+	"github.com/HashCash-Consultants/go/support/log"
 )
 
 type hcnetCoreRunnerInterface interface {
@@ -121,9 +121,9 @@ func (r *hcnetCoreRunner) getFullStoragePath() string {
 		return path.Join(r.storagePath, "captive-core-"+createRandomHexString(8))
 	} else {
 		// Use the specified directory to store Captive Core's data:
-		//    https://github.com/shantanu-hashcash/go/issues/3437
+		//    https://github.com/HashCash-Consultants/go/issues/3437
 		// but be sure to re-use rather than replace it:
-		//    https://github.com/shantanu-hashcash/go/issues/3631
+		//    https://github.com/HashCash-Consultants/go/issues/3631
 		return path.Join(r.storagePath, "captive-core")
 	}
 }

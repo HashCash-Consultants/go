@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"net/http"
 
-	hProtocol "github.com/shantanu-hashcash/go/protocols/aurora"
-	auroraContext "github.com/shantanu-hashcash/go/services/aurora/internal/context"
-	"github.com/shantanu-hashcash/go/services/aurora/internal/db2/history"
-	"github.com/shantanu-hashcash/go/support/render/problem"
+	hProtocol "github.com/HashCash-Consultants/go/protocols/aurora"
+	auroraContext "github.com/HashCash-Consultants/go/services/aurora/internal/context"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/db2/history"
+	"github.com/HashCash-Consultants/go/support/render/problem"
 )
 
 // these admin HTTP endpoints are documented in services/aurora/internal/httpx/static/admin_oapi.yml

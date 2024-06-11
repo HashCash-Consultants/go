@@ -4,8 +4,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/shantanu-hashcash/go/keypair"
-	"github.com/shantanu-hashcash/go/network"
+	"github.com/HashCash-Consultants/go/keypair"
+	"github.com/HashCash-Consultants/go/network"
 	"github.com/stretchr/testify/assert"
 )
 

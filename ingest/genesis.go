@@ -1,9 +1,9 @@
 package ingest
 
 import (
-	"github.com/shantanu-hashcash/go/amount"
-	"github.com/shantanu-hashcash/go/keypair"
-	"github.com/shantanu-hashcash/go/xdr"
+	"github.com/HashCash-Consultants/go/amount"
+	"github.com/HashCash-Consultants/go/keypair"
+	"github.com/HashCash-Consultants/go/xdr"
 )
 
 // GenesisChange returns the Change occurring at the genesis ledger (ledgerseq = 1)..

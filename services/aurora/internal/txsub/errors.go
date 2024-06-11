@@ -5,8 +5,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/shantanu-hashcash/go/services/aurora/internal/codes"
-	"github.com/shantanu-hashcash/go/xdr"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/codes"
+	"github.com/HashCash-Consultants/go/xdr"
 )
 
 var (

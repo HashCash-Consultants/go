@@ -358,10 +358,10 @@ the [SEP-8] spec._
 }
 ```
 
-[SEP-8]: https://github.com/shantanu-hashcash/hcnet-protocol/blob/7c795bb9abc606cd1e34764c4ba07900d58fe26e/ecosystem/sep-0008.md
-[authorization flags]: https://github.com/shantanu-hashcash/hcnet-protocol/blob/7c795bb9abc606cd1e34764c4ba07900d58fe26e/ecosystem/sep-0008.md#authorization-flags
-[Action Required]: https://github.com/shantanu-hashcash/hcnet-protocol/blob/7c795bb9abc606cd1e34764c4ba07900d58fe26e/ecosystem/sep-0008.md#action-required
-[Rejected]: https://github.com/shantanu-hashcash/hcnet-protocol/blob/master/ecosystem/sep-0008.md#rejected
-[Revised]:https://github.com/shantanu-hashcash/hcnet-protocol/blob/master/ecosystem/sep-0008.md#revised
-[Success]: https://github.com/shantanu-hashcash/hcnet-protocol/blob/master/ecosystem/sep-0008.md#success
-[Pending]: https://github.com/shantanu-hashcash/hcnet-protocol/blob/master/ecosystem/sep-0008.md#pending
+[SEP-8]: https://github.com/HashCash-Consultants/hcnet-protocol/blob/7c795bb9abc606cd1e34764c4ba07900d58fe26e/ecosystem/sep-0008.md
+[authorization flags]: https://github.com/HashCash-Consultants/hcnet-protocol/blob/7c795bb9abc606cd1e34764c4ba07900d58fe26e/ecosystem/sep-0008.md#authorization-flags
+[Action Required]: https://github.com/HashCash-Consultants/hcnet-protocol/blob/7c795bb9abc606cd1e34764c4ba07900d58fe26e/ecosystem/sep-0008.md#action-required
+[Rejected]: https://github.com/HashCash-Consultants/hcnet-protocol/blob/master/ecosystem/sep-0008.md#rejected
+[Revised]:https://github.com/HashCash-Consultants/hcnet-protocol/blob/master/ecosystem/sep-0008.md#revised
+[Success]: https://github.com/HashCash-Consultants/hcnet-protocol/blob/master/ecosystem/sep-0008.md#success
+[Pending]: https://github.com/HashCash-Consultants/hcnet-protocol/blob/master/ecosystem/sep-0008.md#pending

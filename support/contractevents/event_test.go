@@ -6,11 +6,11 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/shantanu-hashcash/go/gxdr"
-	"github.com/shantanu-hashcash/go/keypair"
-	"github.com/shantanu-hashcash/go/randxdr"
-	"github.com/shantanu-hashcash/go/strkey"
-	"github.com/shantanu-hashcash/go/xdr"
+	"github.com/HashCash-Consultants/go/gxdr"
+	"github.com/HashCash-Consultants/go/keypair"
+	"github.com/HashCash-Consultants/go/randxdr"
+	"github.com/HashCash-Consultants/go/strkey"
+	"github.com/HashCash-Consultants/go/xdr"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

@@ -5,7 +5,7 @@ import (
 	"testing"
 
 	"github.com/pkg/errors"
-	"github.com/shantanu-hashcash/go/support/datastore"
+	"github.com/HashCash-Consultants/go/support/datastore"
 	"github.com/stretchr/testify/require"
 )
 

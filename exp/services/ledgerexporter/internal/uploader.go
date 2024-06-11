@@ -8,8 +8,8 @@ import (
 
 	"github.com/pkg/errors"
 	"github.com/prometheus/client_golang/prometheus"
-	"github.com/shantanu-hashcash/go/support/compressxdr"
-	"github.com/shantanu-hashcash/go/support/datastore"
+	"github.com/HashCash-Consultants/go/support/compressxdr"
+	"github.com/HashCash-Consultants/go/support/datastore"
 )
 
 // Uploader is responsible for uploading data to a storage destination.

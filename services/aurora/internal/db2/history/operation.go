@@ -9,10 +9,10 @@ import (
 
 	sq "github.com/Masterminds/squirrel"
 
-	"github.com/shantanu-hashcash/go/services/aurora/internal/db2"
-	"github.com/shantanu-hashcash/go/support/errors"
-	"github.com/shantanu-hashcash/go/toid"
-	"github.com/shantanu-hashcash/go/xdr"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/db2"
+	"github.com/HashCash-Consultants/go/support/errors"
+	"github.com/HashCash-Consultants/go/toid"
+	"github.com/HashCash-Consultants/go/xdr"
 )
 
 // LedgerSequence return the ledger in which the effect occurred.
@@ -51,7 +51,7 @@ func preprocessDetails(details string) ([]byte, error) {
 		if strings.HasSuffix(k, "_muxed_id") {
 			if vNumber, ok := v.(json.Number); ok {
 				// transform it into a string so that _muxed_id unmarshaling works with `,string` tags
-				// see https://github.com/shantanu-hashcash/go/pull/3716#issuecomment-867057436
+				// see https://github.com/HashCash-Consultants/go/pull/3716#issuecomment-867057436
 				dest[k] = vNumber.String()
 			}
 		}

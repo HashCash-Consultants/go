@@ -76,5 +76,5 @@ Flags:
 Use "recoverysigner db [command] --help" for more information about a command.
 ```
 
-[SEP-30]: https://github.com/shantanu-hashcash/hcnet-protocol/blob/3e05bb668f94793545588106af74699b8d6b02d6/ecosystem/sep-0030.md
+[SEP-30]: https://github.com/HashCash-Consultants/hcnet-protocol/blob/3e05bb668f94793545588106af74699b8d6b02d6/ecosystem/sep-0030.md
 [README-Firebase.md]: README-Firebase.md

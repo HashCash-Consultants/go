@@ -6,7 +6,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/shantanu-hashcash/go/xdr"
+	"github.com/HashCash-Consultants/go/xdr"
 )
 
 func TestChangeAccountChangedExceptSignersInvalidType(t *testing.T) {
@@ -337,7 +337,7 @@ func TestFeeMetaAndOperationsChangesSeparate(t *testing.T) {
 	assert.Equal(t, operationChanges[0].Post.Data.MustAccount().Balance, xdr.Int64(400))
 
 	// Ignore operation meta if tx result is txInternalError
-	// https://github.com/shantanu-hashcash/go/issues/2111
+	// https://github.com/HashCash-Consultants/go/issues/2111
 	tx.Result.Result.Result.Code = xdr.TransactionResultCodeTxInternalError
 	metaChanges, err = tx.GetChanges()
 	assert.NoError(t, err)
@@ -560,7 +560,7 @@ func TestMetaV2Order(t *testing.T) {
 	assert.Len(t, operationChanges, 1)
 
 	// Ignore operations meta and txChangesAfter if txInternalError
-	// https://github.com/shantanu-hashcash/go/issues/2111
+	// https://github.com/HashCash-Consultants/go/issues/2111
 	tx.Result.Result.Result.Code = xdr.TransactionResultCodeTxInternalError
 	metaChanges, err = tx.GetChanges()
 	assert.NoError(t, err)

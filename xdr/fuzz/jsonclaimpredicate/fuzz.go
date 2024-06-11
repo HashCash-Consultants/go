@@ -7,7 +7,7 @@ import (
 	"bytes"
 	"encoding/json"
 
-	"github.com/shantanu-hashcash/go/xdr"
+	"github.com/HashCash-Consultants/go/xdr"
 )
 
 // Fuzz is go-fuzz function for fuzzing xdr.ClaimPredicate JSON

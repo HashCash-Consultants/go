@@ -1,7 +1,7 @@
 package keypairgentest
 
 import (
-	"github.com/shantanu-hashcash/go/keypair"
+	"github.com/HashCash-Consultants/go/keypair"
 )
 
 // SliceSource is a keypairgen.Generator source that has the values returned

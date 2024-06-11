@@ -3,11 +3,11 @@ package actions
 import (
 	"net/http"
 
-	protocol "github.com/shantanu-hashcash/go/protocols/aurora"
-	"github.com/shantanu-hashcash/go/services/aurora/internal/context"
-	"github.com/shantanu-hashcash/go/services/aurora/internal/db2/history"
-	"github.com/shantanu-hashcash/go/services/aurora/internal/resourceadapter"
-	"github.com/shantanu-hashcash/go/support/render/problem"
+	protocol "github.com/HashCash-Consultants/go/protocols/aurora"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/context"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/db2/history"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/resourceadapter"
+	"github.com/HashCash-Consultants/go/support/render/problem"
 )
 
 // StreamableObjectResponse is an interface for objects returned by streamable object endpoints

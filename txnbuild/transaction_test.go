@@ -7,11 +7,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/shantanu-hashcash/go/keypair"
-	"github.com/shantanu-hashcash/go/network"
-	"github.com/shantanu-hashcash/go/price"
-	"github.com/shantanu-hashcash/go/strkey"
-	"github.com/shantanu-hashcash/go/xdr"
+	"github.com/HashCash-Consultants/go/keypair"
+	"github.com/HashCash-Consultants/go/network"
+	"github.com/HashCash-Consultants/go/price"
+	"github.com/HashCash-Consultants/go/strkey"
+	"github.com/HashCash-Consultants/go/xdr"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

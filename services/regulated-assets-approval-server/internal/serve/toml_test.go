@@ -8,7 +8,7 @@ import (
 	"testing"
 
 	"github.com/go-chi/chi"
-	"github.com/shantanu-hashcash/go/network"
+	"github.com/HashCash-Consultants/go/network"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

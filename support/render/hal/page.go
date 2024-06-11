@@ -4,7 +4,7 @@ import (
 	"net/url"
 	"strconv"
 
-	sUrl "github.com/shantanu-hashcash/go/support/url"
+	sUrl "github.com/HashCash-Consultants/go/support/url"
 )
 
 // BasePage represents the simplest page: one with no links and only embedded records.

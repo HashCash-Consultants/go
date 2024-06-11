@@ -10,15 +10,15 @@ import (
 
 	"github.com/stretchr/testify/mock"
 
-	"github.com/shantanu-hashcash/go/protocols/aurora"
+	"github.com/HashCash-Consultants/go/protocols/aurora"
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/shantanu-hashcash/go/network"
-	proto "github.com/shantanu-hashcash/go/protocols/hcnetcore"
-	"github.com/shantanu-hashcash/go/services/aurora/internal/corestate"
-	"github.com/shantanu-hashcash/go/support/errors"
-	"github.com/shantanu-hashcash/go/support/render/problem"
+	"github.com/HashCash-Consultants/go/network"
+	proto "github.com/HashCash-Consultants/go/protocols/hcnetcore"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/corestate"
+	"github.com/HashCash-Consultants/go/support/errors"
+	"github.com/HashCash-Consultants/go/support/render/problem"
 )
 
 const (

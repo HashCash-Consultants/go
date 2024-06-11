@@ -6,7 +6,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/shantanu-hashcash/go/support/errors"
+	"github.com/HashCash-Consultants/go/support/errors"
 )
 
 func New(rootProcessor *PipelineNode) *Pipeline {

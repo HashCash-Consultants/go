@@ -48,7 +48,7 @@ Aurora maintains its own database (postgres), a verbose and user friendly accoun
 
 #### Ingester
 
-Ingester represents metrics specific to Aurora's [ingestion](https://github.com/shantanu-hashcash/go/blob/master/services/aurora/internal/docs/reference/admin.md#ingesting-hcnet-core-data) process, or the process by which Aurora consumes transaction results from a connected Hcnet Core instance.
+Ingester represents metrics specific to Aurora's [ingestion](https://github.com/HashCash-Consultants/go/blob/master/services/aurora/internal/docs/reference/admin.md#ingesting-hcnet-core-data) process, or the process by which Aurora consumes transaction results from a connected Hcnet Core instance.
 
 |    Metric     |  Description                                                                                                                               |
 | ---------------- |  ------------------------------------------------------------------------------------------------------------------------------ |
@@ -96,9 +96,9 @@ Aurora does not submit transactions directly to the Hcnet network. Instead, it s
 
 ##### Aurora Transaction Sequencing and Submission
 
-The following is a simplified version of the transaction submission process that glosses over the finer details. To dive deeper, check out the [source code](https://github.com/shantanu-hashcash/go/tree/master/services/aurora/internal/txsub).
+The following is a simplified version of the transaction submission process that glosses over the finer details. To dive deeper, check out the [source code](https://github.com/HashCash-Consultants/go/tree/master/services/aurora/internal/txsub).
 
-Aurora's sequencing mechanism consists of a [manager](https://github.com/shantanu-hashcash/go/blob/master/services/aurora/internal/txsub/sequence/manager.go) that keeps track of [submission queues](https://github.com/shantanu-hashcash/go/blob/master/services/aurora/internal/txsub/sequence/queue.go) for a set of addresses. A submission queue is a  priority queue, prioritized by minimum transaction sequence number, that holds a set of pending transactions for an account. A pending transaction is represented as an object with a sequence number and a channel. Periodically, this queue is updated, popping off finished transactions, sending down the transaction's channel a successful/failure response.
+Aurora's sequencing mechanism consists of a [manager](https://github.com/HashCash-Consultants/go/blob/master/services/aurora/internal/txsub/sequence/manager.go) that keeps track of [submission queues](https://github.com/HashCash-Consultants/go/blob/master/services/aurora/internal/txsub/sequence/queue.go) for a set of addresses. A submission queue is a  priority queue, prioritized by minimum transaction sequence number, that holds a set of pending transactions for an account. A pending transaction is represented as an object with a sequence number and a channel. Periodically, this queue is updated, popping off finished transactions, sending down the transaction's channel a successful/failure response.
 
 These metrics contain useful [sub metrics](#sub-metrics).
 

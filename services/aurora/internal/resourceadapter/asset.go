@@ -3,8 +3,8 @@ package resourceadapter
 import (
 	"context"
 
-	protocol "github.com/shantanu-hashcash/go/protocols/aurora"
-	"github.com/shantanu-hashcash/go/xdr"
+	protocol "github.com/HashCash-Consultants/go/protocols/aurora"
+	"github.com/HashCash-Consultants/go/xdr"
 )
 
 func PopulateAsset(ctx context.Context, dest *protocol.Asset, asset xdr.Asset) error {

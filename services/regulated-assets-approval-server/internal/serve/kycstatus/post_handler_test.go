@@ -6,8 +6,8 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/shantanu-hashcash/go/services/regulated-assets-approval-server/internal/db/dbtest"
-	"github.com/shantanu-hashcash/go/services/regulated-assets-approval-server/internal/serve/httperror"
+	"github.com/HashCash-Consultants/go/services/regulated-assets-approval-server/internal/db/dbtest"
+	"github.com/HashCash-Consultants/go/services/regulated-assets-approval-server/internal/serve/httperror"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

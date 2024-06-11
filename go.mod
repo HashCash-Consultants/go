@@ -1,4 +1,4 @@
-module github.com/shantanu-hashcash/go
+module github.com/HashCash-Consultants/go
 
 go 1.22
 

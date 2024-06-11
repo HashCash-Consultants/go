@@ -7,12 +7,12 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/shantanu-hashcash/go/protocols/aurora"
-	"github.com/shantanu-hashcash/go/services/aurora/internal/corestate"
-	"github.com/shantanu-hashcash/go/services/aurora/internal/db2/history"
-	"github.com/shantanu-hashcash/go/services/aurora/internal/ingest"
-	"github.com/shantanu-hashcash/go/services/aurora/internal/test"
-	"github.com/shantanu-hashcash/go/xdr"
+	"github.com/HashCash-Consultants/go/protocols/aurora"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/corestate"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/db2/history"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/ingest"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/test"
+	"github.com/HashCash-Consultants/go/xdr"
 )
 
 func TestTransactionActions_Show(t *testing.T) {
@@ -235,7 +235,7 @@ func TestTransactionActions_Index(t *testing.T) {
 	w = ht.Get("/accounts/GCXKG6RN4ONIEPCMNFB732A436Z5PNDSRLGWK7GBLCMQLIFO4S7EYWVU/transactions?cursor=limit=order=")
 	ht.Assert.Equal(400, w.Code)
 
-	// regression: https://github.com/shantanu-hashcash/go/services/aurora/internal/issues/365
+	// regression: https://github.com/HashCash-Consultants/go/services/aurora/internal/issues/365
 	w = ht.Get("/transactions?limit=200")
 	ht.Require.Equal(200, w.Code)
 	w = ht.Get("/transactions?limit=201")

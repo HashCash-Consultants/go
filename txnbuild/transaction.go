@@ -3,9 +3,9 @@ Package txnbuild implements transactions and operations on the Hcnet network.
 This library provides an interface to the Hcnet transaction model. It supports the building of Go applications on
 top of the Hcnet network (https://www.hcnet.org/). Transactions constructed by this library may be submitted
 to any Aurora instance for processing onto the ledger, using any Hcnet SDK client. The recommended client for Go
-programmers is auroraclient (https://github.com/shantanu-hashcash/go/tree/master/clients/auroraclient). Together, these two
+programmers is auroraclient (https://github.com/HashCash-Consultants/go/tree/master/clients/auroraclient). Together, these two
 libraries provide a complete Hcnet SDK.
-For more information and further examples, see https://github.com/shantanu-hashcash/go/blob/master/docs/reference/readme.md
+For more information and further examples, see https://github.com/HashCash-Consultants/go/blob/master/docs/reference/readme.md
 */
 package txnbuild
 
@@ -21,12 +21,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/shantanu-hashcash/go/keypair"
-	"github.com/shantanu-hashcash/go/network"
-	"github.com/shantanu-hashcash/go/strkey"
-	"github.com/shantanu-hashcash/go/support/collections/set"
-	"github.com/shantanu-hashcash/go/support/errors"
-	"github.com/shantanu-hashcash/go/xdr"
+	"github.com/HashCash-Consultants/go/keypair"
+	"github.com/HashCash-Consultants/go/network"
+	"github.com/HashCash-Consultants/go/strkey"
+	"github.com/HashCash-Consultants/go/support/collections/set"
+	"github.com/HashCash-Consultants/go/support/errors"
+	"github.com/HashCash-Consultants/go/xdr"
 )
 
 // MinBaseFee is the minimum transaction fee for the Hcnet network of 100 stroops (0.00001 XLM).
@@ -406,7 +406,7 @@ func (t *Transaction) ClaimableBalanceID(operationIndex int) (string, error) {
 	}
 
 	// We mimic the relevant code from Hcnet Core
-	// https://github.com/shantanu-hashcash/hcnet-core/blob/9f3cc04e6ec02c38974c42545a86cdc79809252b/src/test/TestAccount.cpp#L285
+	// https://github.com/HashCash-Consultants/hcnet-core/blob/9f3cc04e6ec02c38974c42545a86cdc79809252b/src/test/TestAccount.cpp#L285
 	//
 	// Note that the source account must be *unmuxed* for this to work.
 	muxedAccountId := xdr.MustMuxedAddress(t.sourceAccount.AccountID).ToAccountId()
@@ -1022,7 +1022,7 @@ func NewFeeBumpTransaction(params FeeBumpTransactionParams) (*FeeBumpTransaction
 // BuildChallengeTx is a factory method that creates a valid SEP 10 challenge, for use in web authentication.
 // "timebound" is the time duration the transaction should be valid for, and must be greater than 1s (300s is recommended).
 // Muxed accounts or ID memos can be provided to identity a user of a shared Hcnet account.
-// More details on SEP 10: https://github.com/shantanu-hashcash/hcnet-protocol/blob/master/ecosystem/sep-0010.md
+// More details on SEP 10: https://github.com/HashCash-Consultants/hcnet-protocol/blob/master/ecosystem/sep-0010.md
 func BuildChallengeTx(serverSignerSecret, clientAccountID, webAuthDomain, homeDomain, network string, timebound time.Duration, memo *MemoID) (*Transaction, error) {
 	if timebound < time.Second {
 		return nil, errors.New("provided timebound must be at least 1s (300s is recommended)")
@@ -1062,7 +1062,7 @@ func BuildChallengeTx(serverSignerSecret, clientAccountID, webAuthDomain, homeDo
 	maxTime := currentTime.Add(timebound)
 
 	// Create a SEP 10 compatible response. See
-	// https://github.com/shantanu-hashcash/hcnet-protocol/blob/master/ecosystem/sep-0010.md#response
+	// https://github.com/HashCash-Consultants/hcnet-protocol/blob/master/ecosystem/sep-0010.md#response
 	txParams := TransactionParams{
 		SourceAccount:        &sa,
 		IncrementSequenceNum: false,

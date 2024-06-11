@@ -3,7 +3,7 @@ package health
 import (
 	"net/http"
 
-	"github.com/shantanu-hashcash/go/support/render/httpjson"
+	"github.com/HashCash-Consultants/go/support/render/httpjson"
 )
 
 // PassHandler implements a simple handler that returns the most basic health

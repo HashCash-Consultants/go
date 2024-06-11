@@ -7,10 +7,10 @@ import (
 
 	migrate "github.com/rubenv/sql-migrate"
 	"github.com/spf13/cobra"
-	"github.com/shantanu-hashcash/go/services/regulated-assets-approval-server/internal/db"
-	"github.com/shantanu-hashcash/go/services/regulated-assets-approval-server/internal/db/dbmigrate"
-	"github.com/shantanu-hashcash/go/support/config"
-	"github.com/shantanu-hashcash/go/support/log"
+	"github.com/HashCash-Consultants/go/services/regulated-assets-approval-server/internal/db"
+	"github.com/HashCash-Consultants/go/services/regulated-assets-approval-server/internal/db/dbmigrate"
+	"github.com/HashCash-Consultants/go/support/config"
+	"github.com/HashCash-Consultants/go/support/log"
 )
 
 type MigrateCommand struct {

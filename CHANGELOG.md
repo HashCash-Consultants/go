@@ -19,4 +19,4 @@ This monorepo contains a number of projects, individually versioned and released
 If a project is pre-v1.0, breaking changes may happen for minor version
 bumps.  A breaking change will be clearly notified in the corresponding changelog.
 
-Official project releases may be found here: https://github.com/shantanu-hashcash/go/releases
+Official project releases may be found here: https://github.com/HashCash-Consultants/go/releases

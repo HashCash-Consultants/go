@@ -10,9 +10,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/shantanu-hashcash/go/ingest/ledgerbackend"
-	"github.com/shantanu-hashcash/go/network"
-	"github.com/shantanu-hashcash/go/xdr"
+	"github.com/HashCash-Consultants/go/ingest/ledgerbackend"
+	"github.com/HashCash-Consultants/go/network"
+	"github.com/HashCash-Consultants/go/xdr"
 )
 
 const (

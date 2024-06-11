@@ -1,8 +1,8 @@
 package adapters
 
 import (
-	"github.com/shantanu-hashcash/go/exp/lightaurora/common"
-	"github.com/shantanu-hashcash/go/protocols/aurora/operations"
+	"github.com/HashCash-Consultants/go/exp/lightaurora/common"
+	"github.com/HashCash-Consultants/go/protocols/aurora/operations"
 )
 
 func populateInflationOperation(op *common.Operation, baseOp operations.Base) (operations.Inflation, error) {

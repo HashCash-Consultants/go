@@ -9,10 +9,10 @@ import (
 
 	"github.com/lib/pq"
 
-	"github.com/shantanu-hashcash/go/support/collections/set"
-	"github.com/shantanu-hashcash/go/support/db"
-	"github.com/shantanu-hashcash/go/support/errors"
-	"github.com/shantanu-hashcash/go/support/ordered"
+	"github.com/HashCash-Consultants/go/support/collections/set"
+	"github.com/HashCash-Consultants/go/support/db"
+	"github.com/HashCash-Consultants/go/support/errors"
+	"github.com/HashCash-Consultants/go/support/ordered"
 )
 
 // FutureAccountID represents a future history account.
@@ -141,7 +141,7 @@ func (a *AccountLoader) Exec(ctx context.Context, session db.SessionInterface) e
 	}
 	addresses = addresses[:insert]
 	// sort entries before inserting rows to prevent deadlocks on acquiring a ShareLock
-	// https://github.com/shantanu-hashcash/go/issues/2370
+	// https://github.com/HashCash-Consultants/go/issues/2370
 	sort.Strings(addresses)
 
 	err := bulkInsert(

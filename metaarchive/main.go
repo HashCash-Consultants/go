@@ -7,9 +7,9 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/shantanu-hashcash/go/support/errors"
-	"github.com/shantanu-hashcash/go/support/storage"
-	"github.com/shantanu-hashcash/go/xdr"
+	"github.com/HashCash-Consultants/go/support/errors"
+	"github.com/HashCash-Consultants/go/support/storage"
+	"github.com/HashCash-Consultants/go/xdr"
 )
 
 type MetaArchive interface {

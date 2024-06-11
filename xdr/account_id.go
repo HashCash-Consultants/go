@@ -4,7 +4,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/shantanu-hashcash/go/strkey"
+	"github.com/HashCash-Consultants/go/strkey"
 )
 
 // Address returns the strkey encoded form of this AccountId.  This method will

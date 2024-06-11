@@ -6,7 +6,7 @@ import (
 	"os"
 
 	"github.com/spf13/cobra"
-	"github.com/shantanu-hashcash/go/keypair"
+	"github.com/HashCash-Consultants/go/keypair"
 )
 
 func main() {

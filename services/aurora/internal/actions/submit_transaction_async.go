@@ -4,12 +4,12 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/shantanu-hashcash/go/protocols/aurora"
-	proto "github.com/shantanu-hashcash/go/protocols/hcnetcore"
-	hProblem "github.com/shantanu-hashcash/go/services/aurora/internal/render/problem"
-	"github.com/shantanu-hashcash/go/support/errors"
-	"github.com/shantanu-hashcash/go/support/log"
-	"github.com/shantanu-hashcash/go/support/render/problem"
+	"github.com/HashCash-Consultants/go/protocols/aurora"
+	proto "github.com/HashCash-Consultants/go/protocols/hcnetcore"
+	hProblem "github.com/HashCash-Consultants/go/services/aurora/internal/render/problem"
+	"github.com/HashCash-Consultants/go/support/errors"
+	"github.com/HashCash-Consultants/go/support/log"
+	"github.com/HashCash-Consultants/go/support/render/problem"
 )
 
 type coreClient interface {

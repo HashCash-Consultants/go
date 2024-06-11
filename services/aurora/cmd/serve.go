@@ -2,7 +2,7 @@ package cmd
 
 import (
 	"github.com/spf13/cobra"
-	aurora "github.com/shantanu-hashcash/go/services/aurora/internal"
+	aurora "github.com/HashCash-Consultants/go/services/aurora/internal"
 )
 
 var serveCmd = &cobra.Command{

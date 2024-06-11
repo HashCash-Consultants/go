@@ -11,16 +11,16 @@ import (
 
 	"github.com/guregu/null"
 
-	"github.com/shantanu-hashcash/go/amount"
-	"github.com/shantanu-hashcash/go/ingest"
-	"github.com/shantanu-hashcash/go/keypair"
-	"github.com/shantanu-hashcash/go/protocols/aurora/base"
-	"github.com/shantanu-hashcash/go/services/aurora/internal/db2/history"
-	"github.com/shantanu-hashcash/go/strkey"
-	"github.com/shantanu-hashcash/go/support/contractevents"
-	"github.com/shantanu-hashcash/go/support/db"
-	"github.com/shantanu-hashcash/go/support/errors"
-	"github.com/shantanu-hashcash/go/xdr"
+	"github.com/HashCash-Consultants/go/amount"
+	"github.com/HashCash-Consultants/go/ingest"
+	"github.com/HashCash-Consultants/go/keypair"
+	"github.com/HashCash-Consultants/go/protocols/aurora/base"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/db2/history"
+	"github.com/HashCash-Consultants/go/strkey"
+	"github.com/HashCash-Consultants/go/support/contractevents"
+	"github.com/HashCash-Consultants/go/support/db"
+	"github.com/HashCash-Consultants/go/support/errors"
+	"github.com/HashCash-Consultants/go/xdr"
 )
 
 // EffectProcessor process effects
@@ -152,7 +152,7 @@ func (operation *transactionOperationWrapper) ingestEffects(accountLoader *histo
 		}
 
 		// For now, the only effects are related to the events themselves.
-		// Possible add'l work: https://github.com/shantanu-hashcash/go/issues/4585
+		// Possible add'l work: https://github.com/HashCash-Consultants/go/issues/4585
 		err = wrapper.addInvokeHostFunctionEffects(filterEvents(diagnosticEvents))
 	case xdr.OperationTypeExtendFootprintTtl, xdr.OperationTypeRestoreFootprint:
 		// do not produce effects for these operations as aurora only provides

@@ -8,7 +8,7 @@ import (
 	"context"
 
 	"github.com/sirupsen/logrus"
-	"github.com/shantanu-hashcash/go/support/log"
+	"github.com/HashCash-Consultants/go/support/log"
 )
 
 // ContextWithLogBuffer returns a context and a buffer into which the new, bound

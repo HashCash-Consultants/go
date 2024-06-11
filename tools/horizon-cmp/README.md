@@ -15,7 +15,7 @@ go install ./tools/aurora-cmp
 
 `aurora-cmp` can be run in two modes:
 
-- Crawling: start with a set of paths (defined in [init_paths.go](https://github.com/shantanu-hashcash/go/blob/master/tools/aurora-cmp/init_paths.go)) and then uses `_links` to find new paths.
+- Crawling: start with a set of paths (defined in [init_paths.go](https://github.com/HashCash-Consultants/go/blob/master/tools/aurora-cmp/init_paths.go)) and then uses `_links` to find new paths.
 - ELB access log: send requests found in a provided ELB access log.
 
 ### Crawling mode
@@ -26,7 +26,7 @@ To run in crawling mode specify a `base` and `test` URL, where `base` is the cur
 aurora-cmp -t https://new-aurora.host.org -b https://aurora.hcnet.org
 ```
 
-The paths to be tested can be found in [init_paths.go](https://github.com/shantanu-hashcash/go/blob/master/tools/aurora-cmp/init_paths.go).
+The paths to be tested can be found in [init_paths.go](https://github.com/HashCash-Consultants/go/blob/master/tools/aurora-cmp/init_paths.go).
 
 ### ELB access log
 

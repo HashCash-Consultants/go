@@ -8,7 +8,7 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/shantanu-hashcash/go/clients/hcnetcore"
+	"github.com/HashCash-Consultants/go/clients/hcnetcore"
 
 	"github.com/go-chi/chi"
 	chimiddleware "github.com/go-chi/chi/middleware"
@@ -17,16 +17,16 @@ import (
 	"github.com/rs/cors"
 	"github.com/stellar/throttled"
 
-	"github.com/shantanu-hashcash/go/services/aurora/internal/actions"
-	"github.com/shantanu-hashcash/go/services/aurora/internal/db2/history"
-	"github.com/shantanu-hashcash/go/services/aurora/internal/ledger"
-	"github.com/shantanu-hashcash/go/services/aurora/internal/paths"
-	"github.com/shantanu-hashcash/go/services/aurora/internal/render"
-	"github.com/shantanu-hashcash/go/services/aurora/internal/render/sse"
-	"github.com/shantanu-hashcash/go/services/aurora/internal/txsub"
-	"github.com/shantanu-hashcash/go/support/db"
-	supporthttp "github.com/shantanu-hashcash/go/support/http"
-	"github.com/shantanu-hashcash/go/support/render/problem"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/actions"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/db2/history"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/ledger"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/paths"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/render"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/render/sse"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/txsub"
+	"github.com/HashCash-Consultants/go/support/db"
+	supporthttp "github.com/HashCash-Consultants/go/support/http"
+	"github.com/HashCash-Consultants/go/support/render/problem"
 )
 
 type RouterConfig struct {

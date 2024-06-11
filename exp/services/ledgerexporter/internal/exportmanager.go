@@ -7,9 +7,9 @@ import (
 	"github.com/pkg/errors"
 	"github.com/prometheus/client_golang/prometheus"
 
-	"github.com/shantanu-hashcash/go/ingest/ledgerbackend"
-	"github.com/shantanu-hashcash/go/support/datastore"
-	"github.com/shantanu-hashcash/go/xdr"
+	"github.com/HashCash-Consultants/go/ingest/ledgerbackend"
+	"github.com/HashCash-Consultants/go/support/datastore"
+	"github.com/HashCash-Consultants/go/xdr"
 )
 
 type ExportManager struct {

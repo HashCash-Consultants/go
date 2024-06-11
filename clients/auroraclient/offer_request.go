@@ -7,8 +7,8 @@ import (
 	"net/http"
 	"net/url"
 
-	hProtocol "github.com/shantanu-hashcash/go/protocols/aurora"
-	"github.com/shantanu-hashcash/go/support/errors"
+	hProtocol "github.com/HashCash-Consultants/go/protocols/aurora"
+	"github.com/HashCash-Consultants/go/support/errors"
 )
 
 // BuildURL creates the endpoint to be queried based on the data in the OfferRequest struct.

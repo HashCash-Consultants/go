@@ -4,10 +4,10 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/shantanu-hashcash/go/clients/auroraclient"
-	hProtocol "github.com/shantanu-hashcash/go/protocols/aurora"
-	"github.com/shantanu-hashcash/go/support/errors"
-	"github.com/shantanu-hashcash/go/support/render/problem"
+	"github.com/HashCash-Consultants/go/clients/auroraclient"
+	hProtocol "github.com/HashCash-Consultants/go/protocols/aurora"
+	"github.com/HashCash-Consultants/go/support/errors"
+	"github.com/HashCash-Consultants/go/support/render/problem"
 	"github.com/stretchr/testify/require"
 )
 

@@ -118,7 +118,7 @@ GET `https://ticker.hcnet.org/markets.json`
 }
 ```
 ## Asset (Currency) Data
-Lists all the valid assets within the Hcnet network. The provided fields are based on the [Currency Documentation of SEP-0001](https://github.com/shantanu-hashcash/hcnet-protocol/blob/master/ecosystem/sep-0001.md#currency-documentation) and the [Asset fields from Aurora](https://developers.hcnet.org/api/resources/assets/).
+Lists all the valid assets within the Hcnet network. The provided fields are based on the [Currency Documentation of SEP-0001](https://github.com/HashCash-Consultants/hcnet-protocol/blob/master/ecosystem/sep-0001.md#currency-documentation) and the [Asset fields from Aurora](https://developers.hcnet.org/api/resources/assets/).
 ### Response Fields
 
 * `generated_at`: UNIX timestamp of when data was generated

@@ -15,7 +15,7 @@ When run on the terminal it:
 ## Installing
 
 ```bash
-$ go get -u github.com/shantanu-hashcash/go/tools/hcnet-sign
+$ go get -u github.com/HashCash-Consultants/go/tools/hcnet-sign
 ```
 
 ## Running

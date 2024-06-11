@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/shantanu-hashcash/go/clients/auroraclient"
+	"github.com/HashCash-Consultants/go/clients/auroraclient"
 	"github.com/stretchr/testify/require"
 )
 

@@ -3,7 +3,7 @@ package main
 import (
 	"flag"
 
-	exporter "github.com/shantanu-hashcash/go/exp/services/ledgerexporter/internal"
+	exporter "github.com/HashCash-Consultants/go/exp/services/ledgerexporter/internal"
 )
 
 func main() {

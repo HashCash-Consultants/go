@@ -3,7 +3,7 @@ package assets
 
 import (
 	"github.com/go-errors/errors"
-	"github.com/shantanu-hashcash/go/xdr"
+	"github.com/HashCash-Consultants/go/xdr"
 )
 
 // ErrInvalidString gets returns when the string form of the asset type is invalid

@@ -7,9 +7,9 @@ import (
 	"strings"
 	"testing"
 
-	hc "github.com/shantanu-hashcash/go/clients/auroraclient"
-	"github.com/shantanu-hashcash/go/clients/hcnettoml"
-	"github.com/shantanu-hashcash/go/support/http/httptest"
+	hc "github.com/HashCash-Consultants/go/clients/auroraclient"
+	"github.com/HashCash-Consultants/go/clients/hcnettoml"
+	"github.com/HashCash-Consultants/go/support/http/httptest"
 	"github.com/stretchr/testify/assert"
 )
 

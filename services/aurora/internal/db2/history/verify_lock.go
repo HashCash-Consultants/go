@@ -3,8 +3,8 @@ package history
 import (
 	"context"
 
-	"github.com/shantanu-hashcash/go/support/db"
-	"github.com/shantanu-hashcash/go/support/errors"
+	"github.com/HashCash-Consultants/go/support/db"
+	"github.com/HashCash-Consultants/go/support/errors"
 )
 
 // stateVerificationLockId is the objid for the advisory lock acquired during

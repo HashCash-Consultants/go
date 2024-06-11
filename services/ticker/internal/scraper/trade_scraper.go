@@ -3,10 +3,10 @@ package scraper
 import (
 	"time"
 
-	"github.com/shantanu-hashcash/go/services/ticker/internal/utils"
+	"github.com/HashCash-Consultants/go/services/ticker/internal/utils"
 
-	auroraclient "github.com/shantanu-hashcash/go/clients/auroraclient"
-	hProtocol "github.com/shantanu-hashcash/go/protocols/aurora"
+	auroraclient "github.com/HashCash-Consultants/go/clients/auroraclient"
+	hProtocol "github.com/HashCash-Consultants/go/protocols/aurora"
 )
 
 // checkRecords check if a list of records contains entries older than minTime. If it does,

@@ -5,7 +5,7 @@ replacement: https://developers.hcnet.org/api/resources/accounts/
 
 This endpoint allows filtering accounts who have a given `signer` or have a trustline to an `asset`. The result is a list of [accounts](../resources/account.md).
 
-To find all accounts who are trustees to an asset, pass the query parameter `asset` using the canonical representation for an issued assets which is `Code:IssuerAccountID`. Read more about canonical representation of assets in [SEP-0011](https://github.com/shantanu-hashcash/hcnet-protocol/blob/0c675fb3a482183dcf0f5db79c12685acf82a95c/ecosystem/sep-0011.md#values).
+To find all accounts who are trustees to an asset, pass the query parameter `asset` using the canonical representation for an issued assets which is `Code:IssuerAccountID`. Read more about canonical representation of assets in [SEP-0011](https://github.com/HashCash-Consultants/hcnet-protocol/blob/0c675fb3a482183dcf0f5db79c12685acf82a95c/ecosystem/sep-0011.md#values).
 
 ### Notes
 - The default behavior when filtering by `asset` is to return accounts with `authorized` and `unauthorized` trustlines.

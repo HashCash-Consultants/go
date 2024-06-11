@@ -22,9 +22,9 @@ import (
 	fscache "github.com/djherbis/fscache"
 	log "github.com/sirupsen/logrus"
 
-	"github.com/shantanu-hashcash/go/support/errors"
-	"github.com/shantanu-hashcash/go/support/storage"
-	"github.com/shantanu-hashcash/go/xdr"
+	"github.com/HashCash-Consultants/go/support/errors"
+	"github.com/HashCash-Consultants/go/support/storage"
+	"github.com/HashCash-Consultants/go/xdr"
 )
 
 const hexPrefixPat = "/[0-9a-f]{2}/[0-9a-f]{2}/[0-9a-f]{2}/"

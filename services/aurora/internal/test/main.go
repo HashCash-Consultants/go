@@ -11,8 +11,8 @@ import (
 
 	"github.com/jmoiron/sqlx"
 	"github.com/sirupsen/logrus"
-	tdb "github.com/shantanu-hashcash/go/services/aurora/internal/test/db"
-	"github.com/shantanu-hashcash/go/support/log"
+	tdb "github.com/HashCash-Consultants/go/services/aurora/internal/test/db"
+	"github.com/HashCash-Consultants/go/support/log"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

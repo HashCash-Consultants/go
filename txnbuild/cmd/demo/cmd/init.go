@@ -5,8 +5,8 @@ import (
 
 	log "github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
-	"github.com/shantanu-hashcash/go/clients/auroraclient"
-	demo "github.com/shantanu-hashcash/go/txnbuild/cmd/demo/operations"
+	"github.com/HashCash-Consultants/go/clients/auroraclient"
+	demo "github.com/HashCash-Consultants/go/txnbuild/cmd/demo/operations"
 )
 
 // initCmd represents the init command

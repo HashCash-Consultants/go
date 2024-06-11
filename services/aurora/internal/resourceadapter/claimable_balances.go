@@ -4,12 +4,12 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/shantanu-hashcash/go/amount"
-	protocol "github.com/shantanu-hashcash/go/protocols/aurora"
-	auroraContext "github.com/shantanu-hashcash/go/services/aurora/internal/context"
-	"github.com/shantanu-hashcash/go/services/aurora/internal/db2/history"
-	"github.com/shantanu-hashcash/go/support/render/hal"
-	"github.com/shantanu-hashcash/go/xdr"
+	"github.com/HashCash-Consultants/go/amount"
+	protocol "github.com/HashCash-Consultants/go/protocols/aurora"
+	auroraContext "github.com/HashCash-Consultants/go/services/aurora/internal/context"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/db2/history"
+	"github.com/HashCash-Consultants/go/support/render/hal"
+	"github.com/HashCash-Consultants/go/xdr"
 )
 
 // PopulateClaimableBalance fills out the resource's fields

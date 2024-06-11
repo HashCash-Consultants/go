@@ -6,8 +6,8 @@ import (
 
 	"github.com/prometheus/client_golang/prometheus"
 
-	proto "github.com/shantanu-hashcash/go/protocols/hcnetcore"
-	"github.com/shantanu-hashcash/go/xdr"
+	proto "github.com/HashCash-Consultants/go/protocols/hcnetcore"
+	"github.com/HashCash-Consultants/go/xdr"
 )
 
 var envelopeTypeToLabel = map[xdr.EnvelopeType]string{

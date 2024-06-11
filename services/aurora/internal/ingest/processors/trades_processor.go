@@ -8,13 +8,13 @@ import (
 
 	"github.com/guregu/null"
 
-	"github.com/shantanu-hashcash/go/exp/orderbook"
-	"github.com/shantanu-hashcash/go/ingest"
-	"github.com/shantanu-hashcash/go/services/aurora/internal/db2/history"
-	"github.com/shantanu-hashcash/go/support/db"
-	"github.com/shantanu-hashcash/go/support/errors"
-	"github.com/shantanu-hashcash/go/toid"
-	"github.com/shantanu-hashcash/go/xdr"
+	"github.com/HashCash-Consultants/go/exp/orderbook"
+	"github.com/HashCash-Consultants/go/ingest"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/db2/history"
+	"github.com/HashCash-Consultants/go/support/db"
+	"github.com/HashCash-Consultants/go/support/errors"
+	"github.com/HashCash-Consultants/go/toid"
+	"github.com/HashCash-Consultants/go/xdr"
 )
 
 // TradeProcessor operations processor
@@ -261,7 +261,7 @@ func (p *TradeProcessor) roundingSlippage(
 			true,
 		)
 		if !ok {
-			// Temporary workaround for https://github.com/shantanu-hashcash/go/issues/4203
+			// Temporary workaround for https://github.com/HashCash-Consultants/go/issues/4203
 			// Given strict receives that would underflow here, set maximum
 			// slippage so they get excluded.
 			roundingSlippageBips = xdr.Int64(math.MaxInt64)
@@ -277,7 +277,7 @@ func (p *TradeProcessor) roundingSlippage(
 			true,
 		)
 		if !ok {
-			// Temporary workaround for https://github.com/shantanu-hashcash/go/issues/4203
+			// Temporary workaround for https://github.com/HashCash-Consultants/go/issues/4203
 			// Given strict sends that would overflow here, set maximum slippage
 			// so they get excluded.
 			roundingSlippageBips = xdr.Int64(math.MaxInt64)

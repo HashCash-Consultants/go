@@ -3,8 +3,8 @@ package history
 import (
 	"context"
 
-	"github.com/shantanu-hashcash/go/support/db"
-	"github.com/shantanu-hashcash/go/xdr"
+	"github.com/HashCash-Consultants/go/support/db"
+	"github.com/HashCash-Consultants/go/xdr"
 
 	"github.com/stretchr/testify/mock"
 )

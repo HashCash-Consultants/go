@@ -4,8 +4,8 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/shantanu-hashcash/go/services/aurora/internal/context"
-	"github.com/shantanu-hashcash/go/services/aurora/internal/db2/history"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/context"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/db2/history"
 )
 
 // AccountDataQuery query struct for account data end-point

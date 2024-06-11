@@ -2,7 +2,7 @@ package index
 
 import (
 	"github.com/prometheus/client_golang/prometheus"
-	types "github.com/shantanu-hashcash/go/exp/lightaurora/index/types"
+	types "github.com/HashCash-Consultants/go/exp/lightaurora/index/types"
 	"github.com/stretchr/testify/mock"
 )
 

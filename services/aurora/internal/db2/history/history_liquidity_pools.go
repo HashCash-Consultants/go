@@ -6,8 +6,8 @@ import (
 
 	sq "github.com/Masterminds/squirrel"
 
-	"github.com/shantanu-hashcash/go/support/db"
-	"github.com/shantanu-hashcash/go/support/errors"
+	"github.com/HashCash-Consultants/go/support/db"
+	"github.com/HashCash-Consultants/go/support/errors"
 )
 
 // QHistoryLiquidityPools defines account related queries.
@@ -31,7 +31,7 @@ func (q *Q) CreateHistoryLiquidityPools(ctx context.Context, poolIDs []string, b
 	}
 
 	// sort before inserting to prevent deadlocks on acquiring a ShareLock
-	// https://github.com/shantanu-hashcash/go/issues/2370
+	// https://github.com/HashCash-Consultants/go/issues/2370
 	sort.Strings(poolIDs)
 	var deduped []string
 	for i, id := range poolIDs {

@@ -22,7 +22,7 @@ To run some tests these tools are also required:
 Check the code out anywhere, using a `GOPATH` is not required.
 
 ```
-git clone https://github.com/shantanu-hashcash/go
+git clone https://github.com/HashCash-Consultants/go
 ```
 
 ## Installing dependencies
@@ -96,4 +96,4 @@ git checkout <branch>
 golistcmp go.list.master <(go list -m -json all)
 ```
 
-[golistcmp]: https://github.com/shantanu-hashcash/golistcmp
+[golistcmp]: https://github.com/HashCash-Consultants/golistcmp

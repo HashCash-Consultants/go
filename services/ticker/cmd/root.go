@@ -6,8 +6,8 @@ import (
 
 	"github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
-	auroraclient "github.com/shantanu-hashcash/go/clients/auroraclient"
-	hlog "github.com/shantanu-hashcash/go/support/log"
+	auroraclient "github.com/HashCash-Consultants/go/clients/auroraclient"
+	hlog "github.com/HashCash-Consultants/go/support/log"
 )
 
 var DatabaseURL string

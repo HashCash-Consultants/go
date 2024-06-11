@@ -10,9 +10,9 @@ import (
 	"time"
 
 	"github.com/prometheus/client_golang/prometheus"
-	"github.com/shantanu-hashcash/go/support/compressxdr"
-	"github.com/shantanu-hashcash/go/support/datastore"
-	"github.com/shantanu-hashcash/go/support/errors"
+	"github.com/HashCash-Consultants/go/support/compressxdr"
+	"github.com/HashCash-Consultants/go/support/datastore"
+	"github.com/HashCash-Consultants/go/support/errors"
 	"github.com/stretchr/testify/mock"
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"

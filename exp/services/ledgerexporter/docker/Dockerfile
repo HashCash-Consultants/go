@@ -1,6 +1,6 @@
 FROM golang:1.22-bullseye AS builder
 
-WORKDIR /go/src/github.com/shantanu-hashcash/go
+WORKDIR /go/src/github.com/HashCash-Consultants/go
 
 COPY go.mod ./
 COPY go.sum ./
@@ -9,7 +9,7 @@ RUN go mod download
 
 COPY . ./
 
-RUN go install github.com/shantanu-hashcash/go/exp/services/ledgerexporter
+RUN go install github.com/HashCash-Consultants/go/exp/services/ledgerexporter
 
 FROM ubuntu:22.04
 ARG HCNET_CORE_VERSION

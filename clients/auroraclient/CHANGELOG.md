@@ -5,30 +5,30 @@ file.  This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Unreleased
 
-## [v11.0.0](https://github.com/shantanu-hashcash/go/releases/tag/auroraclient-v11.0.0) - 2023-03-29
+## [v11.0.0](https://github.com/HashCash-Consultants/go/releases/tag/auroraclient-v11.0.0) - 2023-03-29
 
 * Type of `AccountSequence` field in `protocols/aurora.Account` was changed to `int64`.
 
-## [v10.0.0](https://github.com/shantanu-hashcash/go/releases/tag/auroraclient-v10.0.0) - 2022-04-18
+## [v10.0.0](https://github.com/HashCash-Consultants/go/releases/tag/auroraclient-v10.0.0) - 2022-04-18
 
 **This release adds support for Protocol 19:**
 
 * The library is updated to align with breaking changes to `txnbuild`.
 
 
-## [v10.0.0](https://github.com/shantanu-hashcash/go/releases/tag/auroraclient-v10.0.0) - 2022-04-18
+## [v10.0.0](https://github.com/HashCash-Consultants/go/releases/tag/auroraclient-v10.0.0) - 2022-04-18
 
 **This release adds support for Protocol 19:**
 
 * The library is updated to align with breaking changes to `txnbuild`.
 
 
-## [v9.0.0](https://github.com/shantanu-hashcash/go/releases/tag/auroraclient-v9.0.0) - 2022-01-10
+## [v9.0.0](https://github.com/HashCash-Consultants/go/releases/tag/auroraclient-v9.0.0) - 2022-01-10
 
 None
 
 
-## [8.0.0-beta.0](https://github.com/shantanu-hashcash/go/releases/tag/auroraclient-v8.0.0-beta.0) - 2021-10-04
+## [8.0.0-beta.0](https://github.com/HashCash-Consultants/go/releases/tag/auroraclient-v8.0.0-beta.0) - 2021-10-04
 
 **This release adds support for Protocol 18.**
 
@@ -40,40 +40,40 @@ None
 * Add `LiquidityPoolRequest` for getting details about a _specific_ liquidity pool via the `LiquidityPoolID` filter.
 
 
-## [v7.1.1](https://github.com/shantanu-hashcash/go/releases/tag/auroraclient-v7.1.1) - 2021-06-25
+## [v7.1.1](https://github.com/HashCash-Consultants/go/releases/tag/auroraclient-v7.1.1) - 2021-06-25
 
 * Added transaction and operation result codes to the auroraclient.Error string for easy glancing at string only errors for underlying cause.
-* Fix bug in the transaction submission where requests with large transaction payloads fail with an HTTP 414 URI Too Long error ([#3643](https://github.com/shantanu-hashcash/go/pull/3643)).
-* Fix a data race in `Client.fixAuroraURL`([#3690](https://github.com/shantanu-hashcash/go/pull/3690)).
-* Fix bug which occurs when parsing operations involving muxed accounts ([#3722](https://github.com/shantanu-hashcash/go/pull/3722)).
+* Fix bug in the transaction submission where requests with large transaction payloads fail with an HTTP 414 URI Too Long error ([#3643](https://github.com/HashCash-Consultants/go/pull/3643)).
+* Fix a data race in `Client.fixAuroraURL`([#3690](https://github.com/HashCash-Consultants/go/pull/3690)).
+* Fix bug which occurs when parsing operations involving muxed accounts ([#3722](https://github.com/HashCash-Consultants/go/pull/3722)).
 
-## [v7.0.0](https://github.com/shantanu-hashcash/go/releases/tag/auroraclient-v7.0.0) - 2021-05-15
-
-None
-
-## [v6.0.0](https://github.com/shantanu-hashcash/go/releases/tag/auroraclient-v6.0.0) - 2021-02-22
+## [v7.0.0](https://github.com/HashCash-Consultants/go/releases/tag/auroraclient-v7.0.0) - 2021-05-15
 
 None
 
-## [v5.0.0](https://github.com/shantanu-hashcash/go/releases/tag/auroraclient-v5.0.0) - 2020-11-12
+## [v6.0.0](https://github.com/HashCash-Consultants/go/releases/tag/auroraclient-v6.0.0) - 2021-02-22
 
 None
 
-## [v4.2.0](https://github.com/shantanu-hashcash/go/releases/tag/auroraclient-v4.2.0) - 2020-11-11
+## [v5.0.0](https://github.com/HashCash-Consultants/go/releases/tag/auroraclient-v5.0.0) - 2020-11-12
 
 None
 
-## [v4.1.0](https://github.com/shantanu-hashcash/go/releases/tag/auroraclient-v4.1.0) - 2020-10-16
+## [v4.2.0](https://github.com/HashCash-Consultants/go/releases/tag/auroraclient-v4.2.0) - 2020-11-11
 
 None
 
-## [v4.0.1](https://github.com/shantanu-hashcash/go/releases/tag/auroraclient-v4.0.1) - 2020-10-02
+## [v4.1.0](https://github.com/HashCash-Consultants/go/releases/tag/auroraclient-v4.1.0) - 2020-10-16
 
 None
 
-## [v4.0.0](https://github.com/shantanu-hashcash/go/releases/tag/auroraclient-v4.0.0) - 2020-09-29
+## [v4.0.1](https://github.com/HashCash-Consultants/go/releases/tag/auroraclient-v4.0.1) - 2020-10-02
 
-Added new client methods and effects supporting [Protocol 14](https://github.com/shantanu-hashcash/go/issues/3035).
+None
+
+## [v4.0.0](https://github.com/HashCash-Consultants/go/releases/tag/auroraclient-v4.0.0) - 2020-09-29
+
+Added new client methods and effects supporting [Protocol 14](https://github.com/HashCash-Consultants/go/issues/3035).
 
 * New client methods
   * `ClaimableBalances(req ClaimableBalanceRequest)` - returns details about available claimable balances, possibly filtered to a specific sponsor or other parameters.
@@ -95,7 +95,7 @@ Added new client methods and effects supporting [Protocol 14](https://github.com
 
 * Dropped support for Go 1.13.
 
-## [v3.0.0](https://github.com/shantanu-hashcash/go/releases/tag/auroraclient-v3.0.0) - 2020-04-28
+## [v3.0.0](https://github.com/HashCash-Consultants/go/releases/tag/auroraclient-v3.0.0) - 2020-04-28
 
 ### Breaking changes
 
@@ -108,11 +108,11 @@ Added new client methods and effects supporting [Protocol 14](https://github.com
 ### Add
 
 - Add `IsNotFoundError`
-- Add `client.SubmitFeeBumpTransaction` and `client.SubmitFeeBumpTransactionWithOptions` for submitting [fee bump transactions](https://github.com/shantanu-hashcash/hcnet-protocol/blob/master/core/cap-0015.md). Note that fee bump transactions will only be accepted by Hcnet Core once Protocol 13 is enabled.
+- Add `client.SubmitFeeBumpTransaction` and `client.SubmitFeeBumpTransactionWithOptions` for submitting [fee bump transactions](https://github.com/HashCash-Consultants/hcnet-protocol/blob/master/core/cap-0015.md). Note that fee bump transactions will only be accepted by Hcnet Core once Protocol 13 is enabled.
 
 ### Updates
 
-- To support [CAP0018](https://github.com/shantanu-hashcash/hcnet-protocol/blob/master/core/cap-0018.md) Fine-Grained Control of Authorization:
+- To support [CAP0018](https://github.com/HashCash-Consultants/hcnet-protocol/blob/master/core/cap-0018.md) Fine-Grained Control of Authorization:
   - There is a new effect `TrustlineAuthorizedToMaintainLiabilities` which occurs when a trustline has been authorized to maintain liabilities.
   - The `AuthorizeToMaintainLiabilities` boolean field was added to the `AllowTrust` operation struct.
 - These fields were added to the `Transaction` struct to support fee bump transactions:
@@ -128,15 +128,15 @@ Added new client methods and effects supporting [Protocol 14](https://github.com
 
 - Dropped support for Go 1.12.
 
-## [v2.2.0](https://github.com/shantanu-hashcash/go/releases/tag/auroraclient-v2.2.0) - 2020-03-26
+## [v2.2.0](https://github.com/HashCash-Consultants/go/releases/tag/auroraclient-v2.2.0) - 2020-03-26
 
 ### Added
 
-- Add `client.SubmitTransactionWithOptions` with support for [SEP0029](https://github.com/shantanu-hashcash/hcnet-protocol/blob/master/ecosystem/sep-0029.md).
+- Add `client.SubmitTransactionWithOptions` with support for [SEP0029](https://github.com/HashCash-Consultants/hcnet-protocol/blob/master/ecosystem/sep-0029.md).
     If any of the operations included in `client.SubmitTransactionWithOptions` is of type
     `payment`, `pathPaymentStrictReceive`, `pathPaymentStrictSend`, or
     `mergeAccount`, then the SDK will load the destination account from Aurora and check if
-    `config.memo_required` is set to `1` as defined in [SEP0029](https://github.com/shantanu-hashcash/hcnet-protocol/blob/master/ecosystem/sep-0029.md).
+    `config.memo_required` is set to `1` as defined in [SEP0029](https://github.com/HashCash-Consultants/hcnet-protocol/blob/master/ecosystem/sep-0029.md).
 
     For performance reasons, you may choose to skip the check by setting the `SkipMemoRequiredCheck` to `true`:
 
@@ -151,11 +151,11 @@ Added new client methods and effects supporting [Protocol 14](https://github.com
 -  Change `client.SubmitTransaction` to always check if memo is required.
 	If you want to skip the check, call `client.SubmitTransactionWithOptions` instead.
 
-## [v2.1.0](https://github.com/shantanu-hashcash/go/releases/tag/auroraclient-v2.1.0) - 2020-02-24
+## [v2.1.0](https://github.com/HashCash-Consultants/go/releases/tag/auroraclient-v2.1.0) - 2020-02-24
 
 ### Added
 
-- Add `client.StrictReceivePaths` and  `client.StrictSendPaths` ([#2237](https://github.com/shantanu-hashcash/go/pull/2237)).
+- Add `client.StrictReceivePaths` and  `client.StrictSendPaths` ([#2237](https://github.com/HashCash-Consultants/go/pull/2237)).
 
 `client.StrictReceivePaths`:
 
@@ -193,7 +193,7 @@ Added new client methods and effects supporting [Protocol 14](https://github.com
 	paths, err := client.StrictSendPaths(pr)
 ```
 
-- Add `client.OfferDetails` ([#2303](https://github.com/shantanu-hashcash/go/pull/2303)).
+- Add `client.OfferDetails` ([#2303](https://github.com/HashCash-Consultants/go/pull/2303)).
 
 ```go
 	client := auroraclient.DefaultPublicNetClient
@@ -205,7 +205,7 @@ Added new client methods and effects supporting [Protocol 14](https://github.com
 	fmt.Print(offer)
 ```
 
-- Add support to `client.Offers` for the filters: `Seller`, `Selling` and `Buying` ([#2230](https://github.com/shantanu-hashcash/go/pull/2230)).
+- Add support to `client.Offers` for the filters: `Seller`, `Selling` and `Buying` ([#2230](https://github.com/HashCash-Consultants/go/pull/2230)).
 ```go
 	offerRequest = auroraclient.OfferRequest{
 		Seller:  "GCLWGQPMKXQSPF776IU33AH4PZNOOWNAWGGKVTBQMIC5IMKUNP3E6NVU",
@@ -220,7 +220,7 @@ Added new client methods and effects supporting [Protocol 14](https://github.com
 	}
 	fmt.Print(offers)
 ```
-- Add `client.Accounts` ([#2229](https://github.com/shantanu-hashcash/go/pull/2229)).
+- Add `client.Accounts` ([#2229](https://github.com/HashCash-Consultants/go/pull/2229)).
 
 This feature allows account retrieval filtering by signer or by a trustline to an asset.
 
@@ -236,53 +236,53 @@ This feature allows account retrieval filtering by signer or by a trustline to a
 	fmt.Print(account)
 ```
 
-- Add `IsNotFoundError` ([#2197](https://github.com/shantanu-hashcash/go/pull/2197)).
+- Add `IsNotFoundError` ([#2197](https://github.com/HashCash-Consultants/go/pull/2197)).
 
 ### Deprecated
 
-- Make `hProtocol.FeeStats` backwards compatible with Aurora `0.24.1` and `1.0` deprecating usage of `*_accepted_fee` ([#2290](https://github.com/shantanu-hashcash/go/pull/2290)).
+- Make `hProtocol.FeeStats` backwards compatible with Aurora `0.24.1` and `1.0` deprecating usage of `*_accepted_fee` ([#2290](https://github.com/HashCash-Consultants/go/pull/2290)).
 
 All the `_accepted_fee` fields were removed in Aurora 1.0, however we extended this version of the SDK to backfill the `FeeStat` struct using data from `MaxFee`. This is a temporary workaround and it will be removed in auroraclient 3.0. Please start using data from `FeeStat.MaxFee` instead.
 
 
-## [v2.0.0](https://github.com/shantanu-hashcash/go/releases/tag/auroraclient-v2.0.0) - 2020-01-13
+## [v2.0.0](https://github.com/HashCash-Consultants/go/releases/tag/auroraclient-v2.0.0) - 2020-01-13
 
 - Add custom `UnmarshalJSON()` implementations to Aurora protocol structs so `int64` fields can be parsed as JSON numbers or JSON strings
 - Remove deprecated `fee_paid field` from Transaction response
 - Dropped support for Go 1.10, 1.11.
 
-## [v1.4.0](https://github.com/shantanu-hashcash/go/releases/tag/auroraclient-v1.4.0) - 2019-08-09
+## [v1.4.0](https://github.com/HashCash-Consultants/go/releases/tag/auroraclient-v1.4.0) - 2019-08-09
 
-- Add support for querying operation endpoint with `join` parameter [#1521](https://github.com/shantanu-hashcash/go/issues/1521).
+- Add support for querying operation endpoint with `join` parameter [#1521](https://github.com/HashCash-Consultants/go/issues/1521).
 - Add support for querying previous and next trade aggregations with `Client.NextTradeAggregationsPage` and `Client.PrevTradeAggregationsPage` methods.
 
 
-## [v1.3.0](https://github.com/shantanu-hashcash/go/releases/tag/auroraclient-v1.3.0) - 2019-07-08
+## [v1.3.0](https://github.com/HashCash-Consultants/go/releases/tag/auroraclient-v1.3.0) - 2019-07-08
 
 - Transaction information returned by methods now contain new fields: `FeeCharged` and `MaxFee`. `FeePaid` is deprecated and will be removed in later versions.
 - Improved unit test for `Client.FetchTimebounds` method.
 - Added `Client.HomeDomainForAccount` helper method for retrieving the home domain of an account.
 
-## [v1.2.0](https://github.com/shantanu-hashcash/go/releases/tag/auroraclient-v1.2.0) - 2019-05-16
+## [v1.2.0](https://github.com/HashCash-Consultants/go/releases/tag/auroraclient-v1.2.0) - 2019-05-16
 
-- Added support for returning the previous and next set of pages for a aurora response; issue [#985](https://github.com/shantanu-hashcash/go/issues/985).
-- Fixed bug reported in [#1254](https://github.com/shantanu-hashcash/go/issues/1254)  that causes a panic when using auroraclient in goroutines.
+- Added support for returning the previous and next set of pages for a aurora response; issue [#985](https://github.com/HashCash-Consultants/go/issues/985).
+- Fixed bug reported in [#1254](https://github.com/HashCash-Consultants/go/issues/1254)  that causes a panic when using auroraclient in goroutines.
 
 
-## [v1.1.0](https://github.com/shantanu-hashcash/go/releases/tag/auroraclient-v1.1.0) - 2019-05-02
+## [v1.1.0](https://github.com/HashCash-Consultants/go/releases/tag/auroraclient-v1.1.0) - 2019-05-02
 
 ### Added
 
 - `Client.Root()` method for querying the root endpoint of a aurora server.
-- Support for returning concrete effect types[#1217](https://github.com/shantanu-hashcash/go/pull/1217)
+- Support for returning concrete effect types[#1217](https://github.com/HashCash-Consultants/go/pull/1217)
 - Fix when no HTTP client is provided
 
 ### Changes
 
 - `Client.Fund()` now returns `TransactionSuccess` instead of a http response pointer.
 
-- Querying the effects endpoint now supports returning the concrete effect type for each effect. This is also supported in streaming mode. See the [docs](https://godoc.org/github.com/shantanu-hashcash/go/clients/auroraclient#Client.Effects) for examples.
+- Querying the effects endpoint now supports returning the concrete effect type for each effect. This is also supported in streaming mode. See the [docs](https://godoc.org/github.com/HashCash-Consultants/go/clients/auroraclient#Client.Effects) for examples.
 
-## [v1.0.0](https://github.com/shantanu-hashcash/go/releases/tag/auroraclient-v1.0) - 2019-04-26
+## [v1.0.0](https://github.com/HashCash-Consultants/go/releases/tag/auroraclient-v1.0) - 2019-04-26
 
  * Initial release

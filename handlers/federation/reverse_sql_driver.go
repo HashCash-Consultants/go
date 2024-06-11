@@ -3,7 +3,7 @@ package federation
 import (
 	"context"
 
-	"github.com/shantanu-hashcash/go/support/errors"
+	"github.com/HashCash-Consultants/go/support/errors"
 )
 
 // LookupReverseRecord implements `ReverseDriver` by performing

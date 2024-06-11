@@ -3,12 +3,12 @@ package resourceadapter
 import (
 	"context"
 
-	"github.com/shantanu-hashcash/go/protocols/aurora/base"
-	"github.com/shantanu-hashcash/go/protocols/aurora/effects"
-	auroraContext "github.com/shantanu-hashcash/go/services/aurora/internal/context"
-	"github.com/shantanu-hashcash/go/services/aurora/internal/db2/history"
-	"github.com/shantanu-hashcash/go/support/render/hal"
-	"github.com/shantanu-hashcash/go/xdr"
+	"github.com/HashCash-Consultants/go/protocols/aurora/base"
+	"github.com/HashCash-Consultants/go/protocols/aurora/effects"
+	auroraContext "github.com/HashCash-Consultants/go/services/aurora/internal/context"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/db2/history"
+	"github.com/HashCash-Consultants/go/support/render/hal"
+	"github.com/HashCash-Consultants/go/xdr"
 )
 
 var EffectTypeNames = map[history.EffectType]string{

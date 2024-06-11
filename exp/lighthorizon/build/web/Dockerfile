@@ -1,9 +1,9 @@
 FROM golang:1.20 AS builder
 
-WORKDIR /go/src/github.com/shantanu-hashcash/go
+WORKDIR /go/src/github.com/HashCash-Consultants/go
 COPY . ./
 RUN go mod download
-RUN go install github.com/shantanu-hashcash/go/exp/lightaurora
+RUN go install github.com/HashCash-Consultants/go/exp/lightaurora
 
 FROM ubuntu:22.04
 

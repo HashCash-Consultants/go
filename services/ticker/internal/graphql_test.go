@@ -10,9 +10,9 @@ import (
 
 	"github.com/go-chi/chi"
 
-	"github.com/shantanu-hashcash/go/services/ticker/internal/gql"
-	"github.com/shantanu-hashcash/go/services/ticker/internal/tickerdb/tickerdbtest"
-	hlog "github.com/shantanu-hashcash/go/support/log"
+	"github.com/HashCash-Consultants/go/services/ticker/internal/gql"
+	"github.com/HashCash-Consultants/go/services/ticker/internal/tickerdb/tickerdbtest"
+	hlog "github.com/HashCash-Consultants/go/support/log"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

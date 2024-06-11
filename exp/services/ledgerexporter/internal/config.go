@@ -5,15 +5,15 @@ import (
 	_ "embed"
 	"os/exec"
 
-	"github.com/shantanu-hashcash/go/historyarchive"
-	"github.com/shantanu-hashcash/go/ingest/ledgerbackend"
-	"github.com/shantanu-hashcash/go/network"
+	"github.com/HashCash-Consultants/go/historyarchive"
+	"github.com/HashCash-Consultants/go/ingest/ledgerbackend"
+	"github.com/HashCash-Consultants/go/network"
 
 	"github.com/pelletier/go-toml"
 
-	"github.com/shantanu-hashcash/go/support/datastore"
-	"github.com/shantanu-hashcash/go/support/errors"
-	"github.com/shantanu-hashcash/go/support/ordered"
+	"github.com/HashCash-Consultants/go/support/datastore"
+	"github.com/HashCash-Consultants/go/support/errors"
+	"github.com/HashCash-Consultants/go/support/ordered"
 )
 
 const Pubnet = "pubnet"

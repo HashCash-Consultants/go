@@ -2,7 +2,7 @@
 
 👍🎉 First off, thanks for taking the time to contribute! 🎉👍
 
-Check out the [Hcnet Contribution Guide](https://github.com/shantanu-hashcash/.github/blob/master/CONTRIBUTING.md) that apply to all Hcnet projects.
+Check out the [Hcnet Contribution Guide](https://github.com/HashCash-Consultants/.github/blob/master/CONTRIBUTING.md) that apply to all Hcnet projects.
 
 ## Style guides
 

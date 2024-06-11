@@ -10,11 +10,11 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/shantanu-hashcash/go/historyarchive"
-	"github.com/shantanu-hashcash/go/ingest"
-	"github.com/shantanu-hashcash/go/services/aurora/internal/ingest/processors"
-	logpkg "github.com/shantanu-hashcash/go/support/log"
-	"github.com/shantanu-hashcash/go/xdr"
+	"github.com/HashCash-Consultants/go/historyarchive"
+	"github.com/HashCash-Consultants/go/ingest"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/ingest/processors"
+	logpkg "github.com/HashCash-Consultants/go/support/log"
+	"github.com/HashCash-Consultants/go/xdr"
 )
 
 const (

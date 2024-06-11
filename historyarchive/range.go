@@ -8,7 +8,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/shantanu-hashcash/go/support/ordered"
+	"github.com/HashCash-Consultants/go/support/ordered"
 	"golang.org/x/exp/slices"
 )
 

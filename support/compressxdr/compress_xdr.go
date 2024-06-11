@@ -3,7 +3,7 @@ package compressxdr
 import (
 	"io"
 
-	"github.com/shantanu-hashcash/go/support/errors"
+	"github.com/HashCash-Consultants/go/support/errors"
 )
 
 const (

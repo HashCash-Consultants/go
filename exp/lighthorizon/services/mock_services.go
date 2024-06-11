@@ -3,7 +3,7 @@ package services
 import (
 	"context"
 
-	"github.com/shantanu-hashcash/go/exp/lightaurora/common"
+	"github.com/HashCash-Consultants/go/exp/lightaurora/common"
 	"github.com/stretchr/testify/mock"
 )
 

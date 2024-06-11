@@ -3,9 +3,9 @@ package aurora
 import (
 	"testing"
 
-	"github.com/shantanu-hashcash/go/services/aurora/internal/db2/history"
-	"github.com/shantanu-hashcash/go/services/aurora/internal/ingest"
-	"github.com/shantanu-hashcash/go/xdr"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/db2/history"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/ingest"
+	"github.com/HashCash-Consultants/go/xdr"
 )
 
 func TestAccountActions_InvalidID(t *testing.T) {

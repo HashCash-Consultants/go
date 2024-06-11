@@ -11,9 +11,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/shantanu-hashcash/go/exp/lightaurora/actions"
-	"github.com/shantanu-hashcash/go/exp/lightaurora/services"
-	"github.com/shantanu-hashcash/go/support/render/problem"
+	"github.com/HashCash-Consultants/go/exp/lightaurora/actions"
+	"github.com/HashCash-Consultants/go/exp/lightaurora/services"
+	"github.com/HashCash-Consultants/go/support/render/problem"
 )
 
 func TestUnknownUrl(t *testing.T) {

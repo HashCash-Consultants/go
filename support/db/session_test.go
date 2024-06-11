@@ -11,7 +11,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/shantanu-hashcash/go/support/db/dbtest"
+	"github.com/HashCash-Consultants/go/support/db/dbtest"
 )
 
 func TestContextTimeoutDuringSql(t *testing.T) {

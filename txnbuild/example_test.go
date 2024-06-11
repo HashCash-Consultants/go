@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/shantanu-hashcash/go/price"
-	"github.com/shantanu-hashcash/go/xdr"
+	"github.com/HashCash-Consultants/go/price"
+	"github.com/HashCash-Consultants/go/xdr"
 
-	"github.com/shantanu-hashcash/go/keypair"
-	"github.com/shantanu-hashcash/go/network"
-	auroraclient "github.com/shantanu-hashcash/go/txnbuild/exampleauroraclient"
+	"github.com/HashCash-Consultants/go/keypair"
+	"github.com/HashCash-Consultants/go/network"
+	auroraclient "github.com/HashCash-Consultants/go/txnbuild/exampleauroraclient"
 )
 
 func ExampleInflation() {

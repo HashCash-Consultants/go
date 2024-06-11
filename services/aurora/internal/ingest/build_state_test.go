@@ -6,10 +6,10 @@ import (
 	"context"
 	"testing"
 
-	"github.com/shantanu-hashcash/go/ingest"
-	"github.com/shantanu-hashcash/go/ingest/ledgerbackend"
-	"github.com/shantanu-hashcash/go/support/errors"
-	"github.com/shantanu-hashcash/go/xdr"
+	"github.com/HashCash-Consultants/go/ingest"
+	"github.com/HashCash-Consultants/go/ingest/ledgerbackend"
+	"github.com/HashCash-Consultants/go/support/errors"
+	"github.com/HashCash-Consultants/go/xdr"
 	"github.com/stretchr/testify/suite"
 )
 

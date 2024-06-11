@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/shantanu-hashcash/go/support/errors"
-	"github.com/shantanu-hashcash/go/support/render/problem"
-	"github.com/shantanu-hashcash/go/xdr"
+	"github.com/HashCash-Consultants/go/support/errors"
+	"github.com/HashCash-Consultants/go/support/render/problem"
+	"github.com/HashCash-Consultants/go/xdr"
 )
 
 // SellingBuyingAssetQueryParams query struct for end-points requiring a selling

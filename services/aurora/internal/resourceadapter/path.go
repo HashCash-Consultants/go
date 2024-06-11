@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/shantanu-hashcash/go/amount"
-	"github.com/shantanu-hashcash/go/protocols/aurora"
-	"github.com/shantanu-hashcash/go/services/aurora/internal/paths"
+	"github.com/HashCash-Consultants/go/amount"
+	"github.com/HashCash-Consultants/go/protocols/aurora"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/paths"
 )
 
 func extractAsset(asset string, t, c, i *string) error {

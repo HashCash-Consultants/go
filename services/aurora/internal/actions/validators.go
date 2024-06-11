@@ -2,16 +2,16 @@ package actions
 
 import (
 	"encoding/hex"
-	"github.com/shantanu-hashcash/go/services/aurora/internal/db2/history"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/db2/history"
 	"strings"
 
 	"github.com/asaskevich/govalidator"
 	"github.com/gorilla/schema"
 
-	"github.com/shantanu-hashcash/go/amount"
-	"github.com/shantanu-hashcash/go/services/aurora/internal/assets"
-	"github.com/shantanu-hashcash/go/support/errors"
-	"github.com/shantanu-hashcash/go/xdr"
+	"github.com/HashCash-Consultants/go/amount"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/assets"
+	"github.com/HashCash-Consultants/go/support/errors"
+	"github.com/HashCash-Consultants/go/xdr"
 )
 
 // Validateable allow structs to define their own custom validations.

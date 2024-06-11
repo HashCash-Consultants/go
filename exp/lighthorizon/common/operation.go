@@ -3,9 +3,9 @@ package common
 import (
 	"encoding/hex"
 
-	"github.com/shantanu-hashcash/go/network"
-	"github.com/shantanu-hashcash/go/toid"
-	"github.com/shantanu-hashcash/go/xdr"
+	"github.com/HashCash-Consultants/go/network"
+	"github.com/HashCash-Consultants/go/toid"
+	"github.com/HashCash-Consultants/go/xdr"
 )
 
 type Operation struct {

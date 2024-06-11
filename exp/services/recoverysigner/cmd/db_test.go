@@ -5,9 +5,9 @@ import (
 
 	"github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
-	dbpkg "github.com/shantanu-hashcash/go/exp/services/recoverysigner/internal/db"
-	"github.com/shantanu-hashcash/go/exp/services/recoverysigner/internal/db/dbtest"
-	"github.com/shantanu-hashcash/go/support/log"
+	dbpkg "github.com/HashCash-Consultants/go/exp/services/recoverysigner/internal/db"
+	"github.com/HashCash-Consultants/go/exp/services/recoverysigner/internal/db/dbtest"
+	"github.com/HashCash-Consultants/go/support/log"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

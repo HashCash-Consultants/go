@@ -8,8 +8,8 @@ import (
 	"github.com/pkg/errors"
 	xdr3 "github.com/stellar/go-xdr/xdr3"
 
-	"github.com/shantanu-hashcash/go/support/log"
-	"github.com/shantanu-hashcash/go/xdr"
+	"github.com/HashCash-Consultants/go/support/log"
+	"github.com/HashCash-Consultants/go/xdr"
 )
 
 const (

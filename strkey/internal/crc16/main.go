@@ -13,7 +13,7 @@
 // Output for "123456789"     : 31C3
 //
 // ported from the c++ code in the hcnet-core codebase
-// (https://github.com/shantanu-hashcash/hcnet-core).  The code is licensed
+// (https://github.com/HashCash-Consultants/hcnet-core).  The code is licensed
 // as:
 /*
  * Copyright 2001-2010 Georges Menie (www.menie.org)

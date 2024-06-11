@@ -3,7 +3,7 @@ package utf8
 import (
 	"testing"
 
-	"github.com/shantanu-hashcash/go/services/aurora/internal/test"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/test"
 )
 
 func TestScrub(t *testing.T) {

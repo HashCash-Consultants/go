@@ -5,9 +5,9 @@ import (
 	"encoding/base64"
 	"testing"
 
-	xdr3 "github.com/shantanu-hashcash/go-xdr/xdr3"
-	"github.com/shantanu-hashcash/go/gxdr"
-	"github.com/shantanu-hashcash/go/xdr"
+	xdr3 "github.com/HashCash-Consultants/go-xdr/xdr3"
+	"github.com/HashCash-Consultants/go/gxdr"
+	"github.com/HashCash-Consultants/go/xdr"
 	goxdr "github.com/xdrpp/goxdr/xdr"
 )
 

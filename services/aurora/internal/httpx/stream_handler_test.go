@@ -15,12 +15,12 @@ import (
 	"github.com/go-chi/chi"
 	"github.com/stretchr/testify/mock"
 
-	"github.com/shantanu-hashcash/go/services/aurora/internal/actions"
-	auroraContext "github.com/shantanu-hashcash/go/services/aurora/internal/context"
-	"github.com/shantanu-hashcash/go/services/aurora/internal/ledger"
-	"github.com/shantanu-hashcash/go/services/aurora/internal/render/sse"
-	"github.com/shantanu-hashcash/go/support/db"
-	"github.com/shantanu-hashcash/go/support/render/hal"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/actions"
+	auroraContext "github.com/HashCash-Consultants/go/services/aurora/internal/context"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/ledger"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/render/sse"
+	"github.com/HashCash-Consultants/go/support/db"
+	"github.com/HashCash-Consultants/go/support/render/hal"
 )
 
 type testingFactory struct {

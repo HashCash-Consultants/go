@@ -2,7 +2,7 @@
 package exampleauroraclient
 
 import (
-	hProtocol "github.com/shantanu-hashcash/go/protocols/aurora"
+	hProtocol "github.com/HashCash-Consultants/go/protocols/aurora"
 )
 
 // AccountRequest is a simple mock

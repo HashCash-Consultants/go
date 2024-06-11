@@ -14,8 +14,8 @@ import (
 
 	"github.com/jmoiron/sqlx"
 	"github.com/lib/pq"
-	"github.com/shantanu-hashcash/go/support/db/sqlutils"
-	"github.com/shantanu-hashcash/go/support/errors"
+	"github.com/HashCash-Consultants/go/support/db/sqlutils"
+	"github.com/HashCash-Consultants/go/support/errors"
 	"github.com/stretchr/testify/require"
 )
 

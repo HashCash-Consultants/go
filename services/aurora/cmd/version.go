@@ -5,7 +5,7 @@ import (
 	"runtime"
 
 	"github.com/spf13/cobra"
-	apkg "github.com/shantanu-hashcash/go/support/app"
+	apkg "github.com/HashCash-Consultants/go/support/app"
 )
 
 var versionCmd = &cobra.Command{

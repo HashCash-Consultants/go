@@ -42,7 +42,7 @@ import (
 	"context"
 	"fmt"
 
-	backends "github.com/shantanu-hashcash/go/ingest/ledgerbackend"
+	backends "github.com/HashCash-Consultants/go/ingest/ledgerbackend"
 )
 
 func main() {
@@ -162,9 +162,9 @@ import (
 	"io"
 
 	"github.com/sirupsen/logrus"
-	"github.com/shantanu-hashcash/go/ingest"
-	backends "github.com/shantanu-hashcash/go/ingest/ledgerbackend"
-	"github.com/shantanu-hashcash/go/support/log"
+	"github.com/HashCash-Consultants/go/ingest"
+	backends "github.com/HashCash-Consultants/go/ingest/ledgerbackend"
+	"github.com/HashCash-Consultants/go/support/log"
 )
 
 func statistics() {
@@ -267,7 +267,7 @@ In this example, we'll leverage the `CheckpointChangeReader` to determine the po
 Let's begin. As before, there's a bit of boilerplate necessary. There's only a single additional import necessary relative to the [previous Preamble](#preamble). Since we're working with checkpoint ledgers, history archives come into play:
 
 ```go
-import "github.com/shantanu-hashcash/go/historyarchive"
+import "github.com/HashCash-Consultants/go/historyarchive"
 ```
 
 This time, we don't need a `LedgerBackend` instance whatsoever. The ledger changes we want to process will be fed into the reader through a different means. In our example, the history archives have the ~droids~ ledgers that we are looking for.
@@ -354,8 +354,8 @@ You can suppress many logs by changing the level to only print warnings and erro
 package main
 
 import (
-  ingest "github.com/shantanu-hashcash/go/ingest/ledgerbackend"
-  "github.com/shantanu-hashcash/go/support/log"
+  ingest "github.com/HashCash-Consultants/go/ingest/ledgerbackend"
+  "github.com/HashCash-Consultants/go/support/log"
   "github.com/sirupsen/logrus"
 )
 

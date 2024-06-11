@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/shantanu-hashcash/go/keypair"
-	supportlog "github.com/shantanu-hashcash/go/support/log"
+	"github.com/HashCash-Consultants/go/keypair"
+	supportlog "github.com/HashCash-Consultants/go/support/log"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"gopkg.in/square/go-jose.v2"

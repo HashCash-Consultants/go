@@ -2,7 +2,7 @@
 package main
 
 import (
-	"github.com/shantanu-hashcash/go/txnbuild/cmd/demo/cmd"
+	"github.com/HashCash-Consultants/go/txnbuild/cmd/demo/cmd"
 )
 
 func main() {

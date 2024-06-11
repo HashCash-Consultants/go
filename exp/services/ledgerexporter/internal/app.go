@@ -13,13 +13,13 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/collectors"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
-	"github.com/shantanu-hashcash/go/historyarchive"
+	"github.com/HashCash-Consultants/go/historyarchive"
 
-	"github.com/shantanu-hashcash/go/ingest/ledgerbackend"
-	_ "github.com/shantanu-hashcash/go/network"
-	"github.com/shantanu-hashcash/go/support/datastore"
-	supporthttp "github.com/shantanu-hashcash/go/support/http"
-	"github.com/shantanu-hashcash/go/support/log"
+	"github.com/HashCash-Consultants/go/ingest/ledgerbackend"
+	_ "github.com/HashCash-Consultants/go/network"
+	"github.com/HashCash-Consultants/go/support/datastore"
+	supporthttp "github.com/HashCash-Consultants/go/support/http"
+	"github.com/HashCash-Consultants/go/support/log"
 )
 
 var (

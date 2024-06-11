@@ -4,7 +4,7 @@ import (
 	"log"
 
 	"github.com/spf13/cobra"
-	"github.com/shantanu-hashcash/go/tools/hcnet-hd-wallet/commands"
+	"github.com/HashCash-Consultants/go/tools/hcnet-hd-wallet/commands"
 )
 
 var mainCmd = &cobra.Command{

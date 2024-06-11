@@ -5,8 +5,8 @@ import (
 
 	"github.com/guregu/null"
 
-	"github.com/shantanu-hashcash/go/services/aurora/internal/db2"
-	"github.com/shantanu-hashcash/go/services/aurora/internal/test"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/db2"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/test"
 )
 
 func TestQueryEmptyAccountSigners(t *testing.T) {

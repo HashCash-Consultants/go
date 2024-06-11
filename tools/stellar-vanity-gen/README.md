@@ -6,7 +6,7 @@ This folder contains `hcnet-vanity-gen` a simple utility to generate vanity addr
 ## Installing
 
 ```bash
-$ go get -u github.com/shantanu-hashcash/go/tools/hcnet-vanity-gen
+$ go get -u github.com/HashCash-Consultants/go/tools/hcnet-vanity-gen
 ```
 
 ## Running

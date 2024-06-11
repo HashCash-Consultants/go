@@ -3,8 +3,8 @@ package txnbuild
 import (
 	"fmt"
 
-	"github.com/shantanu-hashcash/go/support/errors"
-	"github.com/shantanu-hashcash/go/xdr"
+	"github.com/HashCash-Consultants/go/support/errors"
+	"github.com/HashCash-Consultants/go/xdr"
 )
 
 // MemoText is used to send human messages of up to 28 bytes of ASCII/UTF-8.

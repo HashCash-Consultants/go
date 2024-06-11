@@ -5,8 +5,8 @@ import (
 	"go/format"
 
 	"github.com/spf13/cobra"
-	"github.com/shantanu-hashcash/go/support/errors"
-	"github.com/shantanu-hashcash/go/xdr"
+	"github.com/HashCash-Consultants/go/support/errors"
+	"github.com/HashCash-Consultants/go/xdr"
 )
 
 var (

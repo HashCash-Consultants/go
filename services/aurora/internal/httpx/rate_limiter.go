@@ -7,9 +7,9 @@ import (
 
 	"github.com/stellar/throttled"
 
-	"github.com/shantanu-hashcash/go/services/aurora/internal/ledger"
-	hProblem "github.com/shantanu-hashcash/go/services/aurora/internal/render/problem"
-	"github.com/shantanu-hashcash/go/support/render/problem"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/ledger"
+	hProblem "github.com/HashCash-Consultants/go/services/aurora/internal/render/problem"
+	"github.com/HashCash-Consultants/go/support/render/problem"
 )
 
 const lruCacheSize = 50000

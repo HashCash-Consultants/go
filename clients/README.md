@@ -7,7 +7,7 @@ Packages here provide client libraries for accessing the ecosystem of Hcnet serv
 * `federation` - resolve federation addresses into hcnet account IDs, suitable for use within a transaction
 * `aurora` (DEPRECATED) - the original Aurora client, now superceded by `auroraclient`
 
-See [GoDoc](https://godoc.org/github.com/shantanu-hashcash/go/clients) for more details.
+See [GoDoc](https://godoc.org/github.com/HashCash-Consultants/go/clients) for more details.
 
 ## For developers: Adding new client packages
 

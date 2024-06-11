@@ -8,8 +8,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/shantanu-hashcash/go/support/clock"
-	"github.com/shantanu-hashcash/go/support/errors"
+	"github.com/HashCash-Consultants/go/support/clock"
+	"github.com/HashCash-Consultants/go/support/errors"
 )
 
 // decodeResponse decodes the response from a request to a aurora server

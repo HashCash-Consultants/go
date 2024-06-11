@@ -5,17 +5,17 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/shantanu-hashcash/go/services/aurora/internal/actions"
-	auroraContext "github.com/shantanu-hashcash/go/services/aurora/internal/context"
-	"github.com/shantanu-hashcash/go/services/aurora/internal/ledger"
-	"github.com/shantanu-hashcash/go/services/aurora/internal/render"
-	hProblem "github.com/shantanu-hashcash/go/services/aurora/internal/render/problem"
-	"github.com/shantanu-hashcash/go/services/aurora/internal/render/sse"
-	"github.com/shantanu-hashcash/go/support/db"
-	"github.com/shantanu-hashcash/go/support/errors"
-	"github.com/shantanu-hashcash/go/support/render/hal"
-	"github.com/shantanu-hashcash/go/support/render/httpjson"
-	"github.com/shantanu-hashcash/go/support/render/problem"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/actions"
+	auroraContext "github.com/HashCash-Consultants/go/services/aurora/internal/context"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/ledger"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/render"
+	hProblem "github.com/HashCash-Consultants/go/services/aurora/internal/render/problem"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/render/sse"
+	"github.com/HashCash-Consultants/go/support/db"
+	"github.com/HashCash-Consultants/go/support/errors"
+	"github.com/HashCash-Consultants/go/support/render/hal"
+	"github.com/HashCash-Consultants/go/support/render/httpjson"
+	"github.com/HashCash-Consultants/go/support/render/problem"
 )
 
 type objectAction interface {

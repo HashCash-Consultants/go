@@ -5,8 +5,8 @@ import (
 	"sort"
 
 	"github.com/pkg/errors"
-	"github.com/shantanu-hashcash/go/historyarchive"
-	"github.com/shantanu-hashcash/go/support/log"
+	"github.com/HashCash-Consultants/go/historyarchive"
+	"github.com/HashCash-Consultants/go/support/log"
 )
 
 type ResumableManager interface {

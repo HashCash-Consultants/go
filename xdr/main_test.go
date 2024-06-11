@@ -7,8 +7,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/shantanu-hashcash/go/gxdr"
-	"github.com/shantanu-hashcash/go/randxdr"
+	"github.com/HashCash-Consultants/go/gxdr"
+	"github.com/HashCash-Consultants/go/randxdr"
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"

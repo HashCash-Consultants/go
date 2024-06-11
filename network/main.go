@@ -7,9 +7,9 @@ import (
 
 	"strings"
 
-	"github.com/shantanu-hashcash/go/hash"
-	"github.com/shantanu-hashcash/go/support/errors"
-	"github.com/shantanu-hashcash/go/xdr"
+	"github.com/HashCash-Consultants/go/hash"
+	"github.com/HashCash-Consultants/go/support/errors"
+	"github.com/HashCash-Consultants/go/xdr"
 )
 
 const (

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"runtime"
 
-	"github.com/shantanu-hashcash/go/ingest"
+	"github.com/HashCash-Consultants/go/ingest"
 )
 
 func bToMb(b uint64) uint64 {

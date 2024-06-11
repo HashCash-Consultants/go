@@ -6,8 +6,8 @@ import (
 
 	"github.com/go-chi/chi"
 	"github.com/go-chi/chi/middleware"
-	"github.com/shantanu-hashcash/go/support/http/httptest"
-	"github.com/shantanu-hashcash/go/support/log"
+	"github.com/HashCash-Consultants/go/support/http/httptest"
+	"github.com/HashCash-Consultants/go/support/log"
 	"github.com/stretchr/testify/assert"
 )
 

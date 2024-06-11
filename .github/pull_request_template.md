@@ -19,7 +19,7 @@ change is, and why it is being made, with enough context for anyone to understan
 * [ ] This PR adds tests for the most critical parts of the new functionality or fixes.
 * [ ] I've updated any docs ([developer docs](https://developers.hcnet.org/api/), `.md`
   files, etc... affected by this change). Take a look in the `docs` folder for a given service,
-  like [this one](https://github.com/shantanu-hashcash/go/tree/master/services/aurora/internal/docs).
+  like [this one](https://github.com/HashCash-Consultants/go/tree/master/services/aurora/internal/docs).
 
 ### Release planning
 

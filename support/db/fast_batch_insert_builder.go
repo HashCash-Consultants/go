@@ -7,7 +7,7 @@ import (
 
 	"github.com/lib/pq"
 
-	"github.com/shantanu-hashcash/go/support/errors"
+	"github.com/HashCash-Consultants/go/support/errors"
 )
 
 // ErrSealed is returned when trying to add rows to the FastBatchInsertBuilder after Exec() is called.
@@ -128,7 +128,7 @@ func (b *FastBatchInsertBuilder) Exec(ctx context.Context, session SessionInterf
 			// we need to close the statement otherwise the session
 			// will always return bad connection errors when executing
 			// any other sql statements,
-			// see https://github.com/shantanu-hashcash/go/pull/316#issuecomment-368990324
+			// see https://github.com/HashCash-Consultants/go/pull/316#issuecomment-368990324
 			stmt.Close()
 			return err
 		}

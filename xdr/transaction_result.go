@@ -1,6 +1,6 @@
 package xdr
 
-import "github.com/shantanu-hashcash/go/support/errors"
+import "github.com/HashCash-Consultants/go/support/errors"
 
 // Successful returns true if the transaction succeeded
 func (r TransactionResult) Successful() bool {

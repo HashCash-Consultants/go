@@ -4,12 +4,12 @@ import (
 	"encoding/json"
 	"time"
 
-	"github.com/shantanu-hashcash/go/protocols/aurora/base"
-	"github.com/shantanu-hashcash/go/support/render/hal"
-	"github.com/shantanu-hashcash/go/xdr"
+	"github.com/HashCash-Consultants/go/protocols/aurora/base"
+	"github.com/HashCash-Consultants/go/support/render/hal"
+	"github.com/HashCash-Consultants/go/xdr"
 )
 
-// Peter 30-04-2019: this is copied from the history package "github.com/shantanu-hashcash/go/services/aurora/internal/db2/history"
+// Peter 30-04-2019: this is copied from the history package "github.com/HashCash-Consultants/go/services/aurora/internal/db2/history"
 // Could not import this because internal package imports must share the same path prefix as the importer.
 // Maybe this should be housed here and imported into internal packages?
 
@@ -202,17 +202,17 @@ const (
 
 	// EffectContractCredited effects occur when a contract receives some
 	// currency from SAC events involving transfers, mints, and burns.
-	// https://github.com/shantanu-hashcash/rs-soroban-env/blob/5695440da452837555d8f7f259cc33341fdf07b0/soroban-env-host/src/native_contract/token/contract.rs#L51-L63
+	// https://github.com/HashCash-Consultants/rs-soroban-env/blob/5695440da452837555d8f7f259cc33341fdf07b0/soroban-env-host/src/native_contract/token/contract.rs#L51-L63
 	EffectContractCredited EffectType = 96
 
 	// EffectContractDebited effects occur when a contract sends some currency
 	// from SAC events involving transfers, mints, and burns.
-	// https://github.com/shantanu-hashcash/rs-soroban-env/blob/5695440da452837555d8f7f259cc33341fdf07b0/soroban-env-host/src/native_contract/token/contract.rs#L51-L63
+	// https://github.com/HashCash-Consultants/rs-soroban-env/blob/5695440da452837555d8f7f259cc33341fdf07b0/soroban-env-host/src/native_contract/token/contract.rs#L51-L63
 	EffectContractDebited EffectType = 97
 )
 
 // Peter 30-04-2019: this is copied from the resourcadapter package
-// "github.com/shantanu-hashcash/go/services/aurora/internal/resourceadapter"
+// "github.com/HashCash-Consultants/go/services/aurora/internal/resourceadapter"
 // Could not import this because internal package imports must share the same path prefix as the importer.
 
 // EffectTypeNames stores a map of effect type ID and names

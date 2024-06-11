@@ -1,6 +1,6 @@
 package main
 
-import "github.com/shantanu-hashcash/go/services/ticker/cmd"
+import "github.com/HashCash-Consultants/go/services/ticker/cmd"
 
 func main() {
 	cmd.Execute()

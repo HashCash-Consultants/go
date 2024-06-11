@@ -48,7 +48,7 @@ Price is a precise representation of a bid/ask offer.
 Thus to get price you would take n / d.
 
 #### Synthetic Offer Ids
-Offer ids in the aurora trade resource (base_offer_id, counter_offer_id) are synthetic and don't always reflect the respective hcnet-core offer ids. This is due to the fact that hcnet-core does not assign offer ids when an offer gets filled immediately. In these cases, Aurora synthetically generates an offer id for the buying offer, based on the total order id of the offer operation. This allows wallets to aggregate historical trades based on offer ids without adding special handling for edge cases. The exact encoding can be found [here](https://github.com/shantanu-hashcash/go/blob/master/services/aurora/internal/db2/history/synt_offer_id.go). 
+Offer ids in the aurora trade resource (base_offer_id, counter_offer_id) are synthetic and don't always reflect the respective hcnet-core offer ids. This is due to the fact that hcnet-core does not assign offer ids when an offer gets filled immediately. In these cases, Aurora synthetically generates an offer id for the buying offer, based on the total order id of the offer operation. This allows wallets to aggregate historical trades based on offer ids without adding special handling for edge cases. The exact encoding can be found [here](https://github.com/HashCash-Consultants/go/blob/master/services/aurora/internal/db2/history/synt_offer_id.go). 
 
 ## Links
 

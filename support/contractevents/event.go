@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/shantanu-hashcash/go/support/errors"
-	"github.com/shantanu-hashcash/go/xdr"
+	"github.com/HashCash-Consultants/go/support/errors"
+	"github.com/HashCash-Consultants/go/xdr"
 )
 
 type Event = xdr.ContractEvent
@@ -68,7 +68,7 @@ func NewHcnetAssetContractEvent(event *Event, networkPassphrase string) (HcnetAs
 	// SAC event topics take the form <fn name>/<params...>/<token name>.
 	//
 	// For specific event forms, see here:
-	// https://github.com/shantanu-hashcash/rs-soroban-env/blob/main/soroban-env-host/src/native_contract/token/event.rs#L44-L49
+	// https://github.com/HashCash-Consultants/rs-soroban-env/blob/main/soroban-env-host/src/native_contract/token/event.rs#L44-L49
 	topics := event.Body.V0.Topics
 	value := event.Body.V0.Data
 

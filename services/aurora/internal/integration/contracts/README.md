@@ -23,7 +23,7 @@ The existing integeration tests refer to .wasm files from the `testdata/` direct
 https://www.rust-lang.org/tools/install
 
 2. Update the [`Cargo.toml file`](./Cargo.toml) to have latest git refs to
-[`rs-soroban-sdk`](https://github.com/shantanu-hashcash/rs-soroban-sdk) for the `soroban-sdk` and `soroban-auth` dependencies.
+[`rs-soroban-sdk`](https://github.com/HashCash-Consultants/rs-soroban-sdk) for the `soroban-sdk` and `soroban-auth` dependencies.
 
 3. Compile the contract source code to WASM and copy it to `testdata/`:
 

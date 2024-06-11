@@ -1,6 +1,6 @@
 package index
 
-import types "github.com/shantanu-hashcash/go/exp/lightaurora/index/types"
+import types "github.com/HashCash-Consultants/go/exp/lightaurora/index/types"
 
 // TODO: Use a more standardized filesystem-style backend, so we can re-use
 // code

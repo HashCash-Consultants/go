@@ -5,7 +5,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/shantanu-hashcash/go/support/log"
+	"github.com/HashCash-Consultants/go/support/log"
 )
 
 // NewDefaultSubmissionList returns a list that manages open submissions purely

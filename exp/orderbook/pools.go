@@ -4,8 +4,8 @@ import (
 	"math"
 
 	"github.com/holiman/uint256"
-	"github.com/shantanu-hashcash/go/support/errors"
-	"github.com/shantanu-hashcash/go/xdr"
+	"github.com/HashCash-Consultants/go/support/errors"
+	"github.com/HashCash-Consultants/go/xdr"
 )
 
 // There are two different exchanges that can be simulated:
@@ -37,7 +37,7 @@ var (
 // In (2), this returns the amount of `asset` you'd need to deposit to get
 // `amount` of the *other* asset in return.
 //
-// Refer to https://github.com/shantanu-hashcash/hcnet-protocol/blob/master/core/cap-0038.md#pathpaymentstrictsendop-and-pathpaymentstrictreceiveop
+// Refer to https://github.com/HashCash-Consultants/hcnet-protocol/blob/master/core/cap-0038.md#pathpaymentstrictsendop-and-pathpaymentstrictreceiveop
 // and the calculation functions (below) for details on the exchange algorithm.
 //
 // Warning: If you pass an asset that is NOT one of the pool reserves, the

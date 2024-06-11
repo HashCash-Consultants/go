@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/shantanu-hashcash/go/keypair"
+	"github.com/HashCash-Consultants/go/keypair"
 	"github.com/stretchr/testify/assert"
 )
 

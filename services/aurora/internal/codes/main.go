@@ -5,7 +5,7 @@ package codes
 import (
 	"github.com/go-errors/errors"
 
-	"github.com/shantanu-hashcash/go/xdr"
+	"github.com/HashCash-Consultants/go/xdr"
 )
 
 // ErrUnknownCode is returned when an unexepcted value is provided to `String`

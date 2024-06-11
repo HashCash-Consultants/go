@@ -14,9 +14,9 @@ import (
 
 	"cloud.google.com/go/storage"
 
-	"github.com/shantanu-hashcash/go/support/errors"
-	"github.com/shantanu-hashcash/go/support/log"
-	"github.com/shantanu-hashcash/go/support/url"
+	"github.com/HashCash-Consultants/go/support/errors"
+	"github.com/HashCash-Consultants/go/support/log"
+	"github.com/HashCash-Consultants/go/support/url"
 )
 
 // GCSDataStore implements DataStore for GCS

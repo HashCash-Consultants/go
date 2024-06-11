@@ -10,9 +10,9 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/shantanu-hashcash/go/support/collections/heap"
-	"github.com/shantanu-hashcash/go/support/compressxdr"
-	"github.com/shantanu-hashcash/go/support/datastore"
+	"github.com/HashCash-Consultants/go/support/collections/heap"
+	"github.com/HashCash-Consultants/go/support/compressxdr"
+	"github.com/HashCash-Consultants/go/support/datastore"
 )
 
 type ledgerBatchObject struct {

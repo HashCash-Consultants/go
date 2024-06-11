@@ -8,11 +8,11 @@ import (
 	"os"
 	"path/filepath"
 
-	types "github.com/shantanu-hashcash/go/exp/lightaurora/index/types"
+	types "github.com/HashCash-Consultants/go/exp/lightaurora/index/types"
 
-	"github.com/shantanu-hashcash/go/support/collections/set"
-	"github.com/shantanu-hashcash/go/support/errors"
-	"github.com/shantanu-hashcash/go/support/log"
+	"github.com/HashCash-Consultants/go/support/collections/set"
+	"github.com/HashCash-Consultants/go/support/errors"
+	"github.com/HashCash-Consultants/go/support/log"
 )
 
 type FileBackend struct {

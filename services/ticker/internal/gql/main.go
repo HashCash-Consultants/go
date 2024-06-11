@@ -6,9 +6,9 @@ import (
 
 	"github.com/graph-gophers/graphql-go"
 	"github.com/graph-gophers/graphql-go/relay"
-	"github.com/shantanu-hashcash/go/services/ticker/internal/gql/static"
-	"github.com/shantanu-hashcash/go/services/ticker/internal/tickerdb"
-	hlog "github.com/shantanu-hashcash/go/support/log"
+	"github.com/HashCash-Consultants/go/services/ticker/internal/gql/static"
+	"github.com/HashCash-Consultants/go/services/ticker/internal/tickerdb"
+	hlog "github.com/HashCash-Consultants/go/support/log"
 )
 
 // asset represents a Hcnet asset, with some type

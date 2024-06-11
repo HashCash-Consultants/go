@@ -8,13 +8,13 @@ import (
 
 	"github.com/go-chi/chi"
 	"github.com/spf13/cobra"
-	"github.com/shantanu-hashcash/go/services/friendbot/internal"
-	"github.com/shantanu-hashcash/go/support/app"
-	"github.com/shantanu-hashcash/go/support/config"
-	"github.com/shantanu-hashcash/go/support/errors"
-	"github.com/shantanu-hashcash/go/support/http"
-	"github.com/shantanu-hashcash/go/support/log"
-	"github.com/shantanu-hashcash/go/support/render/problem"
+	"github.com/HashCash-Consultants/go/services/friendbot/internal"
+	"github.com/HashCash-Consultants/go/support/app"
+	"github.com/HashCash-Consultants/go/support/config"
+	"github.com/HashCash-Consultants/go/support/errors"
+	"github.com/HashCash-Consultants/go/support/http"
+	"github.com/HashCash-Consultants/go/support/log"
+	"github.com/HashCash-Consultants/go/support/render/problem"
 )
 
 // Config represents the configuration of a friendbot server

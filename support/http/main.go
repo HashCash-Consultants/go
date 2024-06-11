@@ -10,9 +10,9 @@ import (
 	"os"
 	"time"
 
-	"github.com/shantanu-hashcash/go/support/config"
-	"github.com/shantanu-hashcash/go/support/errors"
-	"github.com/shantanu-hashcash/go/support/log"
+	"github.com/HashCash-Consultants/go/support/config"
+	"github.com/HashCash-Consultants/go/support/errors"
+	"github.com/HashCash-Consultants/go/support/log"
 	"gopkg.in/tylerb/graceful.v1"
 )
 

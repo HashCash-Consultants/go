@@ -3,10 +3,10 @@ package txnbuild
 import (
 	"testing"
 
-	"github.com/shantanu-hashcash/go/amount"
-	"github.com/shantanu-hashcash/go/gxdr"
-	"github.com/shantanu-hashcash/go/randxdr"
-	"github.com/shantanu-hashcash/go/xdr"
+	"github.com/HashCash-Consultants/go/amount"
+	"github.com/HashCash-Consultants/go/gxdr"
+	"github.com/HashCash-Consultants/go/randxdr"
+	"github.com/HashCash-Consultants/go/xdr"
 	goxdr "github.com/xdrpp/goxdr/xdr"
 
 	"github.com/stretchr/testify/assert"

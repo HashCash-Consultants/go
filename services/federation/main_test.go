@@ -3,8 +3,8 @@ package main
 import (
 	"testing"
 
-	"github.com/shantanu-hashcash/go/support/db/dbtest"
-	"github.com/shantanu-hashcash/go/support/errors"
+	"github.com/HashCash-Consultants/go/support/db/dbtest"
+	"github.com/HashCash-Consultants/go/support/errors"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

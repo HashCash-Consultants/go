@@ -3,7 +3,7 @@ package txnbuild
 import (
 	"fmt"
 
-	"github.com/shantanu-hashcash/go/xdr"
+	"github.com/HashCash-Consultants/go/xdr"
 )
 
 // Operation represents the operation types of the Hcnet network.

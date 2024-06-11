@@ -14,9 +14,9 @@ import (
 
 	"github.com/go-chi/chi"
 	"github.com/google/uuid"
-	"github.com/shantanu-hashcash/go/keypair"
-	"github.com/shantanu-hashcash/go/services/regulated-assets-approval-server/internal/db/dbtest"
-	"github.com/shantanu-hashcash/go/services/regulated-assets-approval-server/internal/serve/kycstatus"
+	"github.com/HashCash-Consultants/go/keypair"
+	"github.com/HashCash-Consultants/go/services/regulated-assets-approval-server/internal/db/dbtest"
+	"github.com/HashCash-Consultants/go/services/regulated-assets-approval-server/internal/serve/kycstatus"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

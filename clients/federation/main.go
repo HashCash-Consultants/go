@@ -4,9 +4,9 @@ import (
 	"net/http"
 	"net/url"
 
-	hc "github.com/shantanu-hashcash/go/clients/auroraclient"
-	"github.com/shantanu-hashcash/go/clients/hcnettoml"
-	proto "github.com/shantanu-hashcash/go/protocols/federation"
+	hc "github.com/HashCash-Consultants/go/clients/auroraclient"
+	"github.com/HashCash-Consultants/go/clients/hcnettoml"
+	proto "github.com/HashCash-Consultants/go/protocols/federation"
 )
 
 // FederationResponseMaxSize is the maximum size of response from a federation server

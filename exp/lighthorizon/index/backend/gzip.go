@@ -6,7 +6,7 @@ import (
 	"errors"
 	"io"
 
-	types "github.com/shantanu-hashcash/go/exp/lightaurora/index/types"
+	types "github.com/HashCash-Consultants/go/exp/lightaurora/index/types"
 )
 
 func writeGzippedTo(w io.Writer, indexes types.NamedIndices) (int64, error) {

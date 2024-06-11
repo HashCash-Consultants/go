@@ -4,8 +4,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/shantanu-hashcash/go/support/clock"
-	"github.com/shantanu-hashcash/go/support/clock/clocktest"
+	"github.com/HashCash-Consultants/go/support/clock"
+	"github.com/HashCash-Consultants/go/support/clock/clocktest"
 	"github.com/stretchr/testify/assert"
 )
 

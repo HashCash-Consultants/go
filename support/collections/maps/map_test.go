@@ -3,7 +3,7 @@ package maps
 import (
 	"testing"
 
-	"github.com/shantanu-hashcash/go/support/collections/set"
+	"github.com/HashCash-Consultants/go/support/collections/set"
 	"github.com/stretchr/testify/require"
 )
 

@@ -4,11 +4,11 @@ import (
 	"log"
 	"time"
 
-	"github.com/shantanu-hashcash/throttled"
+	"github.com/HashCash-Consultants/throttled"
 
-	"github.com/shantanu-hashcash/go/network"
-	"github.com/shantanu-hashcash/go/services/aurora/internal/test"
-	supportLog "github.com/shantanu-hashcash/go/support/log"
+	"github.com/HashCash-Consultants/go/network"
+	"github.com/HashCash-Consultants/go/services/aurora/internal/test"
+	supportLog "github.com/HashCash-Consultants/go/support/log"
 )
 
 func NewTestApp(dsn string) *App {

@@ -5,6 +5,6 @@ set -e
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 GOTOP="$( cd "$DIR/../../../../../../../.." && pwd )"
 
-go generate github.com/shantanu-hashcash/go/services/aurora/internal/db2/schema
-go generate github.com/shantanu-hashcash/go/services/aurora/internal/test
-go install github.com/shantanu-hashcash/go/services/aurora
+go generate github.com/HashCash-Consultants/go/services/aurora/internal/db2/schema
+go generate github.com/HashCash-Consultants/go/services/aurora/internal/test
+go install github.com/HashCash-Consultants/go/services/aurora

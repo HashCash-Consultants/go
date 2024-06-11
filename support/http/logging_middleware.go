@@ -8,8 +8,8 @@ import (
 
 	"github.com/go-chi/chi"
 	"github.com/go-chi/chi/middleware"
-	"github.com/shantanu-hashcash/go/support/http/mutil"
-	"github.com/shantanu-hashcash/go/support/log"
+	"github.com/HashCash-Consultants/go/support/http/mutil"
+	"github.com/HashCash-Consultants/go/support/log"
 )
 
 // Options allow the middleware logger to accept additional information.

@@ -1,7 +1,7 @@
 package orderbook
 
 import (
-	"github.com/shantanu-hashcash/go/xdr"
+	"github.com/HashCash-Consultants/go/xdr"
 )
 
 // getPoolAssets retrieves string representations of a pool's reserves

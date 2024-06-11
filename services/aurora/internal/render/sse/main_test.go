@@ -6,7 +6,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/shantanu-hashcash/go/support/test"
+	"github.com/HashCash-Consultants/go/support/test"
 	"github.com/stretchr/testify/assert"
 )
 

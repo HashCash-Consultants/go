@@ -1,8 +1,8 @@
 package services
 
 import (
-	"github.com/shantanu-hashcash/go/exp/lightaurora/index"
-	"github.com/shantanu-hashcash/go/toid"
+	"github.com/HashCash-Consultants/go/exp/lightaurora/index"
+	"github.com/HashCash-Consultants/go/toid"
 )
 
 // CursorManager describes a way to control how a cursor advances for a

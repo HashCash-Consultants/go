@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/shantanu-hashcash/go/services/aurora/cmd"
+	"github.com/HashCash-Consultants/go/services/aurora/cmd"
 )
 
 func main() {

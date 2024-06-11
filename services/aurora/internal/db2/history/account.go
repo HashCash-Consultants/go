@@ -6,8 +6,8 @@ import (
 
 	sq "github.com/Masterminds/squirrel"
 
-	"github.com/shantanu-hashcash/go/support/db"
-	"github.com/shantanu-hashcash/go/support/errors"
+	"github.com/HashCash-Consultants/go/support/db"
+	"github.com/HashCash-Consultants/go/support/errors"
 )
 
 // AccountByAddress loads a row from `history_accounts`, by address
@@ -34,7 +34,7 @@ func (q *Q) CreateAccounts(ctx context.Context, addresses []string, batchSize in
 	}
 
 	// sort assets before inserting rows into history_assets to prevent deadlocks on acquiring a ShareLock
-	// https://github.com/shantanu-hashcash/go/issues/2370
+	// https://github.com/HashCash-Consultants/go/issues/2370
 	sort.Strings(addresses)
 	var deduped []string
 	for i, address := range addresses {

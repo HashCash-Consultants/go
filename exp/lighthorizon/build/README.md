@@ -6,7 +6,7 @@ Light Aurora is composed of a few micro services:
 * ledgerexporter - contains single binary that reads from captive core and writes tx-meta
 * web            - contains single binary that runs web api which reads from tx-meta and index.
 
-See [godoc](https://godoc.org/github.com/shantanu-hashcash/go/exp/lightaurora) for details on each service.
+See [godoc](https://godoc.org/github.com/HashCash-Consultants/go/exp/lightaurora) for details on each service.
 
 ## Buiding docker images of each service
 Each service is packaged into a Docker image, use the helper script included here to build:

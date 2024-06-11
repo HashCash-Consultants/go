@@ -7,10 +7,10 @@ import (
 
 	migrate "github.com/rubenv/sql-migrate"
 	"github.com/spf13/cobra"
-	dbpkg "github.com/shantanu-hashcash/go/exp/services/recoverysigner/internal/db"
-	"github.com/shantanu-hashcash/go/exp/services/recoverysigner/internal/db/dbmigrate"
-	"github.com/shantanu-hashcash/go/support/config"
-	supportlog "github.com/shantanu-hashcash/go/support/log"
+	dbpkg "github.com/HashCash-Consultants/go/exp/services/recoverysigner/internal/db"
+	"github.com/HashCash-Consultants/go/exp/services/recoverysigner/internal/db/dbmigrate"
+	"github.com/HashCash-Consultants/go/support/config"
+	supportlog "github.com/HashCash-Consultants/go/support/log"
 )
 
 type DBCommand struct {

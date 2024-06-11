@@ -23,7 +23,7 @@ func (t *AccountDataValue) Scan(src interface{}) error {
 // Value implements driver.Valuer
 func (value AccountDataValue) Value() (driver.Value, error) {
 	// Return string to bypass buggy encoding in pq driver for []byte.
-	// More info https://github.com/shantanu-hashcash/go/issues/5086#issuecomment-1773215436)
+	// More info https://github.com/HashCash-Consultants/go/issues/5086#issuecomment-1773215436)
 	return driver.Value(base64.StdEncoding.EncodeToString(value)), nil
 }
 

@@ -1,7 +1,7 @@
 package historyarchive
 
 import (
-	"github.com/shantanu-hashcash/go/xdr"
+	"github.com/HashCash-Consultants/go/xdr"
 	"github.com/stretchr/testify/mock"
 )
 

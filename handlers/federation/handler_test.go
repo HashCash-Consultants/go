@@ -6,8 +6,8 @@ import (
 	"net/url"
 	"testing"
 
-	"github.com/shantanu-hashcash/go/support/db/dbtest"
-	"github.com/shantanu-hashcash/go/support/http/httptest"
+	"github.com/HashCash-Consultants/go/support/db/dbtest"
+	"github.com/HashCash-Consultants/go/support/http/httptest"
 )
 
 func TestHandler(t *testing.T) {
