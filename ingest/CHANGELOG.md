@@ -1,0 +1,51 @@
+# Changelog
+
+All notable changes to this project will be documented in this file. This project adheres to [Semantic Versioning](http://semver.org/).
+
+
+## Unreleased
+
+### New Features
+* Support for Soroban and Protocol 20!
+* The `LedgerTransactionReader` now has a `Seek(index int)` method to provide reading from arbitrary parts of the ledger [5274](https://github.com/shantanu-hashcash/go/pull/5274).
+* `Change` now has a canonical stringification and a set of them is deterministically sortable.
+* `NewCompactingChangeReader` will give you a wrapped `ChangeReader` that compacts the changes.
+* Let filewatcher use binary hash instead of timestamp to detect core version update [4050](https://github.com/shantanu-hashcash/go/pull/4050).
+
+### Performance Improvements
+* The Captive Core backend now reuses bucket files whenever it finds existing ones in the corresponding `--captive-core-storage-path` (introduced in [v2.0](#v2.0.0)) rather than generating a one-time temporary sub-directory ([#3670](https://github.com/shantanu-hashcash/go/pull/3670)). Note that taking advantage of this feature requires [Hcnet-Core v17.1.0](https://github.com/shantanu-hashcash/hcnet-core/releases/tag/v17.1.0) or later.
+* There have been miscallaneous memory and processing speed improvements.
+
+### Bug Fixes
+* The Hcnet Core runner now parses logs from its underlying subprocess better [#3746](https://github.com/shantanu-hashcash/go/pull/3746).
+* Ensures that the underlying Hcnet Core is terminated before restarting.
+* Backends will now connect with a user agent.
+* Better handling of various error and restart scenarios.
+
+### Breaking Changes
+* **Captive Core is now the only available backend.**
+* The Captive Core configuration should be provided via a TOML file.
+* `Change.AccountSignersChanged` has been removed.
+
+## v2.0.0
+
+This release is related to the release of [Aurora v2.3.0](https://github.com/shantanu-hashcash/go/releases/tag/aurora-v2.3.0) and introduces some breaking changes to the `ingest` package for those building their own tools.
+
+### Breaking Changes
+- Many APIs now require a `context.Context` parameter, allowing you to interact with the backends and control calls in a more finely-controlled manner. This includes the readers (`ChangeReader` et al.) as well as the backends themselves (`CaptiveHcnetCore` et al.).
+
+- **`GetLedger()` always blocks** now, even for an `UnboundedRange`.
+
+- The `CaptiveCoreBackend` now requires an all-inclusive `CaptiveCoreToml` object to configure Captive Core rather than an assortment of individual parameters. This object can be built from a TOML file (see `NewCaptiveCoreTomlFromFile`) or from parameters (see `NewCaptiveCoreToml`) as was done before.
+
+- `LedgerTransaction.Meta` has been renamed to `UnsafeMeta` to highlight that users should be careful when interacting with it.
+
+- Remote Captive Core no longer includes the `present` field in the ledger response JSON.
+
+### New Features
+- `NewLedgerChangeReaderFromLedgerCloseMeta` and `NewLedgerTransactionReaderFromLedgerCloseMeta` are new ways to construct readers from a particular single ledger.
+
+### Other Changes
+- The remote Captive Core client timeout has doubled.
+
+- Captive Core now creates a temporary directory (`captive-core-...`) in the specified storage path (current directory by default) that it cleans it up on shutdown rather than in the OS's temp directory.

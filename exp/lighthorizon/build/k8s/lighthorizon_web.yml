@@ -1,0 +1,133 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  annotations:
+    fluxcd.io/ignore: "true"
+  labels:
+    app: lightaurora-pubnet-web
+  name: lightaurora-pubnet-web-env
+data:
+  TXMETA_SOURCE: "s3://aurora-indices-pubnet"
+  INDEXES_SOURCE: "s3://aurora-ledgermeta-pubnet"
+  NETWORK_PASSPHRASE: "Public Global Hcnet Network ; September 2015"
+  MAX_PARALLEL_DOWNLOADS: 16
+  CACHE_PATH: "/ledgercache"
+  CACHE_PRELOAD_START_LEDGER: 0
+  CACHE_PRELOAD_COUNT: 14400
+---  
+apiVersion: v1
+kind: Secret
+metadata:
+  labels:
+    app: lightaurora-pubnet-web
+  name: lightaurora-pubnet-web-secret
+type: Opaque
+data:
+  AWS_REGION: <base64 encoded here>
+  AWS_ACCESS_KEY_ID: <base64 encoded here>
+  AWS_SECRET_ACCESS_KEY: <base64 encoded here>  
+---  
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    fluxcd.io/ignore: "true"
+  labels:
+    app: lightaurora-pubnet-web
+  name: lightaurora-pubnet-web
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: lightaurora-pubnet-web
+  template:
+    metadata:
+      annotations:
+        fluxcd.io/ignore: "true"
+        prometheus.io/port: "6060"
+        prometheus.io/scrape: "false"
+      creationTimestamp: null
+      labels:
+        app: lightaurora-pubnet-web
+    spec:
+      containers:
+      - envFrom:
+        - secretRef:
+            name: lightaurora-pubnet-web-secret
+        - configMapRef:
+            name: lightaurora-pubnet-web-env
+        image: hcnet/lightaurora-web:latest
+        imagePullPolicy: Always
+        name: web
+        ports:
+        - containerPort: 8080
+          name: web
+          protocol: TCP
+        - containerPort: 6060
+          name: metrics
+          protocol: TCP
+        readinessProbe:
+          failureThreshold: 3
+          httpGet:
+            path: /
+            port: 8080
+            scheme: HTTP
+          initialDelaySeconds: 30
+          periodSeconds: 30
+          successThreshold: 1
+          timeoutSeconds: 5
+        resources:
+          limits:
+            cpu: 2
+            memory: 4Gi
+          requests:
+            cpu: 500m
+            memory: 1Gi
+        volumeMounts:
+        - mountPath: /ledgercache
+          name: cache-storage    
+      volumes:
+      - name: cache-storage
+        emptyDir: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: lightaurora-pubnet-web
+  name: lightaurora-pubnet-web
+spec:
+  ports:
+  - name: http
+    port: 8000
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: lightaurora-pubnet-web
+  sessionAffinity: None
+  type: ClusterIP
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    cert-manager.io/cluster-issuer: default
+    ingress.kubernetes.io/ssl-redirect: "true"
+    kubernetes.io/ingress.class: public
+  name: lightaurora-pubnet-web
+spec:
+  rules:
+  - host: lightaurora-pubnet.prototypes.kube001.services.hcnet-ops.com
+    http:
+      paths:
+      - backend:
+          service:
+            name: lightaurora-pubnet-web
+            port:
+              number: 8000
+        path: /
+        pathType: ImplementationSpecific
+  tls:
+  - hosts:
+    - lightaurora-pubnet.prototypes.kube001.services.hcnet-ops.com
+    secretName: lightaurora-pubnet-web-cert
